@@ -1,0 +1,15 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" fill="#F5F5F5"/>
+<g clip-path="url(#clip_facebook_footer)">
+<rect width="1440" height="6539" transform="translate(-830 -6369)" fill="white"/>
+<rect x="-830" y="-136" width="1440" height="306" fill="#0B2235"/>
+<circle cx="17" cy="17" r="17" fill="#B5CEE3" fill-opacity="0.3"/>
+<circle cx="17" cy="17" r="16.675" stroke="white" stroke-opacity="0.16" stroke-width="0.65"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3668 17.0546V23.1417C15.3668 23.224 15.4354 23.3062 15.5314 23.3062H17.7934C17.8757 23.3062 17.958 23.2377 17.958 23.1417V16.9449H19.5894C19.6717 16.9449 19.7402 16.8764 19.7539 16.7941L19.891 14.9433C19.9047 14.8474 19.8225 14.7651 19.7265 14.7651H17.9443V13.449C17.9443 13.1336 18.191 12.8869 18.5064 12.8869H19.7676C19.8499 12.8869 19.9322 12.8183 19.9322 12.7224V10.8715C19.9322 10.7893 19.8636 10.707 19.7676 10.707H17.6289C16.3814 10.707 15.3668 11.7215 15.3668 12.9691V14.7651H14.2426C14.1604 14.7651 14.0781 14.8336 14.0781 14.9296V16.7941C14.0781 16.8764 14.1467 16.9586 14.2426 16.9586H15.3668V17.0546V17.0546Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip_facebook_footer">
+<rect width="1440" height="6539" fill="white" transform="translate(-830 -6369)"/>
+</clipPath>
+</defs>
+</svg>

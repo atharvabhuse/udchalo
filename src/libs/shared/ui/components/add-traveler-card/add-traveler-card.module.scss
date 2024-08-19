@@ -1,0 +1,102 @@
+.add_traveller_container {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin-top: 1rem;
+
+  .add_traveller_heading {
+    font-weight: 600;
+  }
+
+  .error_message {
+    color: red;
+  }
+  .add_traveller_input_row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .input_box {
+      width: 48%;
+
+      .input_heading {
+        font-size: 10px;
+        position: absolute;
+        background-color: white;
+        padding: 0.2rem 0.4rem;
+        transform: translateX(15%) translateY(-50%);
+        color: gray;
+      }
+      .add_traveller_inp {
+        width: 100%;
+      }
+
+      .error_message {
+        color: red;
+      }
+    }
+  }
+  .save_traveller_info_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #e9f2f8;
+    border-radius: 10px;
+    margin-top: 1rem;
+    padding: 1rem;
+
+    .save_traveller_info_left {
+      display: flex;
+      flex-direction: column;
+
+      .save_traveller_info_heading {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+
+      .save_traveller_info_desc {
+        font-size: 0.9rem;
+      }
+    }
+    .save_traveller_info_right {
+    }
+  }
+
+  .add_traveller_buttons_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+
+    .cancel_btn {
+      background-color: white;
+      color: #3398d5;
+      border-radius: 10px;
+      width: 20%;
+      padding: 1rem 1rem;
+      margin-left: 5%;
+      border: 2px solid #3398d5;
+      font-weight: 600;
+    }
+    .cancel_btn:hover {
+      cursor: pointer;
+    }
+
+    .add_traveller_btn {
+      background-color: #32996a;
+      color: white;
+      border-radius: 10px;
+      width: 20%;
+      padding: 1rem 1rem;
+      margin-left: 5%;
+      font-weight: 600;
+    }
+    .add_traveller_btn:hover {
+      cursor: pointer;
+    }
+  }
+}

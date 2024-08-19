@@ -1,0 +1,22 @@
+.extras {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  .extras_heading_row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    .extras_index {
+      font-size: 1rem;
+      background-color: #edf7ff;
+      color: #1d4ea5;
+      border-radius: 100%;
+      padding: 1rem 1.3rem;
+    }
+    .extras_heading {
+      font-weight: 600;
+    }
+  }
+}

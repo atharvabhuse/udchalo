@@ -1,0 +1,125 @@
+.contact_details_box {
+  margin-top: 2rem;
+  position: relative;
+
+  .form_content {
+    background-color: #f3f7ff;
+    padding: 1.5rem;
+    margin: 0 -16px;
+
+    .contact_details_heading {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    .contact_details_desc {
+      color: #858585;
+      font-size: 12px;
+    }
+    .form_row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+
+      .form_field {
+        width: 100%;
+
+        .error_message {
+          color: red;
+        }
+      }
+    }
+    .checkbox_row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  .button_row {
+    text-align: center;
+    padding: 1rem 0;
+
+    button {
+      font-weight: 700;
+      line-height: 26px;
+      height: 48px;
+      width: 216px;
+    }
+  }
+
+  .form_overlay {
+    position: absolute;
+    top: 0;
+    left: -16px;
+    height: 100%;
+    width: calc(100% + 32px);
+    opacity: 0.6;
+    background-color: #fff;
+    z-index: 99;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact_details_box {
+    margin-top: 2rem;
+    position: relative;
+
+    .form_content {
+      background-color: #f3f7ff;
+      padding: 1.5rem;
+      margin: 0 -16px;
+
+      .contact_details_heading {
+        font-weight: 600;
+        font-size: 1rem;
+      }
+      .contact_details_desc {
+        color: #858585;
+        font-size: 12px;
+      }
+      .form_row {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin: 1.5rem 0;
+
+        .form_field {
+          width: 100%;
+
+          .error_message {
+            color: red;
+          }
+        }
+      }
+      .checkbox_row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    .button_row {
+      text-align: center;
+      padding: 1rem 0;
+
+      button {
+        font-weight: 700;
+        line-height: 26px;
+        height: 48px;
+        width: 216px;
+      }
+    }
+
+    .form_overlay {
+      position: absolute;
+      top: 0;
+      left: -16px;
+      height: 100%;
+      width: calc(100% + 32px);
+      opacity: 0.6;
+      background-color: #fff;
+      z-index: 99;
+    }
+  }
+}

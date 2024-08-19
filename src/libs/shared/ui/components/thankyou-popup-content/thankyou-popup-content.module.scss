@@ -1,0 +1,129 @@
+.popupContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  .popupHeading {
+    font-weight: 600;
+    padding-top: 1rem;
+    font-size: 16px;
+  }
+  .popupDesc {
+    font-weight: 400;
+    padding-top: 0.7rem;
+    color: #858585;
+    font-size: 14px;
+  }
+  .textarea {
+    border: 1px solid #c5d4e3;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+    color: gray;
+  }
+  .note {
+    color: red;
+  }
+  .btnRow {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
+
+    .btnLink1 {
+      border: 2px solid #3398d5;
+      border-radius: 8px;
+      color: #3398d5;
+      background-color: white;
+      width: 35%;
+      padding: 1rem 0;
+      margin-right: 1rem;
+      font-weight: 600;
+    }
+    .btnLink1:hover {
+      cursor: pointer;
+    }
+    .btnLink2 {
+      background-color: #32996a;
+      border-radius: 8px;
+      color: white;
+      width: 35%;
+      padding: 1rem 0;
+      font-weight: 600;
+    }
+    .btnLink2:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .popupContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    .popupHeading {
+      font-weight: 600;
+      padding-top: 1rem;
+      font-size: 14px;
+    }
+    .popupDesc {
+      font-weight: 400;
+      padding-top: 0.7rem;
+      color: #858585;
+      font-size: 12px;
+      text-align: center;
+      width: 70%;
+    }
+    .textarea {
+      border: 1px solid #c5d4e3;
+      border-radius: 8px;
+      padding: 1rem;
+      width: 100%;
+      margin-top: 1rem;
+      color: gray;
+    }
+    .note {
+      color: red;
+    }
+    .btnRow {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      margin-top: 2rem;
+
+      .btnLink1 {
+        border: 2px solid #3398d5;
+        border-radius: 8px;
+        color: #3398d5;
+        background-color: white;
+        width: 35%;
+        padding: 1rem 0;
+        margin-right: 1rem;
+        font-weight: 600;
+        font-size: 12px;
+      }
+      .btnLink1:hover {
+        cursor: pointer;
+      }
+      .btnLink2 {
+        background-color: #32996a;
+        border-radius: 8px;
+        color: white;
+        width: 35%;
+        padding: 1rem 0;
+        font-weight: 600;
+        font-size: 12px;
+      }
+      .btnLink2:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

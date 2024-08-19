@@ -1,0 +1,158 @@
+.carousal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+
+  .swipper_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    .swiper_slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+
+      .green_banner {
+        background-color: #2a4a2f;
+        color: #e2e8e6;
+        font-size: 1vmax;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .fauji_section2 {
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+        width: 70%;
+
+        .fauji_flight_box {
+          display: flex;
+          flex-direction: column;
+          background-color: white;
+          border-radius: 10px;
+          width: 100%;
+
+          .fauji_flight_box_section1 {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 1rem;
+
+            .fauji_row {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+              .fauji_row_flight_location {
+                margin-left: 0.3rem;
+                margin-right: 0.3rem;
+                font-weight: 600;
+                font-size: 1vmax;
+              }
+
+              .fauji_row_flight_timing {
+                color: #858585;
+                margin-left: 0.3rem;
+                font-size: 1vmax;
+              }
+            }
+          }
+
+          .fauji_flight_box_section2 {
+            background-color: #e4f3fd;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 1rem;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            .fauji_row_flight_timing {
+              color: #858585;
+              margin-left: 0.3rem;
+              font-size: 1vmax;
+            }
+
+            .fauji_row_flight_location {
+              margin-left: 0.3rem;
+              margin-right: 0.3rem;
+              font-weight: 600;
+              color: black;
+              font-size: 1vmax;
+            }
+          }
+        }
+      }
+    }
+
+    [class^='swiper-button-']::after {
+      content: '';
+    }
+
+    .fauji_fare_swiper_icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: white;
+      padding: 5px;
+    }
+  }
+
+  .left_right_btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    margin-top: 0vmax;
+    border-radius: 0px;
+    background-color: white;
+
+    .swipper_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+
+      .swiper_slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 1rem;
+
+        .fauji_section2 {
+          display: flex;
+          flex-direction: row;
+          margin: 1rem;
+          width: 100%;
+        }
+      }
+    }
+    .left_right_btn {
+      display: none;
+    }
+  }
+}

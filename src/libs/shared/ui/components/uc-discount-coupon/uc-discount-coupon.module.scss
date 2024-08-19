@@ -1,0 +1,241 @@
+.uc_discount_coupon {
+  position: relative;
+  border: 1px solid $stroke-2;
+  border-radius: 16px 16px 0px 0px;
+  padding: 16px 12px;
+  width: 99%;
+  background-color: $blue-accent-2;
+  padding-bottom: 2rem;
+  border-bottom: none;
+  .discount_coupon_heading_row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    margin-bottom: 16px;
+    .coupon_icon {
+      width: 30px;
+      height: 30px;
+    }
+    .coupon_heading {
+      text-transform: capitalize;
+      @include font-properties($black, 14px, normal, 600, 20px);
+    }
+    .discount_coupon_desc {
+      @include font-properties($text-quaternary, 12px, normal, 400px, 16px);
+      margin-top: 2px;
+    }
+  }
+
+  .viewAll_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 16px;
+    .viewAll_text,
+    .viewall_text_msite {
+      @include font-properties($blue-primary, 12px, normal, 700, normal);
+      background-color: transparent;
+    }
+
+    .viewall_text_msite {
+      @include breakpoints(lg tablet laptop) {
+        display: none;
+      }
+    }
+    .viewAll_text:hover {
+      cursor: pointer;
+    }
+  }
+
+  .coupon_input_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vmax;
+
+    .coupon_input {
+      width: 100%;
+      margin-top: 16px;
+      font-size: 0.9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $white;
+      border-radius: 8px;
+    }
+    .apply_btn {
+      background-color: transparent;
+      color: $blue-primary;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      align-self: center;
+      justify-content: center;
+      text-align: center;
+      font-size: 12px;
+    }
+    .apply_btn:hover {
+      cursor: pointer;
+    }
+  }
+  .apply_btn_disabled {
+    background-color: transparent;
+    color: $bg-disabled;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .invalid_coupon {
+    color: $validation-error-primary;
+    margin-top: 0.3rem;
+    @include breakpoints(mobile) {
+      display: none;
+    }
+  }
+}
+.uc_discount_coupon:after {
+  background: linear-gradient(-45deg, $blue-accent-1 18px, transparent 0),
+    linear-gradient(45deg, $blue-accent-1 17px, transparent 0);
+  background-repeat: repeat-x;
+  background-size: 18px 32px;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 15px;
+}
+
+.uc_discount_applied_coupon {
+  border-radius: 16px;
+  border: 1px solid $stroke-2;
+  background: $white;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  .discount_coupon_applied_heading_row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8px;
+    margin-bottom: 12px;
+    .coupon_heading {
+      @include font-properties($text-secondary, 14px, normal, 600, 20px);
+      text-transform: capitalize;
+    }
+  }
+  .code_applied {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $stroke-2;
+    background: $accent-8;
+    border-radius: 8px;
+    padding: 10px 8px;
+
+    .code_applied_left {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 6px;
+      .code_applied_discount {
+        @include font-properties($text-secondary, 14px, normal, 400, 16px);
+      }
+      .code_applied_discount_rupees {
+        @include font-properties($system-successful, 14px, normal, 600, 16px);
+      }
+    }
+    .closeIconBox:hover {
+      cursor: pointer;
+    }
+  }
+}
+@include breakpoints(lg laptop tablet) {
+  .discount_container_msite {
+    display: none;
+  }
+}
+
+@include breakpoints(mobile) {
+  .uc_discount_coupon {
+    .discount_coupon_heading_row {
+      .discount_coupon_desc {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+    .viewAll_row {
+      margin-top: 8px;
+      .viewAll_text {
+        display: none;
+      }
+    }
+    .coupon_input_row {
+      display: none;
+    }
+  }
+  .uc_discount_applied_coupon {
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+    .discount_coupon_applied_heading_row {
+      .coupon_heading {
+        color: $black;
+      }
+    }
+    .code_applied {
+      .code_applied_left {
+        .code_applied_discount {
+          font-size: 12px;
+        }
+        .code_applied_discount_rupees {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .discount_container_msite {
+    .image_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 16px;
+    }
+    .coupon_card_list_container {
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      border-radius: 18px 18px 0px 0px;
+      padding: 16px;
+      .coupon_input {
+        width: 100%;
+        margin-bottom: 16px;
+        background-color: $white;
+        border-radius: 8px;
+        .apply_btn {
+          background-color: transparent;
+          color: $blue-primary;
+          font-weight: 700;
+          display: flex;
+          align-items: center;
+          align-self: center;
+          justify-content: center;
+          text-align: center;
+          font-size: 12px;
+        }
+        .apply_btn_disabled {
+          background-color: transparent;
+          color: $bg-disabled;
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+      .invalid_coupon {
+        color: $validation-error-primary;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}

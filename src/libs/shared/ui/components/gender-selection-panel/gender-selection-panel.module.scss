@@ -1,0 +1,33 @@
+.add_traveller_gender_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  font-weight: 600;
+  font-size: 12px;
+
+  .add_traveller_gender_row_left {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .gender {
+      padding: 0.5rem 1rem;
+      border: 1px solid lightgray;
+      border-radius: 10px;
+      background-color: transparent;
+    }
+    .gender:hover {
+      cursor: pointer;
+    }
+    .gender_checked {
+      background-color: #d9ece3;
+    }
+  }
+  .add_traveller_gender_row_right {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}

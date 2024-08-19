@@ -1,0 +1,616 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin ticket-button-bg-color{
+  background-color: #32996a;
+}
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  .confirmation_header {
+    display: none;
+  }
+
+  .timeout_message {
+    background-color: #cddffb;
+    color: #545454;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    .timeout_time {
+      font-weight: 600;
+      color: #3572d2;
+    }
+  }
+
+  .confirmation_content {
+    display: flex;
+    flex-direction: row;
+
+    .confirmation_left {
+      width: 70%;
+
+      .ticketSentInfoReturnTrip {
+        display: flex;
+        flex-direction: row;
+        padding: 0.7rem 2rem;
+        background-color: #cbf3ff;
+        border-radius: 8px;
+        align-items: center;
+        margin-top: 1rem;
+
+        .ticketSentInfoReturnTripRow {
+          display: flex;
+          flex-direction: row;
+          padding: 0 2rem;
+          font-weight: 600;
+
+          .ticketSentInfoReturnTripRowText {
+            padding-left: 1rem;
+          }
+        }
+      }
+
+      .confirmation_summary {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .upi_option_row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #eaf0f6;
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-top: 1rem;
+
+        .upi_option_row_left {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .upi_option_icon {
+            @include flex-center;
+
+            border-radius: 4px;
+            border: 1px solid #eaf0f6;
+            padding: 1.3rem 1rem;
+          }
+
+          .upi_option_row_text {
+            color: #454545;
+            font-weight: 600;
+            margin-left: 1rem;
+          }
+        }
+        .upi_option_row_right {
+          .upi_option_row_right_radio {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .video_container {
+        height: 10%;
+        width: 100%;
+        border: 1px solid lightgray;
+        border-radius: 12px;
+        margin-top: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .video {
+          height: 100%;
+          width: 100%;
+          border-radius: 12px;
+        }
+      }
+
+      .booking_model {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        margin-top: 1rem;
+        background-color: #f0f9ff;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+        // height: 15%;
+
+        .booking_left {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .booking_content {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1rem;
+
+            .booking_heading {
+              color: #454545;
+              font-size: 16px;
+            }
+
+            .booking_desc {
+              color: #545454;
+              font-size: 12px;
+            }
+          }
+        }
+
+        .booking_right {
+          .booking_button {
+            background-color: #ddf0fb;
+            color: #3398d5;
+            border-radius: 4px;
+            padding: 0.7rem 2rem;
+            font-weight: 600;
+          }
+          .booking_button:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .my_booking_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        align-items: center;
+        margin-top: 1rem;
+
+        .my_booking_text {
+          font-weight: 600;
+        }
+
+        .my_booking_button {
+          color: white;
+          @include ticket-button-bg-color;
+          padding: 0.8rem;
+          width: 20%;
+          border-radius: 4px;
+          font-weight: 600;
+        }
+        .my_booking_button:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .confirmation_right {
+      width: 30%;
+      margin-left: 1rem;
+
+      .payments_accordion {
+        box-shadow: none;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        .payments_accordion_summary {
+          width: 100%;
+          .total_fare {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .payment_offers_heading {
+        font-weight: 500;
+        color: #454545;
+      }
+
+      .promo_button_container {
+        @include flex-center;
+
+        .ticket_button {
+          color: white;
+          @include ticket-button-bg-color;
+          border-radius: 8px;
+          font-weight: 600;
+          margin-top: 1rem;
+          width: 70%;
+          padding: 1rem;
+        }
+        .ticket_button:hover {
+          cursor: pointer;
+        }
+
+        .ticket_button_disabled {
+          color: white;
+          background-color: #c2d9e2;
+          border-radius: 8px;
+          font-weight: 600;
+          margin-top: 1rem;
+          width: 70%;
+          padding: 1rem;
+          cursor: not-allowed;
+          @include flex-center;
+
+          .space {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.loadingContainer {
+  @include flex-center;
+  flex-direction: column;
+  gap: 4px;
+  height: calc(100vh - (292px + 89px));
+  // height: 52vh;
+  .pleaseWaitMessage {
+    margin-top: 20px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .loadingMessage {
+    color: #545454;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+.errorContainer {
+  @include flex-center;
+  flex-direction: column;
+  gap: 4px;
+  height: calc(100vh - (292px + 89px));
+  .errorMessage {
+    margin-top: 20px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .errorSubMessage {
+    color: #545454;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .confirmation {
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+    .confirmation_header {
+      display: flex;
+      justify-content: space-between;
+      padding: 4rem 1rem 1rem 1rem;
+      width: 100%;
+      background-color: #174e7f;
+
+      .confirmation_header_section1 {
+        width: 8%;
+        background-color: transparent;
+        @include flex-center;
+
+        padding-right: 1rem;
+      }
+
+      .confirmation_header_section2 {
+        width: 60%;
+        color: white;
+        display: flex;
+        align-items: center;
+
+        .confirmation_header_row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .confirmation_header_column1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .confirmation_header_flight {
+              font-size: 16px;
+              font-weight: 600;
+              padding-bottom: 0.2rem;
+            }
+
+            .confirmation_header_flight_details {
+              color: #c5d3df;
+              font-size: 10px;
+              font-weight: 400;
+            }
+          }
+
+          .confirmation_header_column2 {
+            display: flex;
+            justify-content: center;
+            padding: 0.8rem;
+          }
+        }
+      }
+
+      .confirmation_header_section3 {
+        width: 10%;
+        @include flex-center;
+        padding: 0.4vmax;
+      }
+      .confirmation_header_section4 {
+        width: 15%;
+        @include flex-center;
+        padding: 0.4vmax;
+      }
+    }
+
+    .timeout_message {
+      background-color: #cddffb;
+      color: #545454;
+      width: 100%;
+      border-radius: 0px 0px 8px 8px;
+      padding: 1rem;
+      margin-top: 1rem;
+
+      .timeout_time {
+        font-weight: 600;
+        color: #3572d2;
+      }
+    }
+
+    .confirmation_content {
+      display: flex;
+      flex-direction: column;
+
+      .confirmation_left {
+        width: 100%;
+
+        .ticketSentInfoReturnTrip {
+          display: flex;
+          flex-direction: row;
+          padding: 0.7rem 2rem;
+          background-color: #cbf3ff;
+          border-radius: 8px;
+          align-items: center;
+          margin-top: 1rem;
+
+          .ticketSentInfoReturnTripRow {
+            display: flex;
+            flex-direction: row;
+            padding: 0 2rem;
+            font-weight: 600;
+
+            .ticketSentInfoReturnTripRowText {
+              padding-left: 1rem;
+            }
+          }
+        }
+
+        .confirmation_summary {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .upi_option_row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          border: 1px solid #eaf0f6;
+          border-radius: 8px;
+          padding: 1.5rem;
+          margin-top: 1rem;
+
+          .upi_option_row_left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .upi_option_icon {
+              @include flex-center;
+
+              border-radius: 4px;
+              border: 1px solid #eaf0f6;
+              padding: 1.3rem 1rem;
+            }
+
+            .upi_option_row_text {
+              color: #454545;
+              font-weight: 600;
+              margin-left: 1rem;
+            }
+          }
+          .upi_option_row_right {
+            .upi_option_row_right_radio {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .video_container {
+          height: 10%;
+          width: 96.5%;
+          border: 1px solid lightgray;
+          border-radius: 12px;
+          margin-top: 1rem;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+
+          .video {
+            height: 100%;
+            width: 100%;
+            border-radius: 12px;
+          }
+        }
+
+        .booking_model {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid lightgray;
+          border-radius: 8px;
+          margin-top: 1rem;
+          background-color: #f0f9ff;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+          // height: 15%;
+
+          .booking_left {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 70%;
+
+            .booking_content {
+              display: flex;
+              flex-direction: column;
+              margin-left: 1rem;
+              padding-top: 0.5rem;
+
+              .booking_heading {
+                color: #454545;
+                font-size: 14px;
+              }
+
+              .booking_desc {
+                color: #545454;
+                font-size: 10px;
+              }
+            }
+          }
+
+          .booking_right {
+            .booking_button {
+              background-color: #ddf0fb;
+              color: #3398d5;
+              border-radius: 4px;
+              padding: 0.5rem 1rem;
+              font-weight: 600;
+              font-size: 10px;
+            }
+            .booking_button:hover {
+              cursor: pointer;
+            }
+          }
+        }
+
+        .my_booking_container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 1rem;
+          border: 1px solid lightgray;
+          border-radius: 8px;
+          align-items: center;
+          margin-top: 1rem;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem;
+
+          .my_booking_text {
+            font-weight: 600;
+            font-size: 12px;
+            width: 60%;
+          }
+
+          .my_booking_button {
+            color: white;
+            @include ticket-button-bg-color;
+            padding: 0.8rem;
+            width: 30%;
+            border-radius: 4px;
+            font-weight: 600;
+            font-size: 10px;
+          }
+          .my_booking_button:hover {
+            cursor: not-allowed;
+          }
+        }
+      }
+      .confirmation_right {
+        width: 100%;
+        margin-left: 0rem;
+
+        .payments_accordion {
+          box-shadow: none;
+          border-radius: 8px;
+          width: 100%;
+          margin-bottom: 1.5rem;
+
+          .payments_accordion_summary {
+            width: 100%;
+            .total_fare {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              width: 100%;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .payment_offers_heading {
+          font-weight: 500;
+          color: #454545;
+        }
+
+        .promo_button_container {
+          @include flex-center;
+
+          flex-direction: row;
+          position: fixed;
+          z-index: 4;
+          bottom: 0;
+          width: 100%;
+          padding-bottom: 1rem;
+          background-color: white;
+          box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2);
+
+          .ticket_button {
+            color: white;
+            @include ticket-button-bg-color;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 1rem;
+            width: 70%;
+            padding: 1rem;
+          }
+          .ticket_button:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

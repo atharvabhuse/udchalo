@@ -1,0 +1,31 @@
+@import '../../flights-home.module.scss';
+
+$border_color: #eaf0f6;
+
+.main {
+  display: grid;
+  place-content: center;
+  padding-inline: 165px;
+  @media only screen and (max-width: 650px) {
+    padding-inline: 16px;
+  }
+
+  .referral_web {
+    .referral_image {
+      width: 100%;
+      height: auto;
+    }
+    @media only screen and (max-width: 650px) {
+      display: none;
+    }
+  }
+  .referral_msite {
+    .referral_image {
+      width: 100%;
+      height: auto;
+    }
+    @media only screen and (min-width: 650px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+.my_bookings_root {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 10rem 3.5rem 9.5rem;
+  background-color: rgba(229, 237, 244, 0.4);
+  .left_pane {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    .box {
+      display: flex;
+      width: 96%;
+      justify-content: space-between;
+      .status {
+        color: #00b00c;
+        text-align: right;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 100% */
+      }
+      .type {
+        display: flex;
+        width: 80px;
+        color: #fff;
+        padding: 2px 8px 6px 8px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 0px solid #c1a84d;
+        background: linear-gradient(103deg, #ab2421 0%, #070f6c 48.7%, #58bef2 94.44%);
+        box-shadow: 0px 0px 1px 0px rgba(193, 168, 77, 0.8);
+        margin-top: 1.2rem;
+        z-index: 0;
+        position: absolute;
+        border-radius: 8px 8px 0;
+      }
+      .pnr_box {
+        max-width: 195px;
+        height: 4rem;
+        padding: 0.8rem;
+        background-color: #f4fafe;
+        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
+        border-radius: 16px 16px 0 0;
+        .pnr {
+          color: #000;
+          text-align: center;
+          font-family: Open Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-right: 1rem;
+          padding-top: -1.5rem;
+          display: inline-flex;
+        }
+        .copy_icon {
+          color: #3398d5;
+          margin-top: 0.5rem;
+          display: inline-flex;
+          .icon {
+            font-size: 18px;
+            padding-top: 1px;
+          }
+        }
+      }
+    }
+
+    .trip_summary {
+      width: 97%;
+      height: 300px;
+      flex-shrink: 0;
+      border-radius: 16px 16px 16px 16px;
+      border: 1px solid rgba(133, 133, 133, 0.15);
+      background: #fff;
+      z-index: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .suraksha,
+    .contact_details,
+    .holiday_banner,
+    .baggage_details,
+    .traveller_details {
+      width: 97%;
+      margin-bottom: 1rem;
+    }
+
+    .extras {
+      margin-bottom: 0.5rem;
+      padding: 1rem 1rem 0.5rem 1rem;
+      border-radius: 16px;
+      border: 1px solid #e5edf4;
+      background: #fff;
+      width: 97%;
+
+      .heading {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 100% */
+      }
+      .sub_heading {
+        color: #545454;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .right_pane {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 35%;
+    margin-top: 0.5rem;
+    .web_checkin {
+    }
+    .change_in_plan {
+    }
+    .promo_button_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .ticket_button {
+        color: white;
+        background-color: #32996a;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-top: 1rem;
+        width: 70%;
+        padding: 1rem;
+      }
+      .ticket_button:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

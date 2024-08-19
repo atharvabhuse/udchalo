@@ -1,0 +1,42 @@
+.msite_header_root {
+  padding: 3rem 1rem 0rem 1rem;
+  width: 100%;
+  height: 96px;
+  background-color: #174e7f;
+  display: flex;
+  align-items: center;
+
+  .header_contents {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    .left_arrow_icon {
+      width: 3rem;
+      height: 1.5rem;
+      cursor: pointer;
+      margin-right: 1rem;
+      margin-top: 0.4rem;
+    }
+
+    .content_container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+
+      .content {
+        color: inherit;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .msite_header_root {
+    display: none;
+  }
+}

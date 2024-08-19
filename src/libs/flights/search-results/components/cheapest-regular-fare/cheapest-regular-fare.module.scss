@@ -1,0 +1,27 @@
+.tag_row{
+    margin-bottom: 0;
+    margin-top: 1rem;
+    .tag{
+        background-color: #5F9AD8;
+        border-radius: 8px 8px 0 0;
+        color: white;
+        padding: 0.5rem 0.7rem;
+        font-weight: 600;
+        width: 18%;
+    }
+}
+.wrapper{
+    background-color: #F0F7FF;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 600px) {
+    .tag_row{
+        .tag{
+            width: 100%;
+        }
+    }
+}

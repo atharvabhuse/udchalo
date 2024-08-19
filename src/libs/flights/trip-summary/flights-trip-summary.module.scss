@@ -1,0 +1,409 @@
+.bad_session {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.trip_summary {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  background-color: #e5edf466;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  justify-content: center;
+
+  .trip_summary_left {
+    width: 65%;
+    max-width: 740px;
+
+    & > div {
+      margin-bottom: 1rem;
+    }
+
+    .section_heading {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+
+      .section_number {
+        background-color: #edf7ff;
+        min-height: 34px;
+        min-width: 34px;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        color: #1d4ea5;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.32px;
+        text-transform: capitalize;
+      }
+
+      .section_title {
+        .title {
+          color: #000;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 0.28px;
+          text-transform: capitalize;
+        }
+
+        .desc {
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0.24px;
+          text-transform: capitalize;
+          margin-left: 8px;
+        }
+
+        @mixin selected_count_mixin {
+          color: #858585;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+          text-transform: capitalize;
+        }
+
+        .selected_count {
+          @include selected_count_mixin();
+        }
+
+        .selected_count_red {
+          @include selected_count_mixin();
+          color: #cc1100;
+        }
+
+        .selected_count_green {
+          @include selected_count_mixin();
+          color: #00b00c;
+        }
+      }
+    }
+
+    .traveller_details_container {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-gap: 18px;
+      margin-left: 46px;
+      margin-right: 44px;
+    }
+
+    .selected_users {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 14px;
+    }
+
+    .suraksha_banner {
+      margin: 14px;
+    }
+
+    .card {
+      border-radius: 16px;
+      border: 1px solid #eaf0f6;
+      background: #fff;
+      box-shadow: none;
+      margin-bottom: 1rem;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .card_blocked {
+      border-radius: 16px;
+      border: 1px solid #eaf0f6;
+      background: #fff;
+      opacity: 0.5;
+      pointer-events: none;
+      box-shadow: none;
+      margin-bottom: 1rem;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .cb_card {
+      padding: 12px 16px;
+
+      .cb_title {
+        color: #454545;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+
+      .out_link {
+        color: #3398d5;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        text-decoration-line: underline;
+      }
+
+      .cb_description {
+        color: #858585;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  .trip_summary_right {
+    width: 30%;
+    min-width: 360px;
+    margin-bottom: 2rem;
+
+    .cta_box {
+      text-align: center;
+
+      .confirm_cta {
+        background-color: #32996a;
+        color: white;
+        border-radius: 10px;
+        margin-top: 1rem;
+        padding: 1rem;
+        font-weight: 600;
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .trip_summary_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(229, 237, 244, 0.4);
+    padding: 1.25rem 0;
+
+    .flight_allowance_policies_container {
+      background: #ffffff;
+      border: 0.063rem solid #eaf0f6;
+      box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.1);
+      border-radius: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+  .trip_summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: #e5edf466;
+    padding-left: 0rem;
+    padding-right: 0rem;
+
+    .trip_summary_left {
+      width: 100%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+      & > div {
+        margin-bottom: 1rem;
+      }
+
+      .view_fts_details_btn {
+        color: #3398d5;
+        font-size: 12px;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+        width: 100%;
+        justify-content: flex-end;
+        margin-bottom: 10px;
+      }
+
+      .section_heading {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+
+        .section_number {
+          background-color: #edf7ff;
+          min-height: 34px;
+          min-width: 34px;
+          border-radius: 50%;
+          display: grid;
+          place-content: center;
+          color: #1d4ea5;
+          font-family: Open Sans;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px;
+          letter-spacing: 0.32px;
+          text-transform: capitalize;
+        }
+
+        .section_title {
+          .title {
+            color: #000;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            letter-spacing: 0.28px;
+            text-transform: capitalize;
+          }
+
+          .desc {
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            letter-spacing: 0.24px;
+            text-transform: capitalize;
+            margin-left: 8px;
+          }
+
+          @mixin selected_count_mixin {
+            color: #858585;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            text-transform: capitalize;
+          }
+
+          .selected_count {
+            @include selected_count_mixin();
+          }
+
+          .selected_count_red {
+            @include selected_count_mixin();
+            color: #cc1100;
+          }
+
+          .selected_count_green {
+            @include selected_count_mixin();
+            color: #00b00c;
+          }
+        }
+      }
+
+      .card {
+        border-radius: 16px;
+        border: 1px solid #eaf0f6;
+        background: #fff;
+        box-shadow: none;
+        margin-bottom: 1rem;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      .card_blocked {
+        border-radius: 16px;
+        border: 1px solid #eaf0f6;
+        background: #fff;
+        opacity: 0.5;
+        pointer-events: none;
+        box-shadow: none;
+        margin-bottom: 1rem;
+
+        &::before {
+          display: none;
+        }
+      }
+
+      .cb_card {
+        padding: 12px 16px;
+
+        .cb_title {
+          color: #454545;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 16px;
+        }
+
+        .out_link {
+          color: #3398d5;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 16px;
+          text-decoration-line: underline;
+        }
+
+        .cb_description {
+          color: #858585;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 14px;
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    .trip_summary_right {
+      width: 100%;
+      min-width: 360px;
+      margin-bottom: 2rem;
+
+      .cta_box {
+        text-align: center;
+
+        .confirm_cta {
+          background-color: #32996a;
+          color: white;
+          border-radius: 10px;
+          margin-top: 1rem;
+          padding: 1rem;
+          font-weight: 600;
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .proceed_to_pay {
+    display: none;
+  }
+}
+
+.stepper_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view_fts_details_container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 16px;
+  row-gap: 10px;
+}

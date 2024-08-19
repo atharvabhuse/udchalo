@@ -1,0 +1,34 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="17" fill="#E5E5E5"/>
+<g clip-path="url(#clip_calendar_grey)">
+<rect width="1440" height="2771" transform="translate(-220 -2428)" fill="white"/>
+<rect x="-220" y="-2329" width="1440" height="2362" fill="#E5EDF4" fill-opacity="0.4"/>
+<g filter="url(#filter0_d_0_1)">
+<path d="M-220 -28.9824C-220 -42.2373 -209.255 -52.9824 -196 -52.9824H1196C1209.25 -52.9824 1220 -42.2373 1220 -28.9824V38.0176H-220V-28.9824Z" fill="white"/>
+</g>
+<g clip-path="url(#clip1_0_1)">
+<path d="M14.4546 16.0293H1.49211C0.669135 16.0293 0 15.3607 0 14.5383V2.48328C0 1.66087 0.669135 0.992188 1.49211 0.992188H14.4546C15.2775 0.992188 15.9467 1.66087 15.9467 2.48328V14.5383C15.9467 15.3607 15.2775 16.0293 14.4546 16.0293ZM1.49211 2.24206C1.35891 2.24206 1.25072 2.35017 1.25072 2.48328V14.5383C1.25072 14.6714 1.35891 14.7795 1.49211 14.7795H14.4546C14.5878 14.7795 14.6959 14.6714 14.6959 14.5383V2.48328C14.6959 2.35017 14.5878 2.24206 14.4546 2.24206H1.49211Z" fill="#545454"/>
+<path d="M4.21478 3.29579C3.86335 3.29579 3.57812 3.01062 3.57812 2.65925V0.597482C3.57812 0.246109 3.86335 -0.0390625 4.21478 -0.0390625C4.56621 -0.0390625 4.85143 0.246109 4.85143 0.597482V2.65925C4.85143 3.01062 4.56621 3.29579 4.21478 3.29579Z" fill="#545454"/>
+<path d="M11.4579 3.29579C11.1232 3.29579 10.8516 3.01062 10.8516 2.65925V0.597482C10.8516 0.246109 11.1232 -0.0390625 11.4579 -0.0390625C11.7926 -0.0390625 12.0642 0.246109 12.0642 0.597482V2.65925C12.0642 3.01062 11.7926 3.29579 11.4579 3.29579Z" fill="#545454"/>
+<path d="M14.8343 5.84158H1.11101C0.765107 5.84158 0.484375 5.56994 0.484375 5.23524C0.484375 4.90055 0.765107 4.62891 1.11101 4.62891H14.8343C15.1802 4.62891 15.4609 4.90055 15.4609 5.23524C15.4609 5.56994 15.1802 5.84158 14.8343 5.84158Z" fill="#545454"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-224" y="-60.9824" width="1448" height="99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<clipPath id="clip_calendar_grey">
+<rect width="1440" height="2771" fill="white" transform="translate(-220 -2428)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="16" height="16" fill="white" transform="translate(0 0.015625)"/>
+</clipPath>
+</defs>
+</svg>

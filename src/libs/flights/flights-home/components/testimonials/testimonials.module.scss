@@ -1,0 +1,244 @@
+@import '../../flights-home.module.scss';
+
+.testimonials_details_heading_main {
+  height: 28rem;
+
+  @media only screen and (max-width: 500px) {
+    height: 22rem;
+  }
+
+  .testimonials_details_heading {
+    .testimonials_details_heading_data {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include font_flight_home(22px, 600, 30px);
+    }
+
+    @media only screen and (max-width: 500px) {
+      .testimonials_details_heading_data {
+        @include font_flight_home(14px, 600, 16px);
+      }
+    }
+
+    .testimonials_details_data_button_info {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      .testimonials_details_data_button {
+        width: 30rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .testimonials_details_button {
+          margin-right: 1rem;
+          color: rgb(71, 69, 69);
+          text-transform: capitalize;
+          padding: 0.5rem 1rem;
+          border-radius: 8px;
+          border: 1px solid #c5d4e3;
+          background: #fff;
+          color: #858585;
+          @include font_flight_home(14px, 400, 20px);
+        }
+
+        .testimonials_button_active {
+          background-color: rgba(217, 236, 227, 1) !important;
+          border: none;
+          color: #000;
+          font-weight: 600;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .testimonials_details_data_button_info {
+        margin: 0;
+        width: 100%;
+        padding-left: 16px;
+        justify-content: unset;
+
+        .testimonials_details_data_button {
+          display: flex;
+          overflow: scroll;
+          justify-content: unset;
+
+          .testimonials_details_button {
+            border-radius: 8px;
+            border: 1px solid #c5d4e3;
+            background: #fff;
+            margin-right: 8px;
+            color: #858585;
+            text-align: center;
+            font-family: Open Sans;
+            letter-spacing: 0.1px;
+            padding-inline: 16px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            @include font_flight_home(12px, 400, 20px);
+            white-space: nowrap;
+          }
+
+          .testimonials_button_active {
+            background-color: rgba(217, 236, 227, 1) !important;
+            border: none;
+            color: #000;
+            font-weight: 600;
+          }
+        }
+
+        .testimonials_details_data_button::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .testimonials {
+    margin-top: 2rem;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: 25% 73%;
+
+    @media only screen and (max-width: 1300px) {
+      grid-template-columns: 25% 70%;
+    }
+
+    .testimonials_img {
+      margin-top: -8rem;
+      padding-left: 5rem;
+      overflow: hidden;
+    }
+
+    .testimonials_details_data {
+      display: flex;
+      flex-direction: column;
+      width: inherit;
+
+      .card_data {
+        position: relative;
+        height: 260px;
+
+        @media only screen and (max-width: 500px) {
+          height: 200px;
+        }
+
+        .testimonialsCard {
+          width: auto;
+          height: 246px;
+          align-items: center;
+          display: inline-/block;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          border-radius: 16px;
+          border: 1px solid #eaf0f6;
+          background: #fdfdfd;
+
+          @media only screen and (max-width: 500px) {
+            height: 186px;
+          }
+
+          .testimonials_card_heading {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            @include font_flight_home(18px, 600, 25px);
+          }
+
+          .testimonials_card_details {
+            color: #545454;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            white-space: pre-wrap;
+            overflow: hidden;
+            margin-inline: 16px;
+            @include font_flight_home(14px, 400, 26px);
+          }
+
+          .testimonials_card_cta {
+            display: flex;
+            justify-content: center;
+            color: rgba(51, 152, 213, 1);
+            margin-bottom: 1rem;
+            @include font_flight_home(12px, 700, 26px);
+          }
+        }
+
+        &::before {
+          content: '';
+          background-image: url('../../../../../assets/images/borderImage.png');
+          height: 13px;
+          width: 16px;
+          position: absolute;
+          background-repeat: no-repeat;
+          bottom: 0.7rem;
+          left: 50%;
+          transform: translate(-50%);
+          background-size: contain;
+        }
+      }
+
+      @media only screen and (max-width: 1000px) {
+        .card_data {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          margin-bottom: 1.5rem;
+
+          .testimonialsCard {
+            margin-left: 10%;
+            margin-right: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .testimonials_card_heading {
+              font-size: 1rem;
+              font-weight: 500;
+            }
+
+            .testimonials_card_details {
+              font-size: 0.9rem;
+            }
+          }
+
+          @media only screen and (max-width: 500px) {
+            .testimonialsCard {
+              margin: 0;
+
+              .testimonials_card_heading {
+                font-size: 14px;
+                font-weight: 600;
+              }
+
+              .testimonials_card_details {
+                color: #545454;
+                font-size: 12px;
+                line-height: 22px;
+              }
+
+              .testimonials_card_cta {
+                @include font_flight_home(12px, 700, 26px);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .testimonials {
+      grid-template-columns: 100%;
+      margin: 0;
+      margin-left: 16px;
+      margin-top: 16px;
+    }
+  }
+}

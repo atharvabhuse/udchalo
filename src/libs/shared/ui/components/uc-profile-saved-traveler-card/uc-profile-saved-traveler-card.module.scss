@@ -1,0 +1,212 @@
+.saved_traveller_card {
+  width: 100%;
+  border: 1px solid lightgray;
+  margin-bottom: 1rem;
+  box-shadow: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+
+  .edit_icon_container {
+    .edit_icon {
+      background-color: #ddf0fb;
+      color: #3398d5;
+      padding: 6px;
+      border-radius: 4px;
+    }
+  }
+
+  .saved_traveller_card_summary {
+    width: 100%;
+    border: 0;
+
+    .saved_traveller_row {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+
+      .saved_traveller_info {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .saved_traveller_inp {
+        width: 1.3rem;
+      }
+
+      .saved_traveller_heading_col {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+
+        .saved_traveller_heading {
+          font-weight: 600;
+          font-size: 1rem;
+          padding-bottom: 0.3rem;
+        }
+
+        .saved_traveller_desc {
+          color: #858585;
+        }
+      }
+    }
+  }
+
+  .saved_traveller_card_details {
+    @media screen and (max-width: 767px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .add_traveller_container {
+      display: flex;
+      flex-direction: column;
+
+      border-radius: 10px;
+
+      .add_traveller_heading {
+        font-weight: 600;
+      }
+
+      .add_traveller_gender_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .add_traveller_gender_row_left {
+          display: flex;
+          flex-direction: row;
+          gap: 1rem;
+
+          .gender {
+            padding: 0.5rem 1rem;
+            border: 1px solid lightgray;
+            border-radius: 10px;
+            background-color: transparent;
+          }
+
+          .gender:hover {
+            cursor: pointer;
+          }
+
+          .gender_checked {
+            background-color: #d9ece3;
+          }
+        }
+
+        .add_traveller_gender_row_right {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5rem;
+          align-items: center;
+        }
+      }
+
+      .add_traveller_input_row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .input_box {
+          width: 48%;
+
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+
+          .input_heading {
+            font-size: 10px;
+            position: absolute;
+            background-color: white;
+            padding: 0.2rem 0.4rem;
+            transform: translateX(15%) translateY(-50%);
+            color: gray;
+          }
+
+          .add_traveller_inp {
+            width: 100%;
+          }
+
+          .error_message {
+            color: red;
+          }
+        }
+      }
+
+      .save_traveller_info_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: #e9f2f8;
+        border-radius: 10px;
+        margin-top: 1rem;
+        padding: 1rem;
+
+        .save_traveller_info_left {
+          display: flex;
+          flex-direction: column;
+
+          .save_traveller_info_heading {
+            font-weight: 600;
+            font-size: 1rem;
+          }
+
+          .save_traveller_info_desc {
+            font-size: 0.9rem;
+          }
+        }
+
+        .save_traveller_info_right {
+        }
+      }
+
+      .add_traveller_buttons_row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+        gap: 30px;
+
+        .cancel_btn {
+          background-color: white;
+          color: #3398d5;
+          border-radius: 10px;
+          padding: 1rem 1rem;
+          margin-left: 5%;
+          border: 2px solid #3398d5;
+          font-weight: 600;
+          text-transform: none;
+        }
+
+        .cancel_btn:hover {
+          cursor: pointer;
+        }
+
+        .add_traveller_btn {
+          background-color: #32996a;
+          color: white;
+          border-radius: 10px;
+          padding: 1rem 1rem;
+          margin-left: 5%;
+          font-weight: 600;
+          text-transform: none;
+        }
+
+        .add_traveller_btn:hover {
+          cursor: pointer;
+        }
+
+        .flex_2 {
+          width: 30%;
+
+          @media screen and (max-width: 767px) {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}

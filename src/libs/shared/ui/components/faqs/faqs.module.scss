@@ -1,0 +1,66 @@
+// @import '../../../../../../flights/flights-home/src/lib/flights-home.module.scss';
+@import '../../../../flights/flights-home/flights-home.module.scss';
+
+.faqs_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .faqs_container_data {
+    width: $web_page_width;
+
+    .faqs_heading {
+      display: flex;
+      justify-content: center;
+      @include font_flight_home(22px, 600, 30px);
+    }
+
+    .faqs_data_details {
+      border-left: 3px solid rgba(29, 115, 66, 1);
+      margin-top: 1rem;
+
+      .faqs_data {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+
+        .faqs_title {
+          @include font_flight_home(18px, 500, 25px);
+        }
+
+        .faqs_all_info {
+          color: rgba(84, 84, 84, 1);
+          @include font_flight_home(14px, 400, 26px);
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .faqs_container_data {
+      width: 100%;
+      margin-left: 16px;
+
+      .faqs_heading {
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      .faqs_data_details {
+        .faqs_data {
+          .faqs_title {
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+          }
+
+          .faqs_all_info {
+            color: #545454;
+            font-size: 12px;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+}

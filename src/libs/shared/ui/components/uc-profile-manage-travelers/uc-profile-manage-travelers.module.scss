@@ -1,0 +1,229 @@
+.traveller_details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 1rem;
+  box-shadow: none;
+
+  .traveller_details_summary {
+    border: 0px solid lightgray;
+    border-radius: 20px;
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .traveller_details_col {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+.addedTraveler {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.error_message {
+  color: red;
+  padding-top: 1rem;
+}
+
+.traveller_details_accordion_details {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0;
+
+  .saved_travellers_box {
+    display: flex;
+    //padding-left: 1rem;
+    flex-direction: column;
+    width: 99%;
+
+    .saved_travellers_heading {
+      font-weight: 600;
+      padding-bottom: 1rem;
+    }
+
+    .saved_travellers_list_container {
+      display: flex;
+      flex-direction: column;
+      // max-height: 35vmax;
+      // overflow-y: scroll;
+      padding: 0.2rem;
+    }
+  }
+}
+
+.add_new_traveller_row {
+  display: flex;
+  justify-content: center;
+
+  .add_new_traveller {
+    border: 2px solid #3398d5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.5rem 1.5rem;
+
+    .add_new_traveller_text {
+      color: #3398d5;
+      font-weight: 600;
+    }
+  }
+
+  .add_new_traveller:hover {
+    cursor: pointer;
+  }
+
+  .continue_btn_row {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    .continue_btn {
+      background-color: #32996a;
+      color: white;
+      border-radius: 10px;
+      width: 20%;
+      padding: 1rem 1rem;
+      margin-left: 5%;
+      font-weight: 600;
+    }
+
+    .continue_btn:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.traveller_details_row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .traveller_details_index {
+    border-radius: 100%;
+    background-color: #edf7ff;
+    color: #1d4ea5;
+    padding: 1rem 1.3rem;
+  }
+
+  .traveller_details_heading {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding-top: 0.3rem;
+  }
+
+  .traveller_details_desc {
+    display: flex;
+    color: #858585;
+  }
+
+  .traveller_details_desc_green {
+    display: flex;
+    color: #00b00c;
+  }
+
+  .error_message {
+    color: red;
+  }
+
+  .traveller_details_heading_col {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    justify-content: flex-start;
+    text-align: start;
+  }
+}
+
+.flex_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 1rem;
+
+  .flex_1 {
+    width: 19%;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .flex_2 {
+    width: 39%;
+
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+}
+
+.add_traveller_buttons_row {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+
+  @media screen and (max-width: 767px) {
+    gap: 30px;
+  }
+
+  .cancel_btn {
+    background-color: white;
+    color: #3398d5;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    margin-left: 5%;
+    border: 2px solid #3398d5;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  .cancel_btn:hover {
+    cursor: pointer;
+  }
+
+  .add_traveller_btn {
+    background-color: #32996a;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  .add_traveller_btn:hover {
+    cursor: pointer;
+  }
+
+  .flex_2 {
+    width: 24%;
+    @media screen and (max-width: 767px) {
+      width: 40%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .add_traveler_panel {
+    border: 1px solid #eaf0f6;
+    margin-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

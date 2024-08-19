@@ -1,0 +1,47 @@
+@mixin font-properties($color, $size, $style, $weight, $line-height) {
+  color: $color;
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $line-height;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .message {
+    margin-top: 140px;
+    text-align: center;
+    @include font-properties(#000, 24px, normal, 400, 24px);
+  }
+
+  .image_container {
+    margin-block: 30px;
+  }
+
+  .button {
+    margin-bottom: 206px;
+    border-radius: 8px;
+    padding-inline: 100px;
+    padding-block: 11px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: capitalize;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    .message {
+      font-size: 16px;
+      line-height: normal;
+    }
+    .button {
+      line-height: normal;
+      font-size: 12px;
+      padding-inline: 70px;
+    }
+  }
+}

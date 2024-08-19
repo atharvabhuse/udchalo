@@ -1,0 +1,374 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.seperate_docs_upload_container {
+  padding: 16px;
+  overflow-y: auto;
+  .close_icon {
+    // background-color: #32996a;
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    right: -52px;
+    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+    padding: 5.666px 5.666px 5.665px 5.666px;
+    @media only screen and (max-width: 480px) {
+      width: 28px;
+      height: 28px;
+      padding: 4.67px;
+      top: -50px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  .submit_documents_header_container {
+    margin-bottom: 12px;
+    // .submit_documents_label_container {
+    //   display: flex;
+    //   column-gap: 12px;
+    //   margin-bottom: 8px;
+    .step_label {
+      color: #000;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px; /* 125% */
+      margin-bottom: 8px;
+
+      @media only screen and (max-width: 480px) {
+        font-size: 12px;
+      }
+    }
+    // }
+    .submit_documents_label {
+      color: #545454;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      .submit_documents_label_link {
+        color: #3398d5;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+  }
+  .upload_document_container {
+    border-radius: 8px;
+    border: 1px dashed rgba(30, 84, 176, 0.17);
+    background: #fff;
+    padding: 12px 16px;
+    margin-bottom: 16px;
+    @media only screen and (max-width: 480px) {
+      padding-inline: 10px;
+    }
+    .accordion_container {
+      // padding: 0px;
+      .traveller_header_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        margin: 0px !important;
+        // margin-bottom: 16px;
+        min-height: 0%;
+        .trveller_label_container {
+          display: flex;
+          align-items: center;
+          column-gap: 12px;
+          .traveller_icon_container {
+            background-color: #edf7ff;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            .traveller_icon {
+            }
+          }
+
+          .trveller_name {
+          }
+        }
+      }
+      .accordion_details {
+        padding: 0px;
+        margin-top: 16px;
+        .what_can_submit_label {
+          color: #000;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px; /* 142.857% */
+          margin-top: 16px;
+          @media only screen and (max-width: 480px) {
+            margin-top: 12px;
+            font-size: 12px;
+            /* 166.667% */
+          }
+        }
+        .what_can_submit {
+          color: #545454;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-top: 4px;
+          @media only screen and (max-width: 480px) {
+            margin-top: 2px;
+          }
+        }
+
+        .upload_container {
+          border-radius: 8px;
+          margin-top: 16px;
+          padding: 12px;
+          border: 1px dashed rgba(30, 84, 176, 0.65);
+          background: linear-gradient(180deg, #fff 0%, #f1f6fe 100%);
+          @media only screen and (max-width: 480px) {
+            padding-inline: 8px;
+            padding-block: 10px;
+            margin-top: 8px;
+          }
+
+          .document_type_container {
+            align-self: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 8px;
+            //   margin-top: 12px;
+            margin-bottom: 13px;
+            @media only screen and (max-width: 480px) {
+              margin-bottom: 12px;
+            }
+            .document_check_icon {
+              @media only screen and (max-width: 480px) {
+                width: 10px;
+                height: 10px;
+              }
+            }
+            .document_type_label {
+              color: #000;
+              font-family: Open Sans;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+
+              @media only screen and (max-width: 480px) {
+                font-size: 10px;
+              }
+            }
+          }
+          .document_upload_card {
+            display: flex;
+            padding-left: 12px;
+            margin-inline: 56px;
+            padding-right: 16px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.1);
+
+            @media only screen and (max-width: 480px) {
+              margin-inline: 0px;
+              padding-left: 7px;
+              padding-top: 10px;
+              padding-bottom: 8px;
+              padding-right: 10px;
+              border-radius: 8px;
+
+              /* 150% */
+            }
+            .document_file_icon_container {
+              @media only screen and (max-width: 480px) {
+                width: 30px;
+                height: 30px;
+              }
+            }
+            .upload_document_progress_container {
+              margin-left: 11px;
+              margin-right: 16px;
+              flex-basis: 85%;
+              @media only screen and (max-width: 480px) {
+                margin-left: 10px;
+                margin-right: 15px;
+              }
+              .upload_document_name_container {
+                // flex-basis: 79%;
+                display: flex;
+                justify-content: space-between;
+                .file_name {
+                  color: #545454;
+                  text-align: center;
+                  font-family: Open Sans;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+
+                  @media only screen and (max-width: 480px) {
+                    font-size: 12px;
+                  }
+                }
+                .file_progress {
+                  color: #1e54b0;
+                  text-align: right;
+                  font-family: Open Sans;
+                  font-size: 14px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: normal;
+
+                  @media only screen and (max-width: 480px) {
+                    font-size: 12px;
+                  }
+                }
+              }
+              .upload_document_upload_progress {
+                margin-top: 9.38px;
+                border-radius: 5px;
+                background: #3398d5;
+                height: 7.25px;
+                @media only screen and (max-width: 480px) {
+                  height: 3px;
+                  margin-top: 10px;
+                }
+              }
+            }
+            .delete_icon {
+              @media only screen and (max-width: 480px) {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+          .upload_button_container {
+            margin-top: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .no_file_uploaded {
+            display: flex;
+            // align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            color: #858585;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @media only screen and (max-width: 480px) {
+              font-size: 8px;
+              line-height: 12px;
+              margin-top: 2px;
+              /* 150% */
+            }
+          }
+          .file_upload_count {
+            display: flex;
+            // align-items: flex-end;
+            justify-content: flex-end;
+            margin-top: 8px;
+            color: #858585;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @media only screen and (max-width: 480px) {
+              font-size: 8px;
+              /* 150% */
+              margin-top: 4px;
+            }
+          }
+        }
+        .document_format_container {
+          color: #858585;
+          text-align: center;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          // align-items: center;
+          align-self: center;
+          margin-top: 8px;
+          margin-bottom: 3px;
+          @media only screen and (max-width: 480px) {
+            font-size: 10px;
+            margin-top: 4px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
+  .important_note_container {
+    display: flex;
+    padding: 12px;
+    column-gap: 12px;
+    border-radius: 8px;
+    border: 1px solid #f8edcc;
+    background: #fffbee;
+    margin-block: 12px;
+    @media only screen and (max-width: 480px) {
+      border-radius: 12px;
+      column-gap: 8px;
+      padding: 8px;
+      margin-inline: -2px;
+    }
+    .important_icon {
+      @media only screen and (max-width: 480px) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+    .important_note {
+      .note_highlighted {
+        color: #e4ba39;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 171.429% */
+        @media only screen and (max-width: 480px) {
+          font-size: 12px;
+          line-height: 16px; /* 133.333% */
+        }
+      }
+
+      color: #545454;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+
+      @media only screen and (max-width: 480px) {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,215 @@
+@import '../../flights-home.module.scss';
+
+$border_color: #eaf0f6;
+$on_hover_border_color: rgb(229, 228, 228);
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 16rem;
+
+  .main_advisory {
+    width: $web_page_width_slider;
+    height: 100%;
+
+    .advisory_titles {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      margin-left: 2.5rem;
+
+      .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 2.5rem;
+        font-style: normal;
+        @include font_flight_home(22px, 600, 30px);
+
+        .view_all {
+          color: #3398d5;
+          text-align: right;
+          font-size: 12px;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          text-transform: capitalize;
+        }
+      }
+
+      .subtitle {
+        margin-top: 8px;
+        @include font_flight_home(14px, 400, 24px);
+      }
+    }
+
+    @media only screen and (max-width: 1015px) {
+      .advisory_titles {
+        text-align: center;
+        margin: 0;
+        width: 95%;
+        .title {
+          @include font_flight_home(14px, 600, 16px);
+          text-align: center;
+          display: block;
+          margin: 0px;
+          .view_all {
+            display: none;
+          }
+        }
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .advisory_titles {
+        .title {
+          @include font_flight_home(14px, 600, 16px);
+        }
+
+        .subtitle {
+          font-size: 12px;
+          line-height: 18px;
+          margin-inline: 33px;
+        }
+      }
+    }
+
+    .card_container {
+      margin-top: 1rem;
+
+      @media only screen and (max-width: 500px) {
+        margin-top: 0.5rem;
+        padding-left: 16px;
+      }
+
+      .active_card {
+        box-shadow: 0px 4px 5px 0px rgba(128, 128, 128, 1);
+      }
+
+      .card {
+        display: flex;
+        // padding: 0.2rem;
+        padding: 3.5px;
+        overflow: hidden;
+        background: #fff;
+        width: 350px;
+        height: 128px;
+        border-radius: 16px;
+        border: 1px solid #eaf0f6;
+
+        .cardImage {
+          flex-basis: 30%;
+          border-radius: 12px 4px 4px 12px;
+          width: 125px;
+          height: 121px;
+        }
+
+        .card_titles {
+          padding: 0.5rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+
+          .title {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            white-space: pre-wrap;
+            @include font_flight_home(16px, 500, 20px);
+          }
+
+          .card_description {
+            font-family: 'Open Sans';
+            color: #545454;
+            font-style: normal;
+            margin-top: 4px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            white-space: pre-wrap;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            white-space: pre-wrap;
+            @include font_flight_home(14px, 400, 17px);
+          }
+
+          .card_cta {
+            color: #3398d5;
+            display: flex;
+            justify-content: right;
+            width: 100%;
+            cursor: pointer;
+            @include font_flight_home(12px, 700, 26px);
+          }
+        }
+
+        @media only screen and (max-width: 1200px) {
+          .card_titles {
+            .title {
+              font-size: 0.9rem;
+            }
+
+            .card_description {
+              font-size: 0.8rem;
+            }
+
+            .card_cta {
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+        @media only screen and (max-width: 500px) {
+          .card_titles {
+            .title {
+              @include font_flight_home(12px, 600, 18px);
+            }
+
+            .card_description {
+              font-size: 12px;
+              line-height: 17px;
+            }
+
+            .card_cta {
+              margin-top: -0.2rem;
+              @include font_flight_home(10px, 700, 15px);
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .card {
+          width: 286px;
+          height: 96px;
+          margin-bottom: 2rem;
+
+          .cardImage {
+            margin: 0;
+            width: 81px;
+            height: 88px;
+            overflow: hidden;
+            flex-shrink: 0;
+            border-radius: 8px 4px 4px 8px;
+          }
+
+          .card_titles {
+            justify-content: normal;
+            padding: 0rem 0.3rem 0rem 0.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .main_advisory {
+      width: 100%;
+    }
+  }
+}

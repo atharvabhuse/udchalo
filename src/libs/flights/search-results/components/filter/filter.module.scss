@@ -1,0 +1,242 @@
+.filter {
+  background-color: white;
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+
+  .filter_heading_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .filter_by {
+      font-weight: 600;
+      width: 30%;
+    }
+
+    .reset_filters {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      color: #3398d5;
+      width: 70%;
+
+      .resetIcon_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+
+        .resetIcon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .reset_filters:hover {
+      cursor: pointer;
+    }
+  }
+
+  .price_heading_row {
+    .price_heading {
+      margin-top: 1rem;
+      font-weight: 600;
+    }
+  }
+
+  .checkbox_list_content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    .checkbox {
+      width: 1.2rem;
+      height: 1.2rem;
+      border: 1px solid lightgray;
+      margin-right: 1rem;
+    }
+
+    .checkbox_data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #858585;
+      font-size: 0.9vmax;
+    }
+  }
+}
+.sort_filter_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .filter {
+    width: 90%;
+    background-color: white;
+    margin: 1rem;
+    padding: 0rem;
+    border-radius: 10px;
+    max-height: 110vh;
+    font-size: 1vmax;
+    display: block;
+
+    .filter_heading_row {
+      display: none;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .filter_by {
+        font-weight: 600;
+        width: 30%;
+        display: block;
+      }
+
+      .reset_filters {
+        display: block;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        color: #3398d5;
+        width: 70%;
+
+        .resetIcon_wrapper {
+          display: block;
+          justify-content: center;
+          align-items: center;
+          width: 20px;
+
+          .resetIcon {
+            display: block;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+
+    .price_heading_row {
+      display: block;
+      .price_heading {
+        margin-top: 1rem;
+        font-weight: 600;
+        display: block;
+      }
+    }
+
+    .filter_by {
+      font-weight: 600;
+      display: block;
+    }
+
+    .checkbox_list_content {
+      display: block;
+      flex-direction: row;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+
+      .checkbox {
+        width: 1.2rem;
+        height: 1.2rem;
+        border: 1px solid lightgray;
+        margin-right: 1rem;
+        display: block;
+      }
+
+      .checkbox_data {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        color: #858585;
+        font-size: 0.9vmax;
+      }
+    }
+  }
+  .sort_filter_mobile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: fixed;
+    z-index: 4;
+    bottom: 0;
+    width: 96%;
+    left: 2%;
+
+    .sort_filter_section1 {
+      width: 30%;
+      background-color: #3398d5;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      padding: 0.5rem;
+      color: white;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      font-size: 10px;
+
+      .sort {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+      }
+
+      .sort_filter_section1_heading {
+        font-size: 10px;
+      }
+      .sort_filter_section1_heading:hover {
+        cursor: pointer;
+      }
+    }
+
+    .sort_filter_section2 {
+      width: 70%;
+      background-color: #174e7f;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 0.5rem;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      // overflow-x: scroll;
+
+      .sort_filter_option {
+        color: #3398d5;
+        padding: 0.6rem;
+        display: flex;
+        justify-content: center;
+        background-color: #ddf0fb;
+        border-radius: 5px;
+        margin: 0.3rem;
+        font-size: 10px;
+        width: 30%;
+      }
+
+      .sort_filter_option:hover {
+        cursor: pointer;
+      }
+    }
+
+    .sort_filter_section2 ::-webkit-scrollbar {
+      display: block;
+    }
+  }
+
+  .swiper_drawer_box {
+    .MuiPaper-root .MuiDrawer-paper .MuiDrawer-paperAnchorBottom .MuiPaper-elevation16 a {
+      background-color: red;
+      color: #333;
+
+      .swiper_drawer_content {
+        padding: 8px;
+      }
+    }
+  }
+}

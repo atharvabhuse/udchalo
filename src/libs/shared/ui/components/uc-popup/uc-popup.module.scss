@@ -1,0 +1,42 @@
+.popup {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+
+  .popup-dialog {
+  }
+}
+
+.seat_selection_stepper_row {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: center;
+
+  .extras_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .extras_index {
+      background-color: #edf7ff;
+      border-radius: 100%;
+      padding: 0.5rem 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #1d4ea5;
+    }
+    .extras {
+      margin-left: 1rem;
+    }
+  }
+  .skip {
+    color: skyblue;
+    font-weight: 600;
+    justify-self: end;
+    align-self: center;
+  }
+  .skip:hover {
+    cursor: pointer;
+  }
+}

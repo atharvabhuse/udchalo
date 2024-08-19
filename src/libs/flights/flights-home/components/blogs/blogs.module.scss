@@ -1,0 +1,167 @@
+@import '../../flights-home.module.scss';
+
+.main_ucblog {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #f5f8fb;
+
+  .ucblog {
+    width: $web_page_width_slider;
+    text-align: center;
+    padding: 1rem 0;
+
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      padding: 0;
+      padding-left: 16px;
+      padding-bottom: 1rem;
+    }
+
+    &__title {
+      text-align: center;
+      margin-top: 1rem;
+
+      @media only screen and (max-width: 500px) {
+        margin-top: 16px;
+      }
+
+      h4 {
+        @include font_flight_home(22px, 600, 30px);
+      }
+
+      .ucblog__title_details {
+        margin-top: 8px;
+        @include font_flight_home(14px, 400, 24px);
+      }
+
+      @media only screen and (max-width: 500px) {
+        h4 {
+          @include font_flight_home(14px, 600, 16px);
+        }
+
+        .ucblog__title_details {
+          font-size: 12px;
+          line-height: 18px;
+          margin-top: 6px;
+        }
+      }
+    }
+
+    &__carousel {
+      margin-top: 2rem;
+
+      @media only screen and (max-width: 500px) {
+        margin-top: 14px;
+      }
+    }
+
+    &__card {
+      display: inline-block;
+      border-radius: 1rem;
+      overflow: hidden;
+      text-align: start;
+      width: 350px;
+      height: 334px;
+      border-radius: 16px;
+      border: 1px solid #eaf0f6;
+      background: #fff;
+
+      @media only screen and (max-width: 500px) {
+        width: 288px;
+        height: 312px;
+        margin-bottom: 2rem;
+      }
+
+      .image_of_blog {
+        width: -webkit-fill-available;
+        height: 46%;
+      }
+
+      .card_main {
+        height: 55%;
+        width: inherit;
+        padding: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: 0;
+        padding-inline: 12px;
+
+        &_title {
+          margin-top: 0.5rem;
+          @include font_flight_home(16px, 500, 20px);
+        }
+
+        .udChaloBlogsCardData {
+          margin-top: 1rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+          white-space: pre-wrap;
+          color: #545454;
+          @include font_flight_home(14px, 400, 26px);
+        }
+
+        &__logo {
+          margin-top: 1rem;
+        }
+
+        .ucblogsCard {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          padding-bottom: 0.3rem;
+
+          .ucblogsCardTime {
+            color: rgba(133, 133, 133, 1);
+            @include font_flight_home(10px, 600, 14px);
+          }
+
+          .ucblogsCardReadMore {
+            color: rgba(51, 152, 213, 1);
+            margin-top: -0.9rem;
+            @include font_flight_home(12px, 700, 26px);
+          }
+        }
+      }
+
+      @media only screen and (max-width: 600px) {
+        .card_main {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .card_main {
+          &_title {
+            @include font_flight_home(14px, 500, 20px);
+          }
+
+          .udChaloBlogsCardData {
+            font-size: 12px;
+            line-height: 18px;
+          }
+
+          .ucblogsCard {
+            .ucblogsCardTime {
+              font-size: 10px;
+              font-weight: 600;
+            }
+
+            .ucblogsCardReadMore {
+              @include font_flight_home(10px, 700, 26px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 350px) {
+    .ucblog {
+      width: 100%;
+    }
+  }
+}

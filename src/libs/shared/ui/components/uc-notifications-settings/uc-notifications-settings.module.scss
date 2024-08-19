@@ -1,0 +1,110 @@
+.notification_settings_container {
+  .traveller_details_row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    .traveller_details_heading {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 14px;
+      padding-top: 0.3rem;
+
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .enable_all_heading {
+      display: none;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+
+        .sm_enable_all_text {
+          font-family: Open Sans;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 16px;
+        }
+
+        .sm_enable_all_description {
+          color: #858585;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+        }
+      }
+    }
+
+    .enable_all_switch {
+      color: blue;
+    }
+
+    .lg_enable_all_switch {
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .sm_enable_all_switch {
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  .notification_settings_panel {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 10px;
+    border: 1px solid #eaf0f6;
+
+    .notification_setting_container {
+      display: flex;
+      justify-content: space-between;
+      text-align: right;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+      .notification_heading {
+        @media screen and (max-width: 767px) {
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 16px;
+        }
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      .notification_description {
+        @media screen and (max-width: 767px) {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+        }
+
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #858585;
+      }
+
+      .flex_1 {
+        flex: 1;
+      }
+
+      .flex_3 {
+        flex: 3;
+      }
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.trip_summary_header_main {
+  .trip_summary_header_desktop {
+    .trip_summary_header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .text_section {
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          font-weight: 600;
+          font-size: 1rem;
+          line-height: 1.375rem;
+          color: #000000;
+        }
+
+        .sub_title {
+          font-weight: 400;
+          font-size: 0.75rem;
+          line-height: 1rem;
+          color: #545454;
+        }
+      }
+
+      .share_icon {
+        cursor: pointer;
+      }
+    }
+  }
+  .trip_summary_header_mobile {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .trip_summary_header_main {
+    .trip_summary_header_desktop {
+      display: none;
+      .trip_summary_header {
+      }
+    }
+    .trip_summary_header_mobile {
+      display: block;
+      .trip_summary_header {
+        display: flex;
+        padding: 4rem 1rem 1rem 1rem;
+        width: 100%;
+        background-color: #174e7f;
+
+        .trip_summary_header_section1 {
+          width: 10%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-right: 1rem;
+        }
+
+        .trip_summary_header_section2 {
+          width: 80%;
+          color: white;
+          display: flex;
+          align-items: center;
+          text-align: left;
+
+          .trip_summary_header_row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .trip_summary_header_column1 {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+
+              .trip_summary_header_flight {
+                font-size: 16px;
+                font-weight: 400;
+                padding-bottom: 0.2rem;
+                display: flex;
+                align-items: center;
+              }
+
+              .trip_summary_header_flight_details {
+                color: #c5d3df;
+                font-size: 10px;
+                font-weight: 400;
+              }
+            }
+
+            .trip_summary_header_column2 {
+              display: flex;
+              justify-content: center;
+              padding: 0.8rem;
+            }
+          }
+        }
+
+        .trip_summary_header_section3 {
+          width: 20%;
+          display: flex;
+          align-items: center;
+          padding: 0.4vmax;
+          justify-content: center;
+        }
+        .trip_summary_header_section4 {
+          width: 10%;
+          display: flex;
+          align-items: center;
+          padding: 0.4vmax;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

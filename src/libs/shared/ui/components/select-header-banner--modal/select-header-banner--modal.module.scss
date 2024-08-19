@@ -1,0 +1,112 @@
+.select_header_banner_modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    align-items: end;
+  }
+
+  .close_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 28%;
+    left: 66%;
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50px;
+
+    @media only screen and (max-width: 480px) {
+      left: 50%;
+      top: 55%;
+      transform: translate(-50%);
+    }
+  }
+
+  .paper {
+    padding: 20px 30px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      width: 740px;
+      height: 630px;
+      border-radius: 16px;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 20px 30px;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    .select_pattern_title {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 16px;
+    }
+
+    .pattern_options_panel {
+      .pattern_option {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #e5edf4;
+
+        .radio_button_container {
+          margin-left: auto;
+
+          .radio {
+            color: #00b00c;
+          }
+        }
+      }
+    }
+  }
+
+  .add_traveller_buttons_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem;
+
+    .cancel_btn {
+      background-color: white;
+      color: #3398d5;
+      border-radius: 10px;
+      padding: 1rem 1rem;
+      margin-left: 5%;
+      border: 2px solid #3398d5;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    .cancel_btn:hover {
+      cursor: pointer;
+    }
+
+    .add_traveller_btn {
+      background-color: #32996a;
+      color: white;
+      border-radius: 10px;
+      padding: 1rem 1rem;
+      margin-left: 5%;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    .add_traveller_btn:hover {
+      cursor: pointer;
+    }
+
+    .flex_1 {
+      flex: 1;
+    }
+
+    .flex_2 {
+      flex: 2;
+    }
+  }
+}

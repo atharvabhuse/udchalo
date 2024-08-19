@@ -1,0 +1,32 @@
+<svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="16" height="17" fill="#E5E5E5"/>
+<g clip-path="url(#clip_traveller_icon)">
+<rect width="1440" height="2771" transform="translate(-344 -2428)" fill="white"/>
+<rect x="-344" y="-2329" width="1440" height="2362" fill="#E5EDF4" fill-opacity="0.4"/>
+<g filter="url(#filter0_d_0_1)">
+<path d="M-344 -28.9824C-344 -42.2373 -333.255 -52.9824 -320 -52.9824H1072C1085.25 -52.9824 1096 -42.2373 1096 -28.9824V38.0176H-344V-28.9824Z" fill="white"/>
+</g>
+<g clip-path="url(#clip1_0_1)">
+<path d="M8.17775 6.74102C6.36225 6.74102 4.88574 5.28274 4.88574 3.48965C4.88574 1.69656 6.36225 0.238281 8.17775 0.238281C9.99326 0.238281 11.4698 1.69656 11.4698 3.48965C11.4698 5.28274 9.99326 6.74102 8.17775 6.74102ZM8.17775 1.49122C7.06209 1.49122 6.15434 2.38776 6.15434 3.48965C6.15434 4.59154 7.06209 5.48809 8.17775 5.48809C9.29342 5.48809 10.2012 4.59154 10.2012 3.48965C10.2012 2.38776 9.29342 1.49122 8.17775 1.49122Z" fill="#545454"/>
+<path d="M14.1218 15.4432H1.88194C1.58241 15.4432 1.29345 15.3186 1.08907 15.1021C0.88468 14.8856 0.780373 14.5919 0.801516 14.2974C0.932605 12.5043 1.73957 10.8379 3.07372 9.60658C4.41491 8.36896 6.16487 7.6875 8.00152 7.6875C8.66824 7.6875 9.32791 7.77729 9.96432 7.9541C12.8793 8.76572 14.9837 11.3148 15.2015 14.2974C15.2234 14.5926 15.1184 14.8856 14.914 15.1021C14.7096 15.3186 14.4206 15.4432 14.1211 15.4432H14.1218ZM2.08491 14.1902H13.9188C13.6637 11.818 11.9581 9.81053 9.62039 9.1597C9.09674 9.01352 8.55195 8.93974 8.00222 8.93974C4.96463 8.93974 2.40347 11.2305 2.08562 14.1902H2.08491Z" fill="#545454"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_0_1" x="-348" y="-60.9824" width="1448" height="99" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_0_1" result="shape"/>
+</filter>
+<clipPath id="clip_traveller_icon">
+<rect width="1440" height="2771" fill="white" transform="translate(-344 -2428)"/>
+</clipPath>
+<clipPath id="clip1_0_1">
+<rect width="14.4" height="16" fill="white" transform="translate(0.799805 0.015625)"/>
+</clipPath>
+</defs>
+</svg>

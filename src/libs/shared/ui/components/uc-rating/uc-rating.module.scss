@@ -1,0 +1,75 @@
+.booking_experience {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  border: 1px solid lightgray;
+  padding: 1rem;
+  background-color: #fffbee;
+  // height: 15%;
+  margin-top: 1rem;
+  cursor: not-allowed;
+
+  .booking_experience_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    .booking_experience_text {
+      font-weight: 600;
+      font-size: 16px;
+      width: 50%;
+      .booking_experience_note{
+        font-size: 0.5rem;
+      }
+    }
+    .booking_experience_rating {
+      cursor: not-allowed;
+    }
+  }
+  .booking_experience_image {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .booking_experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid lightgray;
+    padding: 1rem;
+    background-color: #fffbee;
+    // height: 15%;
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    .booking_experience_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: 60%;
+      .booking_experience_text {
+        font-weight: 600;
+        font-size: 12px;
+        width: 100%;
+        padding-bottom: 0.5rem;
+      }
+      .booking_experience_rating {
+      }
+    }
+    .booking_experience_image {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

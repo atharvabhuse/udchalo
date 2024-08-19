@@ -1,0 +1,66 @@
+.contact_details_box {
+  background-color: #f3f7ff;
+  padding: 1% 1% 1% 6%;
+  margin-top: 1rem;
+
+  .contact_details_heading {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  .contact_details_desc {
+    color: #858585;
+    font-size: 12px;
+    padding-bottom: 1rem;
+  }
+  .contact_details_inp_row {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+
+    .input_box_contact_details_inp {
+      width: 32%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+
+      .input_heading_contact_details_inp {
+        font-size: 10px;
+        position: absolute;
+        background-color: white;
+        padding: 0.2rem 0.4rem;
+        transform: translateX(15%) translateY(-50%);
+        color: gray;
+      }
+
+      .contact_details_inp {
+        width: 100%;
+      }
+
+      .error_message {
+        color: red;
+      }
+    }
+  }
+  .checkbox_row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+    .contact_details_checkbox {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .contact_details_checkbox_desc {
+      color: #454545;
+      display: flex;
+      align-items: center;
+      margin-left: 1rem;
+    }
+  }
+}

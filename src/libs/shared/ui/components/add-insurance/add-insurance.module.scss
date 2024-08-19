@@ -1,0 +1,38 @@
+.cb_card {
+  padding: 12px 16px;
+  background-color: #faf8e7;
+  width: 97%;
+  margin-top: 1rem;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+
+  .cb_title {
+    color: #454545;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+  }
+
+  .out_link {
+    color: #3398d5;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-decoration-line: underline;
+  }
+
+  .cb_description {
+    color: #858585;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    margin-left: 2rem;
+  }
+}

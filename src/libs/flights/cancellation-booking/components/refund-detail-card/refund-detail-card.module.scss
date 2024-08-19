@@ -1,0 +1,95 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.container {
+  border-radius: 16px;
+  border: 1px solid #e5edf4;
+  background: #fff;
+  padding: 16px;
+  @media only screen and (max-width: 600px) {
+    border-radius: 8px;
+    border: 1px solid #eaf0f6;
+    background: #fff;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+    padding-inline: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .bankDetails {
+    display: flex;
+    column-gap: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    background: linear-gradient(271deg, #effbf7 1.16%, rgba(239, 251, 247, 0) 70.93%);
+
+    @media only screen and (max-width: 600px) {
+      padding: 6px;
+      column-gap: 10px;
+    }
+    .refundIcon {
+      border-radius: 8px;
+      background: #eefcf8;
+      padding-top: 12px;
+      padding-left: 12px;
+      padding-bottom: 11px;
+      padding-right: 11px;
+      @media only screen and (max-width: 600px) {
+      }
+    }
+  }
+  .detailContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2px;
+    @media only screen and (max-width: 600px) {
+    }
+    .refundText {
+      color: #000;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px; /* 157.143% */
+    }
+    .bankDetailsText {
+      color: #545454;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  .requestMessage {
+    margin-top: 8px;
+    margin-left: 12px;
+    color: #545454;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    .highlightedMessage {
+      color: #000;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 10px;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      font-size: 10px;
+      margin-left: 0px;
+    }
+  }
+}

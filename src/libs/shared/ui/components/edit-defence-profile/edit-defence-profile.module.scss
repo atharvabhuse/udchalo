@@ -1,0 +1,120 @@
+@import '../edit-profile/common_mixins.module.scss';
+
+.edit_defence_profile {
+  .heading_4 {
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .defence_profile_container {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #e5edf4;
+    margin: 0.5rem;
+    padding: 1rem;
+
+    .edit_profile_form_container {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+
+      .error_message {
+        color: red;
+      }
+
+      .add_traveller_input_row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .input_box {
+          width: 32%;
+
+          .input_heading {
+            font-size: 10px;
+            position: absolute;
+            background-color: white;
+            padding: 0.2rem 0.4rem;
+            transform: translateX(15%) translateY(-50%);
+            color: gray;
+          }
+
+          .add_traveller_inp {
+            width: 100%;
+          }
+
+          .error_message {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  .defence_profile_fields_container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .defence_select {
+      flex-basis: calc(33.3% - 17px);
+
+      @media screen and (max-width: 767px) {
+        flex-basis: 100%;
+      }
+
+      .defence_select_element {
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .defence_config_container {
+    border-radius: 7px;
+    border-image-source: linear-gradient(104.7deg, #a72323 0%, #010162 50.35%, #5bc7f9 95.71%);
+    border: 1px solid;
+
+    .armed_force_selection {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      background: linear-gradient(104.7deg, #a72323 0%, #010162 50.35%, #5bc7f9 95.71%);
+    }
+  }
+
+  .uff_verification_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: #f0f8ff;
+    border-radius: 8px;
+
+    .uff_verification_text_container {
+      display: flex;
+      align-items: center;
+
+      .text {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+      }
+    }
+
+    .verify_now_button {
+      @include mx_success_button_1;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 26px;
+      width: 100px;
+    }
+  }
+}

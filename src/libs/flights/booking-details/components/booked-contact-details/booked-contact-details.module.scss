@@ -1,0 +1,167 @@
+.accordion_root {
+  width: 100%;
+  margin-top: 0.5rem;
+
+  .accordion {
+    width: 100%;
+    border-radius: 1rem !important;
+    border: 1px solid #e5edf4;
+  }
+
+  .header {
+    color: #454545;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .sub_header {
+    color: #858585;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: -0.8rem;
+  }
+
+  .form_name {
+    display: flex;
+    margin-top: 0.5rem;
+
+    .label {
+      color: #545454;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+    .value {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      margin-left: 0.3rem;
+      display: flex;
+      text-transform: capitalize;
+    }
+
+    .email {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      margin-left: 0.3rem;
+      display: flex;
+    }
+  }
+
+  .read_only_container {
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #e5edf4;
+    padding: 1rem;
+
+    .header_read_only {
+      color: #454545;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+    }
+
+    .sub_header_read_only {
+      color: #858585;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+    .read_only_label {
+      color: #545454;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+    }
+
+    .read_only_value {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      margin-left: 0.3rem;
+      display: flex;
+      text-transform: capitalize;
+    }
+
+    .read_only_email {
+      color: #000;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px;
+      margin-left: 0.3rem;
+      display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .read_only_container {
+      width: 100%;
+      border-radius: 1rem;
+      border: 1px solid #e5edf4;
+      padding: 1rem;
+
+      .header_read_only {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        letter-spacing: 0.28px;
+        text-transform: capitalize;
+      }
+
+      .sub_header_read_only {
+        color: #858585;
+
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .read_only_label {
+        color: #545454;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+      }
+
+      .read_only_value {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+      }
+
+      .read_only_email {
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        margin-left: 0.3rem;
+        display: flex;
+      }
+    }
+  }
+}

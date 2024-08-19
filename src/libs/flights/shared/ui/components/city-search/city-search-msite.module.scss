@@ -1,0 +1,155 @@
+@keyframes slideIn {
+  0% {
+    transform: translateY(-3%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-1.5%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.city_search_container {
+  position: relative;
+  min-width: 10rem;
+  width: 100%;
+  cursor: pointer;
+
+  .float_label {
+    color: $text-quaternary;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -0.6rem;
+    left: 0.8rem;
+    background-color: $white;
+    padding: 0 0.3rem;
+    z-index: 1;
+  }
+
+  .float_label_error {
+    color: $validation-error-primary;
+  }
+
+  .input_box {
+    border: 1px solid $dividers;
+    border-radius: 10px;
+    font-weight: 400;
+    padding: 6px 12px;
+    width: 100%;
+    height: 60px;
+
+    .content_box {
+      height: 100%;
+
+      .title {
+        font-size: 22px;
+        line-height: 26px;
+        color: $black;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        line-height: 19px;
+        color: $text-tertiary;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .placeholder {
+      font-size: 14px;
+      line-height: 19px;
+      color: $text-tertiary;
+      padding: 15px 5px;
+    }
+  }
+
+  .input_box_error {
+    border-color: $validation-error-primary;
+  }
+}
+.error_message {
+  @include font-properties($validation-error-primary, 12px, normal, 400, normal);
+}
+.msite_container {
+  .input_container {
+    padding-inline: 16px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    .search_image {
+      transform: translateX(36px);
+      margin-left: -20px;
+    }
+    .close_icon {
+      transform: translateX(-36px);
+      margin-right: -20px;
+    }
+    .single_search_option:hover {
+      cursor: pointer;
+    }
+  }
+  .popular_searches_container,
+  .recent_searches_container {
+    padding: 16px;
+    .container_header {
+      @include font-properties($black-secondary, 14px, normal, 600, normal);
+    }
+    .list_container {
+      .list {
+        padding-block: 16px;
+        border-bottom: 1px solid $accent-9;
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        .list_title_container {
+          display: flex;
+          justify-content: space-between;
+          @include font-properties($black-secondary, 14px, normal, 600, 16px); /* 114.286% */
+        }
+        .airport_container {
+          display: flex;
+          column-gap: 8px;
+          align-items: center;
+          @include font-properties($text-quaternary, 14px, normal, 400, 16px);
+        }
+      }
+    }
+  }
+  .recent_searches_container {
+    background: rgba(229, 237, 244, 0.35);
+  }
+}
+.single_search_option {
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 0.5px solid $accent-9;
+  min-height: 5rem;
+
+  .single_search_option_row1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+  }
+
+  .single_search_option_row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    align-items: center;
+    font-size: 1rem;
+    color: $text-quaternary;
+    padding: 4px 0;
+  }
+}

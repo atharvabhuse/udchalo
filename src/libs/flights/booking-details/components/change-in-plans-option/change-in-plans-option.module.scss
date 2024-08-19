@@ -1,0 +1,28 @@
+.changeInPlansOption {
+  border: 1px solid lightgray;
+  border-radius: 12px;
+  padding: 1rem;
+  padding-left: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  .changeInPlans_content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+
+    .changeInPlansOption_heading {
+      color: #454545;
+      font-weight: 400;
+      font-size: 14px;
+      padding-bottom: 0.2rem;
+    }
+    .changeInPlansOption_desc {
+      color: #858585;
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.carousal {
+  background-color: transparent;
+  align-items: center;
+  margin-top: 1rem;
+  border-radius: 10px;
+  display: flex;
+
+  .swipper_wrapper {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .swiper_slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 0;
+      padding-right: 0;
+      flex-direction: column;
+
+      .green_banner {
+        // background-color: #2a4a2f;
+        color: #e2e8e6;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 1rem;
+        width: 100%;
+        font-weight: 600;
+        background-size: cover;
+        background-image: url('../../../../../assets/images/visa-services-background-image.png');
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .carousal {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0rem;
+    border-radius: 0px;
+    background-color: #e5edf4;
+    border-radius: 1rem;
+
+    .swipper_wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem;
+
+      .swiper_slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        border-top-left-radius: 1rem;
+
+        .green_banner {
+          width: 96%;
+          margin-top: 1rem;
+          padding: 0.5rem;
+          font-size: 10px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@keyframes slideIn {
+  0% {
+    transform: translateY(-3%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-1.5%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.container {
+  flex-basis: 50%;
+  .flights_date_picker {
+    position: relative;
+    min-width: 10rem;
+    width: 100%;
+    background: $white;
+    cursor: pointer;
+
+    .inp_box_heading {
+      color: $text-quaternary;
+      font-size: 0.8rem;
+      position: absolute;
+      top: -0.6rem;
+      left: 0.8rem;
+      background-color: white;
+      padding: 0 0.3rem;
+      z-index: 1;
+    }
+    .inp_box_heading_error {
+      color: $validation-error-primary;
+    }
+
+    .date_input {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 4px;
+      height: 60px;
+      border: 1px solid $dividers;
+      border-radius: 8px;
+      padding: 6px 12px;
+
+      .dp_label,
+      .dp_placeholder {
+        flex: 1;
+        font-size: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .dp_placeholder {
+        @include font-properties($blue-inactive, 14px, normal, 700, 16px);
+      }
+    }
+    .date_input_error {
+      border-color: $validation-error-primary;
+    }
+  }
+
+  .error_message {
+    @include font-properties($validation-error-primary, 12px, normal, 400, normal);
+  }
+}
+
+.fare_cell {
+  padding: 4px;
+
+  .dt {
+    font-size: 1rem;
+    color: text-secondary;
+  }
+  .price {
+    font-size: 0.75rem;
+    color: $text-quaternary;
+  }
+}
+
+.dp-day {
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+
+.dp_selected {
+  background-color: $blue-primary;
+  color: white;
+  border-radius: 4px;
+
+  .fare_cell {
+    color: $white;
+    .dt,
+    .price {
+      color: inherit;
+    }
+  }
+}

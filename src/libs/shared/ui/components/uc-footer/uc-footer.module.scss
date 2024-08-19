@@ -1,0 +1,299 @@
+.footerContainer {
+  font-size: 1rem;
+
+  .footer {
+    background-color: #0b2235;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1vmax;
+    padding-bottom: 1rem;
+
+    .footer_section1 {
+      background-color: #0b2235;
+      width: 8%;
+    }
+    .footer_section2 {
+      background-color: #0b2235;
+      width: 44%;
+      padding-top: 2rem;
+      padding-right: 2rem;
+      font-size: 0.8rem;
+
+      .footer_section2_row {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem 0;
+
+        .row_color_white {
+          color: white;
+          cursor: default;
+        }
+        .row_color_gray {
+          color: #6a7681;
+          cursor: pointer;
+        }
+        .row_color_gray:hover {
+          color: white;
+        }
+      }
+
+      .accordionBox {
+        display: none;
+      }
+    }
+
+    .footer_section3 {
+      background-color: #0b2235;
+      width: 30%;
+      justify-content: flex-start;
+      text-align: start;
+      padding-left: 1rem;
+      align-items: flex-start;
+      padding-top: 2.5rem;
+      padding-right: 2rem;
+
+      .footer_section3_row1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 1rem;
+        width: 80%;
+        margin-right: 1rem;
+
+        .google_play_box {
+          width: 100%;
+
+          .image {
+          }
+          .image:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .footer_section3_row1 > div {
+        margin: 0.5rem;
+      }
+
+      .footer_section3_row2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2rem;
+        width: 70%;
+
+        .icon {
+          width: 2.2vmax;
+          height: 2.2vmax;
+        }
+        .icon:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .footer_section4 {
+      background-color: #0b2235;
+      width: 10%;
+      padding-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .qrcode_img_box {
+        // width: 3vmax;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+
+        .qrcode_img {
+          width: 5vmax;
+          height: 5vmax;
+        }
+      }
+      .qrcode_desc {
+        color: #969da3;
+        text-align: center;
+      }
+    }
+  }
+  .footer2 {
+    display: flex;
+    flex-direction: row;
+    font-size: 1vmax;
+    border-top: 2px solid #1c3346;
+    background-color: #0b2235;
+
+    .footer_section1 {
+      background-color: #0b2235;
+      width: 13%;
+    }
+
+    .footer2_section2 {
+      background-color: #0b2235;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      width: 100%;
+    }
+    p {
+      margin: 0.3vh;
+      color: #576f83;
+    }
+    svg {
+      margin-bottom: -0.2rem;
+    }
+
+    .footer_section3 {
+      background-color: #0b2235;
+      width: 5%;
+      justify-content: flex-start;
+      text-align: start;
+      padding-left: 2rem;
+      align-items: flex-start;
+      padding-top: 2.5rem;
+      padding-right: 2rem;
+    }
+
+    .footer_section4 {
+      background-color: #0b2235;
+      width: 35%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      .startup_icon {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footerContainer {
+    .footer {
+      flex-direction: column;
+      font-size: 2vmax;
+
+      .footer_section1 {
+        width: 10%;
+      }
+      .footer_section2 {
+        width: 100%;
+        padding-left: 1.5rem;
+
+        .footer_section2_row {
+          display: none;
+        }
+
+        .footer_section2_row1 {
+          padding: 1.4rem 0;
+        }
+
+        .footer_section2_row2 {
+          display: none;
+        }
+
+        .footer_section2_row3 {
+          display: none;
+        }
+
+        .accordionBox {
+          display: block;
+
+          .accordion {
+            background-color: transparent;
+            color: #c5d4e3;
+            border: 1px solid #c5d4e3;
+            border-radius: 10px;
+            margin: 2rem 0;
+            display: flex;
+            flex-direction: column;
+
+            .accordionIcon {
+              color: #d5d5d5;
+            }
+
+            .accordion_desc {
+              color: #d5d5d5;
+              padding: 1rem 0rem;
+              display: flex;
+              flex-direction: column;
+            }
+          }
+        }
+
+        .footer_section2_row4 {
+          display: none;
+        }
+      }
+
+      .footer_section3 {
+        width: 100%;
+
+        .footer_section3_row1 {
+        }
+
+        .footer_section3_row2 {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-left: 0.5rem;
+
+          .icon {
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-right: 0.1rem;
+            margin-bottom: 1rem;
+          }
+          .icon:hover {
+            cursor: pointer;
+          }
+        }
+      }
+      .footer_section3 > p {
+        margin-left: 0.5rem;
+      }
+      .footer_section4 {
+        display: none;
+      }
+    }
+    .footer2 {
+      background-color: #0b2235;
+      color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
+
+      .footer_section1 {
+        display: none;
+      }
+
+      .footer2_section2 {
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 2vmax;
+      }
+      p {
+        margin: 0.3vh;
+        color: #576f83;
+      }
+
+      .footer_section3 {
+        display: none;
+      }
+
+      // .footer_section4 {
+      //   border: 0;
+      //   .image{
+      //     margin: 1rem;
+      //   }
+      // }
+    }
+  }
+}

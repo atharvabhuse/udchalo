@@ -1,0 +1,103 @@
+.book_now_container {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+
+  .book_now_wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 0.5rem;
+    height: 4.375rem;
+
+    .balmer,
+    .group_booking,
+    .international_booking {
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      flex: 1;
+      border: 0.125rem solid #eaf0f6;
+    }
+
+    .balmer {
+      border-top-left-radius: 6.25rem;
+      border-bottom-left-radius: 6.25rem;
+    }
+
+    .international_booking {
+      border-top-right-radius: 6.25rem;
+      border-bottom-right-radius: 6.25rem;
+    }
+
+    .icon {
+      padding: 1.125rem 0.75rem 1.125rem 1.25rem;
+    }
+
+    .text_section {
+      flex: 1;
+      .title {
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        color: #454545;
+        text-transform: capitalize;
+      }
+
+      .sub_title {
+        font-weight: 400;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
+        color: #858585;
+      }
+    }
+
+    .book_now_text {
+      font-weight: 700;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      text-transform: capitalize;
+      color: #3398d5;
+      padding: 0.2rem 0.75rem 0 1.25rem;
+      span {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .book_now_container {
+    background-color: #f5f8fb;
+    padding: 1.25rem 1rem 1.25rem 1rem;
+    margin-top: 0;
+
+    .book_now_wrapper {
+      flex-direction: column;
+      height: 14rem;
+      width: 100%;
+
+      .balmer,
+      .group_booking,
+      .international_booking {
+        background: #ffffff;
+        border: 0.063rem solid #eaf0f6;
+        box-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.1);
+        border-radius: 0.5rem;
+        height: 3.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .book_now_container {
+    margin-top: -3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .book_now_container {
+    margin-top: -8rem;
+  }
+}

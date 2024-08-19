@@ -1,0 +1,79 @@
+@mixin fontSizeWeightAndLineHeight($size, $weight, $lineHeight) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $lineHeight;
+}
+
+@mixin flexBoxStyles($justify) {
+  display: flex;
+  justify-content: $justify;
+}
+.container {
+  margin-top: 1rem;
+
+  .title {
+    @include fontSizeWeightAndLineHeight(16px, 600, 16px);
+    letter-spacing: 2%;
+  }
+
+  .total_paid_amount {
+    @include flexBoxStyles(space-between);
+    @include fontSizeWeightAndLineHeight(16px, 600, 16px);
+    margin-top: 1rem;
+  }
+
+  .sub_heading {
+    @include fontSizeWeightAndLineHeight(16px, 600, 16px);
+    color: rgba(69, 69, 69, 1);
+    margin-top: 1.1rem;
+  }
+
+  .fare_name_and_fare_amount {
+    @include flexBoxStyles(space-between);
+    @include fontSizeWeightAndLineHeight(14px, 400, 16px);
+    color: rgba(84, 84, 84, 1);
+    margin-top: 7.5px;
+  }
+
+  .estimated_refund {
+    border-top: 1px solid #c5d4e3;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 1rem;
+
+    .title {
+      @include fontSizeWeightAndLineHeight(14px, 600, 20px);
+      letter-spacing: 2%;
+    }
+
+    .total_paid_amount {
+      @include flexBoxStyles(space-between);
+      @include fontSizeWeightAndLineHeight(12px, 600, 20px);
+      margin-top: 0.5rem;
+    }
+
+    .sub_heading {
+      @include fontSizeWeightAndLineHeight(12px, 600, 16px);
+      color: rgba(69, 69, 69, 1);
+      margin-top: 1rem;
+    }
+
+    .fare_name_and_fare_amount {
+      @include flexBoxStyles(space-between);
+      @include fontSizeWeightAndLineHeight(12px, 400, 16px);
+      color: rgba(84, 84, 84, 1);
+      margin-top: 0.5rem;
+    }
+
+    .estimated_refund {
+      border-top: 1px solid #c5d4e3;
+      margin-top: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+}

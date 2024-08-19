@@ -1,0 +1,188 @@
+.container {
+  margin: 1rem 0;
+
+  .fare_table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    @mixin t_cell_mixin {
+      border: 1px solid #e4f3fd;
+      vertical-align: baseline;
+      min-width: 184px;
+      padding: 8px;
+      color: $text-secondary;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background: #fff;
+    }
+
+    .t_cell_header {
+      @include t_cell_mixin();
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom: none;
+
+      .tag {
+        display: inline-block;
+        border-radius: 16px;
+        background: #edf7ff;
+        padding: 4px 8px;
+        color: #1d4ea5;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 12px; /* 100% */
+      }
+
+      .fare_info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .option {
+        padding: 8px 0;
+      }
+    }
+
+    .t_cell {
+      @include t_cell_mixin();
+      border-top: none;
+      border-bottom: none;
+      position: relative;
+    }
+
+    .t_cell_footer {
+      @include t_cell_mixin();
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top: none;
+    }
+  }
+
+  .cta_row {
+    text-align: right;
+    margin: 1rem 0;
+
+    .book_btn {
+      width: 138px;
+      height: 38px;
+      color: white;
+      background: #32996a;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 26px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 1rem 0;
+    width: 100%;
+    overflow-x: scroll;
+
+    .fare_table {
+      width: 100%;
+      table-layout: fixed;
+      border-collapse: separate;
+
+      @mixin t_cell_mixin {
+        border: 1px solid #e4f3fd;
+        vertical-align: baseline;
+        // min-width: 184px;
+        padding: 8px;
+        color: $text-secondary;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background: #fff;
+        width: 15rem;
+      }
+
+      .t_cell_header {
+        @include t_cell_mixin();
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border-bottom: none;
+
+        .tag {
+          display: inline-block;
+          border-radius: 16px;
+          background: #edf7ff;
+          padding: 4px 8px;
+          color: #1d4ea5;
+          text-align: center;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 12px; /* 100% */
+        }
+
+        .fare_info {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .option {
+          padding: 8px 0;
+        }
+      }
+
+      .t_cell {
+        @include t_cell_mixin();
+        border-top: none;
+        border-bottom: none;
+        position: relative;
+      }
+
+      .t_cell_footer {
+        @include t_cell_mixin();
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top: none;
+      }
+    }
+
+    .cta_row {
+      text-align: right;
+      margin: 0rem 0;
+      position: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      margin-top: 1rem;
+
+      .book_btn {
+        color: white;
+        background: #32996a;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 26px;
+        text-transform: capitalize;
+        padding: 0.5rem 1.5rem;
+      }
+    }
+  }
+}

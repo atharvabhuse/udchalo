@@ -1,0 +1,122 @@
+.tv_select_dd {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-height: 24rem;
+  width: 26rem;
+  padding: 1rem;
+  z-index: 9999;
+
+  .tv_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .tv_title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: 1.2rem;
+    }
+
+    .close_icon {
+      cursor: pointer;
+    }
+  }
+
+  .tv_subtitle {
+    color: #545454;
+  }
+
+  .tv_cabin_options {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #858585;
+    border-bottom: 1px solid #c5d4e3;
+    margin: 1rem -1rem 0 -1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+
+    .cabin {
+      padding: 0.5rem 1rem;
+      border-bottom: 2px solid transparent;
+      &:nth-child(2) {
+        flex: 1;
+      }
+
+      &:hover {
+        color: #32996a;
+        border-color: #32996a;
+      }
+    }
+
+    .active-cabin {
+      color: #32996a;
+      border-color: #32996a;
+    }
+  }
+
+  .tv_option {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+
+    .tv_type {
+      flex: 1;
+      .subtitle {
+        color: #858585;
+      }
+    }
+
+    .tv_count_stepper {
+      width: 35%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .btn-round {
+        color: #3398d5;
+        background: rgba(51, 152, 213, 0.15);
+        border: 1px solid #3398d5;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(51, 152, 213, 0.3);
+        }
+      }
+
+      .btn-round-inactive {
+        cursor: not-allowed;
+        color: #778b99;
+        background-color: rgba(119, 139, 153, 0.15);
+        border-color: #778b99;
+        &:hover {
+          background-color: rgba(119, 139, 153, 0.15);
+        }
+      }
+    }
+  }
+
+  .tv-btn-container {
+    padding: 0 1rem;
+
+    .add-btn {
+      background: #32996a;
+      border-radius: 8px;
+      width: 100%;
+      padding: 1rem 0;
+      color: #fff;
+      cursor: pointer;
+      &:hover {
+        background-color: #298158;
+      }
+    }
+  }
+}

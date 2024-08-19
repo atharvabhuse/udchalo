@@ -1,0 +1,356 @@
+@mixin otp_btn {
+  width: 33%;
+  text-align: center;
+
+  .send_otp_btn {
+    width: 17.6rem;
+    height: 2.9rem;
+    font-weight: 700;
+    font-size: 1.14rem;
+    color: white;
+    background: #32996a; //$green-primary;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      background: #298158; //$green-hover-state;
+    }
+  }
+}
+.root_container {
+  position: fixed;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  .close_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 29%;
+    left: 66%;
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50px;
+  }
+  .root {
+    position: fixed;
+    z-index: 3;
+    left: 32%;
+    top: 35%;
+    //width: 36.5%;
+    //height: 39%;
+    min-width: 540px;
+    min-height: 324px;
+    overflow: hidden;
+    border-radius: 28px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    &::before {
+      z-index: -1;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url(../../../../../assets/images/rightFrameImg.png);
+      background-size: 22%;
+      // transform: rotate(0deg);
+      transform: rotate(180deg);
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    .layer_img_div {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fields_box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .title_box {
+      display: flex;
+      justify-content: center;
+      .title_text {
+        color: #32996a;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      margin-bottom: 1.14rem;
+      margin-top: 2.1rem;
+    }
+    .subtitle_box {
+      display: flex;
+      justify-content: center;
+      .subtitle_text {
+        color: #545454;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        .or {
+          color: #000;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 16px;
+          text-transform: uppercase;
+        }
+      }
+      .givenOtpNo {
+        margin-left: 0.3rem;
+        margin-top: -0.1rem;
+      }
+      margin-bottom: 2rem;
+    }
+    .city_search_container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      min-width: 10rem;
+      width: 100%;
+      cursor: pointer;
+      .error_message {
+        color: red;
+      }
+      .resend_box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 2.4rem;
+        margin-top: -0.4rem;
+        .text {
+          color: #c2d9e2;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-weight: 700;
+          .timer {
+            color: #f48d42;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 1.5rem;
+          }
+        }
+      }
+      .otp_parent_box {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        .otp_error {
+          color: red;
+          font-size: 0.9rem;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 2.5rem;
+        }
+        .otp_box {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          .otp_input {
+            max-width: 46px;
+            margin-right: 0.5rem;
+            border-radius: 8px;
+            border: 1px solid #c5d4e3;
+            background: #fff;
+          }
+          ng-deep::muiinputbase-root {
+            min-height: 45px;
+          }
+        }
+
+        .timer_counter {
+          width: 85%;
+          .timer_container {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: right;
+            margin-top: 0.5rem;
+            align-items: center;
+
+            .resend_link_container {
+              display: flex;
+              gap: 0.3rem;
+
+              .in_active_resend_link {
+                color: #c2d9e2;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 700;
+              }
+            }
+
+            .active_timer {
+              color: #f48d42;
+              font-size: 14px;
+              line-height: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+
+        .start_timer {
+          text-align: right;
+          margin-top: 0.5rem;
+          color: #1e54b0;
+          font-weight: 700;
+          font-size: 12px;
+          cursor: pointer;
+          border: 1px solid transparent;
+          background-color: transparent;
+        }
+      }
+
+      .float_label {
+        color: #858585;
+        font-size: 0.8rem;
+        position: absolute;
+
+        left: 8.4rem;
+        top: -0.5rem;
+        background-color: white;
+        padding: 0 0.3rem;
+        z-index: 1;
+      }
+
+      .input_box {
+        width: 23rem;
+        border-radius: 8px;
+        // border: 1px solid #c5d4e3;
+        background: #fff;
+      }
+      margin-bottom: 1.7rem;
+    }
+    .inline_form_cta {
+      @include otp_btn();
+      width: unset;
+
+      margin-bottom: 1.8rem;
+    }
+
+    .terms_box {
+      width: 100%;
+      margin-bottom: 2.1rem;
+      .terms {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 12px;
+        color: #858585;
+        .tc {
+          color: #3398d5;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-left: 0.3rem;
+          margin-right: 0.3rem;
+          margin-top: 0.1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .root_container {
+    position: unset;
+    z-index: 0;
+    background-color: unset;
+    .close_btn {
+      right: 15px;
+      top: -15%;
+      left: unset;
+    }
+    .root {
+      position: unset;
+      border-radius: unset;
+      min-height: unset;
+      min-width: unset;
+      background-image: url(../../../../../assets/images/rightFrameImg.png);
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: right;
+      &::before {
+        display: none;
+      }
+      .fields_box {
+        justify-content: unset;
+        align-items: flex-start;
+        padding-inline: 16px;
+        .title_box {
+          margin-bottom: 9px;
+          .title_text {
+            color: #32996a;
+            font-size: 14;
+            font-weight: '400';
+          }
+        }
+        .subtitle_box {
+          margin-bottom: 22px;
+          .subtitle_text {
+            color: #545454;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+          }
+        }
+        .city_search_container {
+          .input_box {
+            width: 100%;
+            border: none;
+          }
+          .otp_parent_box {
+            .timer_counter {
+              width: 100%;
+              padding-inline: 8px;
+            }
+          }
+        }
+        .inline_form_cta {
+          align-self: center;
+          margin-bottom: 16px;
+          .send_otp_btn {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+        .terms_box {
+          display: flex;
+          justify-content: center;
+          .terms {
+            color: #858585;
+            font-size: 10px;
+            display: unset;
+            .tc {
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

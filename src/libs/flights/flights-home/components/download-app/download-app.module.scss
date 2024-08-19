@@ -1,0 +1,81 @@
+@import '../../flights-home.module.scss';
+
+.download_app_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .download_app_details {
+    background-repeat: no-repeat;
+    background-image: url('../../../../../assets/images/downloadApp.png');
+    color: white;
+    display: grid;
+    width: $web_page_width;
+    height: 21rem;
+    background-size: cover;
+    border-radius: 16px;
+    grid-template-columns: 55% 45%;
+    padding: 44px;
+
+    &_info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .download_app_info_heading {
+        margin-bottom: 0.2rem;
+        @include font_flight_home(22px, 400, 30px);
+      }
+
+      .download_app_info_heading_data {
+        @include font_flight_home(14px, 600, 19px);
+      }
+
+      .download_app_info_heading_details {
+        @include font_flight_home(14px, 400, 20px);
+      }
+
+      .download_app_info_download_data {
+        @include font_flight_home(14px, 600, 19px);
+      }
+
+      .download_store {
+        width: 16rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 1rem;
+        gap: 1rem;
+      }
+    }
+
+    .app_download_QR {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      height: 100%;
+      margin-left: 10rem;
+
+      .download_Qr {
+        height: 13.5rem;
+        width: 10.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 0.6rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 1250px) {
+    .download_app_details {
+      grid-template-columns: 65% 33%;
+
+      .app_download_QR {
+        margin-left: 0rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,282 @@
+@mixin otp_btn {
+  width: 33%;
+  text-align: center;
+
+  .send_otp_btn {
+    width: 17.6rem;
+    height: 2.9rem;
+    font-weight: 700;
+    font-size: 1.14rem;
+    color: white;
+    background: #32996a;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    text-transform: none;
+
+    &:hover {
+      background: #298158;
+    }
+  }
+
+  .send_otp_btn_disabled {
+    width: 17.6rem;
+    height: 2.9rem;
+    font-weight: 700;
+    font-size: 1.14rem;
+    color: white;
+    background: #c2d9e2;
+    border-radius: 0.5rem;
+    cursor: not-allowed;
+    text-transform: none;
+  }
+}
+
+.root_container {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+
+  @media (min-width: 768px) {
+    left: 0;
+    top: 0;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 767px) {
+    inset: 0;
+    align-items: end;
+  }
+
+  .close_btn {
+    cursor: pointer;
+    position: absolute;
+    top: 29%;
+    left: 68%;
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50px;
+
+    @media only screen and (max-width: 767px) {
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  .root {
+    z-index: 3;
+    min-height: 324px;
+
+    background-color: white;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      position: fixed;
+      min-width: 540px;
+      left: 32%;
+      top: 35%;
+      border-radius: 28px;
+    }
+
+    @media screen and (max-width: 767px) {
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      padding: 15px;
+    }
+
+    .layer_img_div {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .fields_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title_box {
+      display: flex;
+      justify-content: center;
+
+      .title_text {
+        color: #32996a;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      margin-bottom: 1.14rem;
+      margin-top: 2.1rem;
+    }
+
+    .subtitle_box {
+      display: flex;
+      justify-content: center;
+
+      .subtitle_text {
+        color: #545454;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+
+        .or {
+          color: #000;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 16px;
+          text-transform: uppercase;
+        }
+      }
+
+      .givenOtpNo {
+        margin-left: 0.3rem;
+        margin-top: -0.1rem;
+      }
+
+      margin-bottom: 2rem;
+    }
+
+    .otp_container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      min-width: 10rem;
+      width: 100%;
+      cursor: pointer;
+
+      .resend_box {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 50px;
+
+        .text_enabled {
+          color: #32996a;
+          font-size: 14px;
+          font-weight: 700;
+        }
+
+        .text {
+          color: #c2d9e2;
+          font-size: 14px;
+          font-weight: 700;
+
+          .timer {
+            color: #f48d42;
+            font-size: 14px;
+            font-weight: 600;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .otp_parent_box {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+
+        .otp_error {
+          color: red;
+          font-size: 0.9rem;
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          margin-left: 2.5rem;
+        }
+
+        .otp_box {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+
+          .otp_input {
+            max-width: 46px;
+            margin-right: 0.5rem;
+            border-radius: 8px;
+            border: 1px solid #c5d4e3;
+            background: #fff;
+
+            @media screen and (max-width: 767px) {
+              max-width: 4rem;
+            }
+          }
+
+          ng-deep::muiinputbase-root {
+            min-height: 45px;
+          }
+        }
+      }
+
+      .float_label {
+        color: #858585;
+        font-size: 0.8rem;
+        position: absolute;
+
+        left: 8.4rem;
+        top: -0.5rem;
+        background-color: white;
+        padding: 0 0.3rem;
+        z-index: 1;
+      }
+
+      .input_box {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid #c5d4e3;
+        background: #fff;
+      }
+
+      margin-bottom: 1.7rem;
+    }
+
+    .inline_form_cta {
+      @include otp_btn();
+      width: unset;
+
+      margin-bottom: 1.8rem;
+    }
+
+    .terms_box {
+      width: 100%;
+      margin-bottom: 2.1rem;
+
+      .terms {
+        display: flex;
+        justify-content: center;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-size: 12px;
+        color: #858585;
+
+        .tc {
+          color: #3398d5;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+          margin-left: 0.3rem;
+          margin-right: 0.3rem;
+          margin-top: 0.1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

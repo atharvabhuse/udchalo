@@ -1,0 +1,15 @@
+<svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="34" height="34" fill="#F5F5F5"/>
+<g clip-path="url(#clip_linkedin_footer)">
+<rect width="1440" height="6539" transform="translate(-998 -6369)" fill="white"/>
+<rect x="-998" y="-136" width="1440" height="306" fill="#0B2235"/>
+<circle cx="17" cy="17" r="17" fill="#B5CEE3" fill-opacity="0.3"/>
+<circle cx="17" cy="17" r="16.675" stroke="white" stroke-opacity="0.16" stroke-width="0.65"/>
+<path d="M23.6128 22.6671V17.5522C23.6128 14.8114 22.2146 13.5361 20.3503 13.5361C18.8458 13.5361 18.1715 14.402 17.7959 15.0098V13.7458H14.9614C14.999 14.5832 14.9614 22.6671 14.9614 22.6671H17.7959V17.6849C17.7959 17.419 17.8141 17.1523 17.8893 16.9621C18.0938 16.4291 18.5603 15.8775 19.3429 15.8775C20.3689 15.8775 20.7787 16.6954 20.7787 17.8945V22.6675H23.6128V22.6671ZM11.9752 12.528C12.9632 12.528 13.5792 11.8424 13.5792 10.986C13.5611 10.111 12.9636 9.44531 11.9942 9.44531C11.0249 9.44531 10.3906 10.1106 10.3906 10.986C10.3906 11.8424 11.0059 12.528 11.9575 12.528H11.9752ZM13.3925 22.6671V13.7458H10.5584V22.6671H13.3925Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip_linkedin_footer">
+<rect width="1440" height="6539" fill="white" transform="translate(-998 -6369)"/>
+</clipPath>
+</defs>
+</svg>

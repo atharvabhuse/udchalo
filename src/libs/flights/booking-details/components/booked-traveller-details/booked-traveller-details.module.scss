@@ -1,0 +1,112 @@
+.accordion_root {
+  width: 100%;
+  margin-top: 0.5rem;
+
+  .no_accordian {
+    width: 100%;
+    border-radius: 1rem !important;
+    border: 1px solid #e5edf4;
+
+    .non_accordian_icon_and_title {
+      padding: 0.5rem 0 0 1rem;
+      color: #454545;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+    }
+  }
+
+  .accordion {
+    width: 100%;
+    border-radius: 1rem !important;
+    border: 1px solid #e5edf4;
+
+    .header {
+      margin-left: 0.8rem;
+      color: #454545;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 22px;
+      /* 137.5% */
+    }
+
+    .sub_header {
+      color: #858585;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      /* 133.333% */
+      margin-top: -0.8rem;
+    }
+
+    .form_name {
+      display: flex;
+      margin-top: 0.5rem;
+
+      .label {
+        color: #545454;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        /* 114.286% */
+      }
+
+      .value {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 16px;
+        margin-left: 0.3rem;
+        display: flex;
+      }
+    }
+  }
+
+  .read_only_container {
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid #e5edf4;
+    padding: 1rem;
+
+    .icon_and_healding {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      .read_only_icon_container {
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #edf7ff;
+        border-radius: 50%;
+      }
+
+      .header_read_only {
+        color: #454545;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .accordion {
+    border: none !important;
+    box-shadow: none !important;
+  }
+}

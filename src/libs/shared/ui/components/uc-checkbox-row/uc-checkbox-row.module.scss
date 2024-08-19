@@ -1,0 +1,105 @@
+.checkbox_row_accordion {
+  border-radius: 10px;
+  margin-top: 1rem;
+  border: 1px solid #d3d3d3;
+  box-shadow: none;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .checkbox_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 0;
+    width: 100%;
+    border-radius: 10px;
+    align-items: center;
+    padding: 1rem 1rem;
+    box-shadow: none;
+    z-index: 10;
+
+    .checkbox_row_left {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      width: 90%;
+
+      .inp {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 1.5rem;
+      }
+      .inp:hover {
+        cursor: pointer;
+      }
+      .heading_desc_col {
+        .checkbox_heading {
+          font-weight: 600;
+          color: black;
+          padding-bottom: 0.3rem;
+        }
+        .checkbox_desc {
+          color: gray;
+        }
+      }
+    }
+
+    .checkbox_row_right {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .checkbox_read_more {
+        color: #3398d5;
+        font-weight: 600;
+      }
+    }
+  }
+  .checkbox_accordion_detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .checkbox_accordion_detail_form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .input_box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 48%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+
+        .input_heading {
+          font-size: 10px;
+          position: absolute;
+          background-color: white;
+          padding: 0.2rem 0.4rem;
+          transform: translateX(15%) translateY(-50%);
+          color: gray;
+        }
+        .add_traveller_inp {
+          width: 100%;
+          margin-bottom: 1rem;
+          margin-right: 1rem;
+        }
+        .error_message {
+          color: red;
+        }
+      }
+    }
+  }
+}
+.grayout {
+  background-color: gray;
+}

@@ -1,0 +1,29 @@
+@import '../../flights-home.module.scss';
+
+.trip_details_body {
+  display: grid;
+  place-content: center;
+  padding-inline: 165px;
+  @media only screen and (max-width: 650px) {
+    padding-inline: 16px;
+  }
+  .trip_details_web {
+    .trip_details_image {
+      width: 100%;
+      height: auto;
+    }
+    @media only screen and (max-width: 650px) {
+      display: none;
+    }
+  }
+
+  .trip_details_msite {
+    .trip_details_image {
+      width: 100%;
+      height: auto;
+    }
+    @media only screen and (min-width: 650px) {
+      display: none;
+    }
+  }
+}

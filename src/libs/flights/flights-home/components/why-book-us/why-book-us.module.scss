@@ -1,0 +1,134 @@
+@import '../../flights-home.module.scss';
+
+.why_bookUs_img {
+  background-image: url('../../../../../assets/images/whyBookUsImg.png');
+  background-repeat: no-repeat;
+  height: 372px;
+  color: white;
+  background-size: cover;
+
+  @media only screen and (max-width: 500px) {
+    height: 287px;
+    background-position-y: -2rem;
+    background-position-x: -15rem;
+  }
+
+  .why_bookUs_img_info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .why_bookUs_title {
+      padding: 2rem;
+      text-align: center;
+      @include font_flight_home(22px, 600, 30px);
+    }
+
+    @media only screen and (max-width: 1000px) {
+      .why_bookUs_title {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .why_bookUs_title {
+        font-size: 14px;
+        font-weight: 600;
+        // padding: 16px;
+        padding: 16px 0rem 12px 0rem;
+      }
+    }
+
+    .why_bookUs_body {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-right: 165px;
+      margin-bottom: 81px;
+
+      @media only screen and (max-width: 1300px) {
+        margin-right: 5rem;
+      }
+
+      .why_bookUs_card {
+        border-radius: 1rem;
+        position: relative;
+        width: 255px;
+        height: 176px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(11px);
+
+        .why_bookUs_card_img {
+          position: absolute;
+          right: 45%;
+          top: -10%;
+        }
+
+        .why_bookUs_card_content {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          display: -webkit-box !important;
+          -webkit-line-clamp: 7;
+          -webkit-box-orient: vertical;
+          white-space: normal;
+          @include font_flight_home(14px, 500, 20px);
+        }
+
+        & + .why_bookUs_card {
+          margin-left: 2rem;
+        }
+      }
+    }
+
+    .why_bookUs_body_slider {
+      flex: 1;
+
+      .why_bookUs_slider_view {
+        margin-left: 100px;
+
+        .why_bookUs_body_new {
+          height: 15rem;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+
+          .why_bookUs_card_new {
+            border-radius: 1rem;
+            padding: 1.5rem;
+            position: relative;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(11px);
+            width: 202px;
+            height: 176px;
+
+            .why_bookUs_card_img {
+              position: absolute;
+              right: 45%;
+              top: -10%;
+            }
+
+            .why_bookUs_card_content {
+              text-overflow: ellipsis;
+              overflow: hidden;
+              display: -webkit-box !important;
+              -webkit-line-clamp: 7;
+              -webkit-box-orient: vertical;
+              white-space: normal;
+              @include font_flight_home(14px, 500, 20px);
+            }
+
+            @media only screen and (max-width: 500px) {
+              .why_bookUs_card_content {
+                font-size: 12px;
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

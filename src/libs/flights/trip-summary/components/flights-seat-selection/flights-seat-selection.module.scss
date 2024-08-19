@@ -1,0 +1,386 @@
+.seat_selection {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+
+  .seat_selection_stepper_row {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    align-items: center;
+
+    .extras_box {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      .extras_index {
+        background-color: #edf7ff;
+        border-radius: 100%;
+        padding: 0.5rem 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1d4ea5;
+      }
+      .extras {
+        margin-left: 1rem;
+      }
+    }
+    .skip {
+      color: skyblue;
+      font-weight: 600;
+      justify-self: end;
+      align-self: center;
+    }
+    .skip:hover {
+      cursor: pointer;
+    }
+  }
+  .trip_toggle_row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #c5d4e3;
+    justify-content: center;
+
+    .trip_toggle_selected {
+      padding-bottom: 0.5rem;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      border-bottom: 3px solid #32996a;
+      margin-right: 1rem;
+
+      .depart {
+        padding: 0 0.5rem;
+        color: #32996a;
+        font-weight: 600;
+      }
+      .arrive {
+        padding: 0 0.5rem;
+        color: #32996a;
+        font-weight: 600;
+      }
+    }
+
+    .trip_toggle_selected:hover {
+      cursor: pointer;
+    }
+
+    .trip_toggle {
+      padding-bottom: 0.5rem;
+      padding-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      margin-right: 1rem;
+
+      .depart {
+        padding: 0 0.5rem;
+        color: #32996a;
+        font-weight: 600;
+      }
+      .arrive {
+        padding: 0 0.5rem;
+        color: #32996a;
+        font-weight: 600;
+      }
+    }
+
+    .trip_toggle:hover {
+      cursor: pointer;
+    }
+  }
+
+  .travellers_row {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-bottom: 1px solid #d2d2d2;
+
+    .travellers_btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: #32996a;
+      border: 1px solid #c5d4e3;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      margin-left: 1rem;
+    }
+    .travellers_btn:hover {
+      cursor: pointer;
+    }
+  }
+
+  .seat_selection_col_container {
+    display: grid;
+    grid-auto-flow: column;
+    // grid-template-rows: 13rem 30rem;
+    grid-template-rows: 13rem 17rem;
+    gap: 0;
+    padding-bottom: 1rem;
+
+    .seat_selection_aeroplane {
+      z-index: 10;
+      padding-top: 0.1rem;
+    }
+
+    .seat_selection_aeroplane_background {
+      background-image: url('../../../../../assets/images/seat_selection_aeroplane.png');
+      width: 95.5%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 27%;
+      margin-top: 0.5rem;
+      display: grid;
+      // grid-template-columns: repeat(25, 1fr);
+      // grid-template-rows: repeat(6, 1fr);
+      grid-auto-flow: row;
+      align-items: center;
+      padding: 1rem 1rem 1rem 11%;
+      overflow: hidden;
+      position: absolute;
+      z-index: 10;
+
+      .seat_selection_box {
+        width: 14px;
+        height: 14px;
+        background-color: #78b6e3;
+        margin: 0.2rem;
+      }
+      .seat_selection_box_right_padding {
+        width: 14px;
+        height: 14px;
+        // padding-right: 1rem;
+        background-color: #78b6e3;
+        margin: 0.2rem;
+      }
+      .seat_selection_red {
+        position: absolute;
+        height: 12rem;
+        width: 20rem;
+        background-color: pink;
+        border: 1px solid red;
+        opacity: 0.7;
+        margin-left: -0.5rem;
+      }
+    }
+
+    .seat_selection_container {
+      height: 30rem;
+      border: 1px solid #d2d2d2;
+      border-top-left-radius: 35%;
+      border-bottom-left-radius: 35%;
+      margin-top: 0.4rem;
+      margin-bottom: 0.4rem;
+      background-color: #f9fcfd;
+      display: grid;
+      position: relative;
+      //   grid-template-columns: repeat(25, 1fr);
+      //   grid-template-rows: repeat(6, 1fr);
+      grid-auto-flow: row;
+      align-items: center;
+      width: 100%;
+      overflow-x: scroll;
+      // overflow-y: scroll;
+      // overflow: scroll;
+      padding-left: 22%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      margin-right: 1rem;
+      box-shadow: inset -30px 0px 25px rgba(0, 0, 0, 0.1);
+
+      .seat {
+        padding: 0.3rem;
+        display: grid;
+
+        .seat_col {
+          display: grid;
+          align-self: center;
+          justify-self: center;
+          padding: 1.5rem 0 1rem 0;
+        }
+
+        .seat_row_middle {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          justify-items: center;
+
+          .seat_image:hover {
+            cursor: pointer;
+          }
+
+          .seat_image_booked:hover {
+            cursor: not-allowed;
+          }
+
+          .seat_col {
+            color: #545454;
+            font-size: 12px;
+          }
+
+          .seatAvailable_box_middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .seatAvailable_middle {
+              position: absolute;
+              color: white;
+              font-size: 10px;
+              transform: translate(-10%, 0%);
+            }
+          }
+        }
+
+        .seat_col_front {
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          grid-auto-flow: row;
+          grid-template-columns: repeat(2, 1fr);
+
+          .seat_col_alphabet {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            padding-right: 2rem;
+
+            .seat_image:hover {
+              cursor: pointer;
+            }
+            .seat_image_booked:hover {
+              cursor: not-allowed;
+            }
+          }
+        }
+        .seat_image:hover {
+          cursor: pointer;
+        }
+        .seat_image_booked:hover {
+          cursor: not-allowed;
+        }
+        .seatAvailable_box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .seatAvailable {
+            position: absolute;
+            color: white;
+            font-size: 10px;
+            transform: translate(-10%, 0%);
+          }
+        }
+      }
+    }
+  }
+  .seat_selection_container::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #ccc;
+  }
+  .seat_selection_container::-webkit-scrollbar-thumb {
+    background-color: #3398d5;
+  }
+
+  .seat_types_row {
+    background-color: #ecf4fa;
+    padding: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    .seat_types {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      border-radius: 5px;
+      padding: 0.3rem 1.5rem;
+
+      .seat_types_heading {
+        margin-left: 1rem;
+        font-size: 10px;
+        font-weight: 600;
+        color: #858585;
+      }
+    }
+  }
+
+  .accordion {
+    display: flex;
+    box-shadow: none;
+    padding-top: 0;
+    margin-top: 0;
+    flex-direction: column;
+
+    .select_seat_fare_breakup_summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .fare_column {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        .fare {
+          font-weight: 700;
+          font-size: 18px;
+        }
+
+        .fare_breakup_row {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 1rem;
+
+          .fare_breakup_text {
+            color: #3398d5;
+            font-weight: 600;
+          }
+
+          .seat_selected {
+            color: #00b00c;
+            font-weight: 600;
+          }
+        }
+      }
+      .next_button_column {
+        .next_btn {
+          background-color: #32996a;
+          color: white;
+          font-weight: 600;
+          padding: 1rem 3rem;
+          border-radius: 10px;
+        }
+
+        .next_btn:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .select_seat_fare_breakup_detail {
+      width: 100%;
+
+      .proceed_to_pay_text {
+        font-size: 14px;
+        display: flex;
+        flex-direction: row;
+        margin-top: 1rem;
+
+        .terms {
+          color: #3398d5;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

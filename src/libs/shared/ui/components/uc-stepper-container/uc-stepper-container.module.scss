@@ -1,0 +1,16 @@
+.stepper {
+  .step {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .stepper {
+    .step {
+      cursor: pointer;
+      .stepLabel {
+        background-color: red;
+      }
+    }
+  }
+}

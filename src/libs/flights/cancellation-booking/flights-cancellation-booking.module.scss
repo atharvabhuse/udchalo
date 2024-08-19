@@ -1,0 +1,116 @@
+.sub_heading {
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cancellation_booking_container {
+  display: flex;
+  flex-direction: row;
+  //   align-items: center;
+  background: rgba(229, 237, 244, 0.4);
+  padding-inline: 160px;
+  padding-top: 23px;
+  column-gap: 16px;
+
+  @media only screen and (max-width: 600px) {
+    padding-inline: 16px;
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  .cancellation_booking_left {
+    width: 67%;
+    // max-width: 741px;
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+    .summary_card_container {
+      // display: none;
+      @media only screen and (max-width: 600px) {
+        padding: 7px 16px;
+        background: #fff;
+        margin-inline: -16px;
+        margin-top: -23px;
+        //   margin: ;
+      }
+    }
+
+    .refund_detail_container {
+      margin-bottom: 16px;
+      @media only screen and (max-width: 600px) {
+        margin-bottom: 0px;
+      }
+    }
+    .left_proceed_button {
+      margin-bottom: 50px;
+      margin-top: 24px;
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+      .proceed_button {
+        width: 265px;
+        height: 48px;
+      }
+    }
+  }
+  .cancellation_booking_right {
+    width: 33%;
+    // max-width: 363px;
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+    .cancellation_breakup_container {
+      margin-top: -1rem;
+      //   @media only screen and (max-width: 600px) {
+      //     margin-top: -1rem;
+      //   }
+    }
+    .buttonContainer {
+      mar .css-1hzjlm5-MuiButtonBase-root-MuiButton-root {
+        padding: 11px 138px;
+        border-radius: 8px;
+      }
+    }
+    .policy_text {
+      margin-top: 8px;
+      margin-bottom: 22px;
+      color: #454545;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    .uc_support_container {
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    .proceed_button_right_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media only screen and (max-width: 600px) {
+        display: flex;
+        //   align-items: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        justify-content: center;
+      }
+      .proceed_button {
+        width: 265px;
+        height: 37px;
+        @media only screen and (max-width: 600px) {
+          width: 240px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}

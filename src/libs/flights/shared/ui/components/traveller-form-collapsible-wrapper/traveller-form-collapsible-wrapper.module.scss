@@ -1,0 +1,11 @@
+.card {
+  border-radius: 16px !important;
+  border: 1px solid #eaf0f6;
+  background: #fff;
+  box-shadow: none;
+  margin-bottom: 1rem;
+
+  &::before {
+    display: none;
+  }
+}

@@ -1,0 +1,91 @@
+.webCheckIn {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 16px;
+  border: 1px solid #e5edf4;
+  width: 100%;
+
+  .pnr_box {
+    border-radius: 8px;
+    border: 1px solid #c5d4e3;
+    margin-right: 1.5rem;
+    width: 100%;
+  }
+
+  .btn {
+    color: #3398d5;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    background-color: transparent;
+    border: 1px solid transparent;
+  }
+
+  .webCheckIn_heading {
+    color: #bcb04e;
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 0.5rem;
+  }
+
+  .webCheckIn_desc {
+    color: #545454;
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .webCheckIn {
+    padding: 0.8rem;
+    background-color: white;
+    border-radius: 16px;
+    border: 1px solid #e5edf4;
+    width: 100%;
+
+    .pnr_box {
+      border-radius: 8px;
+      border: 1px solid #c5d4e3;
+      margin-right: 1.5rem;
+      width: 100%;
+    }
+
+    .btn {
+      color: #3398d5;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+
+    .webCheckIn_heading {
+      color: #bcb04e;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 18px;
+      text-transform: capitalize;
+    }
+
+    .webCheckIn_desc {
+      color: #858585;
+      font-family: Open Sans;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .input_box {
+      display: none;
+    }
+  }
+}

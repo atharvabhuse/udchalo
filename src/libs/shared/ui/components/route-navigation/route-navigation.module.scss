@@ -1,0 +1,39 @@
+.route_navigation {
+  display: flex;
+  flex-direction: row;
+  padding-left: 12rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background: rgba(229, 237, 244, 0.3);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  .navigation_link {
+    color: #3398d5;
+    cursor: pointer;
+  }
+  .breadcrum_level1 {
+    color: #3398d5;
+  }
+  .navigation_arrow {
+    color: #858585;
+  }
+  .breadcrum_level2 {
+    margin-top: -1.8rem;
+    display: flex;
+    padding-left: 2.9rem;
+  }
+}
+.route_navigation > div {
+  padding-right: 2%;
+}
+.route_navigation > div:last-child {
+  color: #858585;
+}

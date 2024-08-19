@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  tab-size: 4;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+pre {
+  margin: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+pre {
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    Liberation Mono,
+    Courier New,
+    monospace;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 1440px;
+  overflow-x: hidden;
+}
+
+/* Shimmer Styles */
+
+.grid_two {
+  display: grid;
+  grid-template-columns: 65% 30%;
+  gap: 5%;
+}
+
+.shine {
+  background: #f6f7f8;
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: inline-block;
+  position: relative;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+}
+
+.box {
+  margin: 1rem;
+  height: 104px;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.lines {
+  height: 10px;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.photo {
+  display: block !important;
+  width: 325px;
+  height: 100px;
+  margin-top: 15px;
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.swiper-horizontal {
+  width: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #32996a !important;
+  width: 24px !important;
+  height: 8px !important;
+  border-radius: 20px !important;
+}
+.swiper-pagination-horizontal {
+  /* top: 57px !important; */
+  position: static !important;
+}
+
+.swiper-wrapper {
+  /* margin-bottom: 2.5rem; */
+  @media only screen and (max-width: 600px) {
+    margin: 0;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dbdbdb;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #428bca;
+  min-height: 3rem;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #428bca;
+}
+
+.rdp {
+  --rdp-cell-size: 50px;
+  --rdp-accent-color: #0000ff;
+  --rdp-background-color: #e7edff;
+  /* Switch to dark colors for dark themes */
+  --rdp-accent-color-dark: #3003e1;
+  --rdp-background-color-dark: #180270;
+  /* Outline border for focused elements */
+  --rdp-outline: 2px solid var(--rdp-accent-color);
+  /* Outline border for focused and selected elements */
+  --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75);
+}
+
+.rdp-nav_button {
+  color: #009900;
+}
+
+.rdp-day {
+  border-radius: 4px;
+}
+
+.rdp-head_cell {
+  .weekend {
+    color: #ff3333;
+  }
+}
+
+.flights-date-picker_dp_dropdown {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 2px 6px rgba(0, 0, 0, 0.15);
+  /* padding: 0.8rem 0.5rem; */
+  border: 1px solid lightgray;
+  animation: slideIn 100ms ease-in;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .holiday-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .holiday-info {
+      padding: 1rem;
+      background-color: #f8f8ff;
+      border-right: 0.5px solid #c9c9fe;
+      border-bottom-left-radius: 8px;
+      + .holiday-info {
+        border-right: 0;
+        border-bottom-right-radius: 8px;
+      }
+    }
+  }
+}

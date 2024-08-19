@@ -1,0 +1,60 @@
+.container {
+  padding: 18px;
+
+  .bg_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 360px));
+    place-content: center;
+    row-gap: 18px;
+    column-gap: 20px;
+
+    .bg_lbl {
+      border: 1px solid $stroke-2;
+      background: $white;
+      border-radius: 8px;
+      margin: 0px;
+      padding-inline: 12px;
+      padding-block: 15px;
+      gap: 24px;
+
+      &:hover {
+        background-color: $stroke-2;
+      }
+    }
+  }
+  .no_baggage {
+    text-align: center;
+  }
+}
+
+.lbl_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include font-properties($text-secondary, 14px, normal, 400, 16px);
+
+  .price {
+    color: $text-quaternary;
+    text-align: right;
+  }
+}
+
+@include breakpoints(mobile) {
+  .container {
+    padding: 16px;
+
+    .bg_grid {
+      grid-template-columns: 100%;
+      row-gap: 16px;
+    }
+  }
+
+  .lbl_box {
+    font-size: 12px;
+    color: $black;
+    .price {
+      font-size: 14px;
+    }
+  }
+}

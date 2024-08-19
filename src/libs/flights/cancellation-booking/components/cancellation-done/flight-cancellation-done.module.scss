@@ -1,0 +1,622 @@
+.sub_heading {
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.notification_root {
+  padding-left: 10rem;
+  padding-right: 9.5rem;
+  background-color: rgba(229, 237, 244, 0.4);
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    padding: 0.5rem 1rem 0 1rem;
+  }
+  .notification {
+    border-radius: 12px;
+    background: #32996a;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 0.6rem;
+    padding-left: 2rem;
+    position: absolute;
+    width: 72%;
+    z-index: 20;
+
+    @media only screen and (max-width: 600px) {
+      width: 95%;
+      padding: 0.5rem;
+    }
+
+    .icon {
+      color: #fff;
+    }
+
+    .succes_alert_title_description {
+      display: flex;
+      .success_alert_title {
+        color: #fff;
+        font-family: Open Sans;
+        font-size: 0.9rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        display: flex;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+      }
+      .success_alert_description {
+        color: #fff;
+        font-family: Open Sans;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 24px;
+        display: flex;
+        margin-top: -0.3rem;
+      }
+
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+
+        .bold_text {
+          color: #fff;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+
+        .text {
+          margin-left: 0.5rem;
+          color: #fff;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+.my_bookings_root {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 0 10rem 3.5rem 9.5rem;
+  background-color: rgba(229, 237, 244, 0.4);
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .left_pane {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    max-width: 740px;
+    height: 100%;
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+    }
+
+    .leg_details {
+      position: relative;
+      margin-bottom: 1rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-image: url('../../../../../assets/images/cancelledIcon.png');
+        background-size: 12rem;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 2;
+      }
+    }
+
+    .traveller_details_and_note_card {
+      @media only screen and (max-width: 600px) {
+        padding: 0rem 1rem 0 1rem;
+      }
+
+      .cancell_travel_details {
+        margin-top: 0rem;
+        padding: 0;
+        padding-bottom: 1rem;
+        background-color: white;
+        border: 0;
+        box-shadow: none;
+
+        .suraksha_container {
+          display: flex;
+          justify-content: space-between;
+          padding-inline: 16px;
+          border-radius: 16px 16px 0px 0px;
+          background: linear-gradient(180deg, #b6f0de 0%, #e7faf4 100%);
+          @media only screen and (max-width: 600px) {
+            padding-inline: 12px;
+          }
+          .suraksha_left {
+            padding-top: 16px;
+            padding-bottom: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media only screen and (max-width: 600px) {
+              padding-top: 8px;
+              padding-bottom: 8px;
+            }
+
+            .suraksha_logo {
+              margin-top: 1px;
+              width: 101.504px;
+              height: 30px;
+              @media only screen and (max-width: 600px) {
+                margin-top: 0px;
+                width: 80px;
+                height: 24px;
+              }
+            }
+
+            .claim_text {
+              color: #000;
+              font-family: Open Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              margin-top: 10px;
+              margin-bottom: 8px;
+              @media only screen and (max-width: 600px) {
+                font-size: 14px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+              }
+            }
+          }
+          .suraksha_right {
+            display: flex;
+            flex-direction: column;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            align-items: center;
+
+            @media only screen and (max-width: 600px) {
+              padding-top: 8px;
+              padding-bottom: 9px;
+              padding-right: 4px;
+              flex-direction: column-reverse;
+              align-items: flex-end;
+            }
+            .suraksha_shield_logo {
+              width: 52.941px;
+              height: 60px;
+
+              @media only screen and (max-width: 600px) {
+                width: 51px;
+                height: 58px;
+              }
+            }
+
+            .covered_text {
+              color: #3398d5;
+              font-family: Open Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              margin-top: 12px;
+              @media only screen and (max-width: 600px) {
+                margin-top: 0px;
+                margin-bottom: 10px;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+
+      .traveller_details_container {
+        // padding-inline: 16px;
+        padding-top: 12px;
+        padding-bottom: 16px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        background-color: white;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        .traveller_details_header_container {
+          display: flex;
+          column-gap: 12px;
+          align-items: center;
+          .traveller_details_icon {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+          }
+          .traveller_details_header {
+            color: #000;
+            font-family: Open Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 16px; /* 100% */
+          }
+        }
+        .travellers_name_container {
+          display: flex;
+          flex-direction: column;
+          row-gap: 8px;
+          margin-inline: 35px;
+          margin-block: 8px;
+          .traveller_name {
+            color: #000;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 21px; /* 150% */
+          }
+        }
+      }
+      .divider {
+        height: 1px;
+        background-color: #e5edf4;
+        @media only screen and (max-width: 480px) {
+          margin-inline: 0px;
+        }
+      }
+      .cancellation_stepper {
+        padding: 1rem;
+        background-color: white;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+      }
+      .note {
+        margin-top: 2.5rem;
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+        border-radius: 12px;
+        border: 1px solid #cddffb;
+        background: #f3f7ff;
+        .heading {
+          color: #1e54b0;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          margin-left: 0.5rem;
+          line-height: 24px; /* 171.429% */
+          .text {
+            color: #545454;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .promo_button_container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+
+      .ticket_button {
+        color: white;
+        background-color: #32996a;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-top: 1rem;
+        width: 35%;
+        padding: 1rem;
+      }
+      .ticket_button:hover {
+        cursor: pointer;
+      }
+      .ticket_button_disabled {
+        color: white;
+        background-color: #C2D9E2;
+        border-radius: 8px;
+        font-weight: 600;
+        width: 35%;
+        padding: 1rem;
+        margin-top: 1rem;
+      }
+      .ticket_button_disabled:hover {
+        cursor: not-allowed;
+      }
+    }
+    .accordion {
+      width: 100%;
+      border-radius: 1rem !important;
+      border: 0px solid #e5edf4;
+      box-shadow: none;
+      margin-bottom: 0rem;
+      .accordionSummary {
+        border: 0;
+        .refund_row {
+          font-weight: 600;
+          font-size: 16px;
+        }
+      }
+    }
+    .pnr_box_and_leg_details {
+      @media only screen and (max-width: 600px) {
+        background-color: white;
+        padding: 0 1.5rem 0rem 1.5rem;
+      }
+
+      .box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        .status {
+          display: flex;
+          margin-top: -0.2rem;
+          color: #00b00c;
+          text-align: right;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 16px; /* 100% */
+        }
+
+        .type {
+          // display: flex;
+          // width: 80px;
+          // color: #fff;
+          // margin-top: 1rem;
+          // padding: 2px 8px 6px 8px;
+          // justify-content: center;
+          // align-items: flex-start;
+          // flex-shrink: 0;
+          // border-radius: 8px;
+          // border: 0px solid #c1a84d;
+          // background: linear-gradient(
+          //   103deg,
+          //   #ab2421 0%,
+          //   #070f6c 48.7%,
+          //   #58bef2 94.44%
+          // );
+          // box-shadow: 0px 0px 1px 0px rgba(193, 168, 77, 0.8);
+          // margin-top: 3.2rem;
+          // z-index: 0;
+          // position: absolute;
+          // border-radius: 8px 8px 0;
+          font-weight: 600;
+          color: gray;
+        }
+
+        .pnr_box {
+          max-width: 195px;
+          height: 4rem;
+          padding: 0.8rem;
+          background-color: rgba(210, 210, 210, 0.3);
+          filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
+          border-radius: 16px 16px 0 0;
+          opacity: 1;
+          margin-bottom: -0.5rem;
+
+          @media only screen and (max-width: 600px) {
+            background-color: #f4fafe;
+            margin-bottom: -0.5rem;
+          }
+          .pnr {
+            color: #000;
+            text-align: center;
+            font-family: Open Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-right: 1rem;
+            padding-top: -1.5rem;
+            display: inline-flex;
+
+            @media only screen and (max-width: 600px) {
+              font-size: 16px;
+              font-weight: 300;
+              color: black;
+            }
+          }
+          .copy_icon {
+            color: #3398d5;
+            margin-top: 0.5rem;
+            display: inline-flex;
+            .icon {
+              font-size: 18px;
+              padding-top: 1px;
+            }
+          }
+        }
+        .box_right {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.3rem;
+        }
+      }
+    }
+
+    .trip_summary {
+      width: 97%;
+      height: 300px;
+      flex-shrink: 0;
+      border-radius: 16px 16px 16px 16px;
+      border: 1px solid rgba(133, 133, 133, 0.15);
+      background: #fff;
+      z-index: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .suraksha,
+    .contact_details,
+    .holiday_banner,
+    .baggage_details {
+      margin-bottom: 0.5rem;
+    }
+    .traveller_details {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .extras {
+      margin-bottom: 0.5rem;
+      padding: 1rem 1rem 0.5rem 1rem;
+      border-radius: 16px;
+      border: 1px solid #e5edf4;
+      background: #fff;
+      width: 97%;
+
+      .heading {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 100% */
+      }
+      .sub_heading {
+        color: #545454;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+  .right_pane {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    min-width: 360px;
+    margin-top: 0.5rem;
+
+    .change_in_plan {
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    .change_in_plan_disabled {
+      cursor: not-allowed;
+      background-color: #E5EDF4;
+      opacity: 0.5;
+      border-radius: 1rem;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+    .uc_support {
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    .follow_us_and_download {
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 100%;
+      padding: 0 1.5rem 0rem 1.5rem;
+    }
+    .promo_button_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media only screen and (max-width: 600px) {
+        display: none;
+      }
+
+      .ticket_button {
+        color: white;
+        background-color: #32996a;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-top: 1rem;
+        width: 70%;
+        padding: 1rem;
+      }
+      .ticket_button:hover {
+        cursor: pointer;
+      }
+      .ticket_button_disabled {
+        color: white;
+        background-color: #C2D9E2;
+        border-radius: 8px;
+        font-weight: 600;
+        width: 70%;
+        padding: 1rem;
+        margin-top: 1rem;
+
+      }
+      .ticket_button_disabled:hover {
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.m_site_promo_button_container {
+  @media only screen and (max-width: 600px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.1);
+
+    .ticket_button {
+      color: white;
+      background-color: #32996a;
+      border-radius: 8px;
+      font-weight: 600;
+      width: 70%;
+      padding: 1rem;
+    }
+    .ticket_button:hover {
+      cursor: pointer;
+    }
+    .ticket_button_disabled {
+      color: white;
+      background-color: #C2D9E2;
+      border-radius: 8px;
+      font-weight: 600;
+      width: 70%;
+      padding: 1rem;
+      margin-top: 1rem;
+
+    }
+    .ticket_button_disabled:hover {
+      cursor: not-allowed;
+    }
+  }
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+}

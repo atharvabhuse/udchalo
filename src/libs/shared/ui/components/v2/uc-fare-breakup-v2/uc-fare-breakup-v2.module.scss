@@ -1,0 +1,110 @@
+.extra_fare_heading {
+    font-weight: 600;
+    font-size: 1rem;
+    padding-top: 1rem;
+    line-height: 16px;
+  }
+  
+  .fare_breakup {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    width: 99%;
+    margin-top: 1rem;
+    background-color: #fff;
+  
+    .fare_heading {
+      font-weight: 600;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+    }
+  
+    .flight_fare {
+      font-weight: 600;
+      font-size: 1rem;
+      padding-bottom: 1rem;
+      margin-top: 1rem;
+
+    }
+  
+    .fares_box {
+      display: flex;
+      flex-direction: column;
+  
+      .fare_row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 0.9rem;
+        padding-bottom: 0.8rem;
+  
+        .fare_row_left {
+          .fare_row_left_heading {
+            color: #2c2828;
+          }
+  
+          .fare_row_left_heading_discount {
+            color: #bcb04e;
+          }
+  
+          .fare_row_left_desc {
+            color: #858585;
+          }
+  
+          .fare_row_left_desc_discount {
+            color: #bcb04e;
+          }
+        }
+  
+        .fare_row_right {
+          color: #545454;
+        }
+  
+        .fare_row_right_discount {
+          color: #bcb04e;
+        }
+      }
+    }
+  
+    .total_fare_row {
+      color: black;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      border-top: 2px solid #c5d4e3;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      font-weight: 600;
+      
+      .total_fare_paid_using_text{
+        font-size: 0.8rem;
+        color: #858585;
+      }
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .fare_breakup {
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      width: 96%;
+  
+      .you_saved_banner_msite{
+        background-color: #E7FAF4;
+        border-radius: 0.4rem;
+        padding: 0.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+  
+        .you_saved_banner_text{
+          padding-left: 0.3rem;
+          color: #108F67;
+        }
+      }
+    }
+  }
+  

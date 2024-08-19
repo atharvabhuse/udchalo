@@ -1,0 +1,104 @@
+.trip_toggle_row {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #c5d4e3;
+  justify-content: center;
+
+  .trip_toggle_selected {
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid #32996a;
+    margin-right: 1rem;
+
+    .depart {
+      padding: 0 0.5rem;
+      color: #32996a;
+      font-weight: 600;
+    }
+
+    .arrive {
+      padding: 0 0.5rem;
+      color: #32996a;
+      font-weight: 600;
+    }
+  }
+
+  .trip_toggle_selected:hover {
+    cursor: pointer;
+  }
+
+  .trip_toggle {
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+
+    .depart {
+      padding: 0 0.5rem;
+      color: #32996a;
+      font-weight: 600;
+    }
+
+    .arrive {
+      padding: 0 0.5rem;
+      color: #32996a;
+      font-weight: 600;
+    }
+  }
+
+  .trip_toggle:hover {
+    cursor: pointer;
+  }
+}
+
+.travellers_row {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  border-bottom: 1px solid #d2d2d2;
+  justify-content: space-between;
+
+  .travellers_row_data {
+    display: flex;
+    flex-direction: row;
+
+    .travellers_btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      color: #32996a;
+      border: 1px solid #c5d4e3;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      margin-left: 1rem;
+    }
+
+    .travellers_btn:hover {
+      cursor: pointer;
+    }
+  }
+
+  .travellers_row_info {
+    display: flex;
+    flex-direction: row;
+
+    .meal_data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 28px;
+      border: 1px solid #c5d4e3;
+      padding: 6px 12px;
+      font-weight: bold;
+      margin-right: 16px;
+      .meal_image_logo {
+        margin-right: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+.mode_of_refund_container {
+  width: 100%;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 1px solid #e5edf4;
+
+  .mode_of_refund_header {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .mode_of_refund_desc {
+    font-size: 16px;
+    color: #545454;
+  }
+
+  .detailContainer {
+    width: 100%;
+    .optionBox {
+      .bankDetailsText {
+        margin-left: 2rem;
+        font-size: 12px;
+        font-weight: 400;
+        color: #545454;
+      }
+
+      .requestMessage {
+        margin-left: 2rem;
+        font-size: 12px;
+        margin-top: -1rem;
+        font-weight: 400;
+        color: #545454;
+      }
+
+      .account_information {
+        font-weight: 600;
+        margin-left: 1rem;
+      }
+      .account_information_form_container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+
+        @media only screen and (max-width: 600px) {
+          flex-direction: column;
+        }
+
+        .form_field {
+          margin: 1rem 0rem 0.5rem 0rem;
+          width: 35%;
+
+          @media only screen and (max-width: 600px) {
+            width: 100%;
+          }
+        }
+        .IFSC_row {
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          width: 35%;
+          margin-right: 1rem;
+
+          @media only screen and (max-width: 600px) {
+            width: 100%;
+          }
+
+          .form_field_IFSC {
+            margin: 1rem 0rem 0.5rem 0rem;
+            width: 100%;
+          }
+
+          .verify {
+            display: flex;
+            background-color: transparent;
+            color: skyblue;
+            font-weight: 600;
+          }
+          .verify:hover {
+            cursor: pointer;
+          }
+          .form_field {
+            margin: 1rem;
+            width: 45%;
+          }
+        }
+        // .form_field_bankName {
+        //   border: 1px solid lightgray;
+
+        // }
+        .error_message {
+          color: red;
+          margin-left: 1rem;
+        }
+      }
+      .checkbox_row {
+        display: flex;
+        flex-direction: row;
+        .checkbox_text {
+          display: flex;
+          align-items: center;
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

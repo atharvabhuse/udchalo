@@ -1,0 +1,71 @@
+.accordion_fare {
+  display: flex;
+  box-shadow: none;
+  padding-top: 0;
+  margin-top: 0;
+  flex-direction: column;
+
+  .select_seat_fare_breakup_summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .fare_column {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      .fare {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .fare_breakup_row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        .fare_breakup_text {
+          color: #3398d5;
+          font-weight: 600;
+        }
+
+        .seat_selected {
+          color: #00b00c;
+          font-weight: 600;
+        }
+      }
+    }
+    .next_button_column {
+      .next_btn {
+        background-color: #32996a;
+        color: white;
+        font-weight: 600;
+        padding: 1rem 3rem;
+        border-radius: 10px;
+      }
+
+      .next_btn:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .select_seat_fare_breakup_detail {
+    width: 100%;
+
+    .proceed_to_pay_text {
+      font-size: 14px;
+      display: flex;
+      flex-direction: row;
+      margin-top: 1rem;
+
+      .terms {
+        color: #3398d5;
+        font-weight: 600;
+      }
+    }
+  }
+}

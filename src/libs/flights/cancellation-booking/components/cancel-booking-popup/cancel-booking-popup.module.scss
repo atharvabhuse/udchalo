@@ -1,0 +1,106 @@
+
+  .close_icon {
+    cursor: pointer;
+    position: fixed;
+    top: 13%;
+    right: 32%;
+    border-radius: 50px;
+    width: 34px;
+    height: 34px;
+    padding: 5.666px 5.666px 5.665px 5.666px;
+    @media only screen and (max-width: 480px) {
+      width: 28px;
+      height: 28px;
+      padding: 4.67px;
+      top: -50px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  .error_icon_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: #fae7e7;
+    align-self: center;
+    .error_icon {
+      width: 31.351px;
+      height: 31.351px;
+      flex-shrink: 0;
+    }
+  }
+  .confirmation_text {
+    color: #000;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+    margin-top: 16px;
+    justify-self: center;
+    align-self: center;
+  }
+  .booking_details_container {
+    border-radius: 16px;
+    background: #f4fafe;
+    padding-inline: 24px;
+    padding-block: 12px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    justify-self: center;
+    align-self: center;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    .booking_detail_label {
+      color: #545454;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      margin-bottom: 6px;
+      line-height: 16px; /* 114.286% */
+      .booking_detail_label_value {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+      }
+    }
+  }
+  .action_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 21px;
+    .reject_button {
+      display: flex;
+      width: 169px;
+      height: 40px;
+      padding: 0px 52px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 8px;
+      border: 2px solid #3398d5;
+      background: #fff;
+    }
+    .confirm_button {
+      display: flex;
+      width: 170px;
+      height: 40px;
+      padding: 0px 52px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 8px;
+      background: #32996a;
+    }
+  }

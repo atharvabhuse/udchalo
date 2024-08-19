@@ -1,0 +1,91 @@
+@keyframes slideIn {
+  0% {
+    transform: translateY(-3%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-1.5%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.flights_date_picker {
+  position: relative;
+  min-width: 10rem;
+  width: 100%;
+  background: #ffffff;
+  cursor: pointer;
+
+  .inp_box_heading {
+    color: #858585;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -0.6rem;
+    left: 0.8rem;
+    background-color: white;
+    padding: 0 0.3rem;
+    z-index: 1;
+  }
+
+  .date_input {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 4px;
+    height: 60px;
+    border: 1px solid #c5d4e3;
+    border-radius: 8px;
+    padding: 6px 12px;
+
+    .dp_label,
+    .dp_placeholder {
+      flex: 1;
+      font-size: 1.2rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .dp_placeholder {
+      font-weight: 700;
+      color: #778b99;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 16px;
+    }
+  }
+}
+
+.fare_cell {
+  padding: 4px;
+
+  .dt {
+    font-size: 1rem;
+    color: #454545;
+  }
+}
+
+.dp-day {
+  border: 0px solid transparent;
+  border-radius: 4px;
+}
+
+.dp_selected {
+  background-color: #3398d5;
+  color: white;
+  border-radius: 4px;
+
+  .fare_cell {
+    color: #ffffff;
+    .dt,
+    .price {
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.card {
+  border-radius: 16px !important;
+  border: 1px solid #eaf0f6;
+  background: #fff;
+  box-shadow: none;
+  margin-bottom: 1rem;
+  position: relative;
+
+  &::before {
+    display: none;
+  }
+
+  .description {
+    color: #858585;
+    font-family: Open Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 116.667% */
+    margin-left: 2rem;
+  }
+
+  .checkbox_row_left {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 90%;
+
+    .inp {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 1.5rem;
+    }
+    .inp:hover {
+      cursor: pointer;
+    }
+    .heading_desc_col {
+      .checkbox_heading {
+        font-weight: 600;
+        color: black;
+        padding-bottom: 0.3rem;
+      }
+      .checkbox_desc {
+        color: gray;
+      }
+    }
+  }
+
+  .checkbox_row_right {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .checkbox_read_more {
+      color: #3398d5;
+      font-weight: 600;
+    }
+  }
+
+  .checkbox_accordion_detail {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .checkbox_accordion_detail_form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      .input_box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 48%;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+
+        .input_heading {
+          font-size: 10px;
+          position: absolute;
+          background-color: white;
+          padding: 0.2rem 0.4rem;
+          transform: translateX(15%) translateY(-50%);
+          color: gray;
+        }
+        .add_traveller_inp {
+          width: 100%;
+          margin-bottom: 1rem;
+          margin-right: 1rem;
+        }
+        .error_message {
+          color: red;
+        }
+      }
+    }
+  }
+}
+.grayout {
+  background-color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    .checkbox_accordion_detail {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+
+      .checkbox_accordion_detail_form {
+        .input_box {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .grayout {
+    background-color: gray;
+  }
+}

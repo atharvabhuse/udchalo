@@ -1,0 +1,46 @@
+@import '../../flights-home.module.scss';
+
+.popular {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: -2rem;
+
+  &_main {
+    width: $web_page_width;
+
+    @media only screen and (max-width: 600px) {
+      height: 416px;
+      width: 100%;
+      margin-left: 16px;
+    }
+
+    &_container {
+      margin-top: 2rem;
+
+      .link_description {
+        @include font_flight_home(14px, 500, 19px);
+      }
+
+      .place_link {
+        color: #858585;
+        line-height: 1.5rem;
+        margin-top: 1rem;
+        @include font_flight_home(12px, 600, 16px);
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .link_description {
+        font-size: 12px;
+        font-weight: 500;
+      }
+
+      .place_link {
+        @include font_flight_home(12px, 600, 18px);
+        margin-top: 8px;
+      }
+    }
+  }
+}

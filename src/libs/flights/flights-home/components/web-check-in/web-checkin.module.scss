@@ -1,0 +1,182 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(229, 237, 244, 0.4);
+  height: 550px;
+  padding-left: 2rem;
+  .covid_label_box {
+    display: flex;
+    width: 36.5%;
+    height: 10%;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    .covid_label {
+      color: #000;
+      font-family: Open Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 0.9rem;
+    }
+  }
+  .readme_box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+    .readme {
+      width: 100%;
+      border-radius: 16px;
+      border: 1px solid #e5edf4;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      color: #858585;
+      font-family: Open Sans;
+      line-height: normal;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      padding-top: 1rem;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 1.2rem;
+      .readmore_box {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        .readmore {
+          color: #3398d5;
+          text-align: right;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  .web_chekin_box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2rem;
+
+    .email_box {
+      width: 21.5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-right: 3.3rem;
+      margin-bottom: 1.5rem;
+
+      .text_field {
+        border-radius: 8px;
+        border: 1px solid #c5d4e3;
+        background-color: #fff;
+      }
+    }
+    .btn_box {
+      width: 21.5%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-top: -2rem;
+      .btn {
+        height: 46px;
+        border-radius: 8px;
+        background-color: #32996a;
+      }
+    }
+    .pnr_box {
+      width: 21.5%;
+      flex-direction: column;
+      display: flex;
+      margin-right: 1rem;
+      margin-bottom: 1.5rem;
+
+      .text_field {
+        border-radius: 8px;
+        border: 1px solid #c5d4e3;
+        background-color: #fff;
+      }
+      .label {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .root {
+    padding-left: 0rem;
+    padding: 1rem;
+    .covid_label_box {
+      .covid_label {
+      }
+    }
+    .readme_box {
+      padding-left: 0rem;
+      padding-right: 0rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      .readme {
+        margin-bottom: 1rem;
+        .readmore_box {
+          .readmore {
+          }
+        }
+      }
+    }
+
+    .web_chekin_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      padding-top: 2rem;
+
+      .email_box {
+        width: 90%;
+        margin-bottom: 1rem;
+        margin-right: 0rem;
+
+        .text_field {
+        }
+      }
+      .btn_box {
+        width: 50%;
+        margin-top: 0rem;
+
+        .btn {
+        }
+      }
+      .pnr_box {
+        width: 90%;
+        margin-right: 0rem;
+
+        .text_field {
+          border-radius: 8px;
+          border: 1px solid #c5d4e3;
+          background-color: #fff;
+        }
+        .label {
+        }
+      }
+    }
+  }
+}

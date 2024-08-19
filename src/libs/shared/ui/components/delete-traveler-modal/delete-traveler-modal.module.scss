@@ -1,0 +1,85 @@
+.delete_traveler_modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 767px) {
+    align-items: end;
+
+    .modal_content {
+      width: 100%;
+    }
+  }
+
+  .main_description_container {
+    margin-top: 2rem;
+
+    .main_description {
+      font-weight: 600;
+      font-size: 16px;
+    }
+  }
+
+  .paper {
+    padding: 2rem;
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+    }
+
+    .deleteIcon {
+      border: 1px solid #c92727;
+      background-color: #f77f7f;
+      color: white;
+      cursor: unset;
+      margin-bottom: 8px;
+    }
+  }
+
+  .add_traveller_buttons_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 2rem;
+
+    .cancel_btn {
+      background-color: white;
+      color: #3398d5;
+      border-radius: 10px;
+      padding: 1rem 1rem;
+      margin-left: 5%;
+      border: 2px solid #3398d5;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    .cancel_btn:hover {
+      cursor: pointer;
+    }
+
+    .add_traveller_btn {
+      background-color: #32996a;
+      color: white;
+      border-radius: 10px;
+      padding: 1rem 1rem;
+      margin-left: 5%;
+      font-weight: 600;
+      text-transform: none;
+    }
+
+    .add_traveller_btn:hover {
+      cursor: pointer;
+    }
+
+    .flex_1 {
+      flex: 1;
+    }
+
+    .flex_2 {
+      flex: 2;
+    }
+  }
+}

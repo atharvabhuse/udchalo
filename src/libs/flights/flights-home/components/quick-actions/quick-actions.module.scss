@@ -1,0 +1,196 @@
+@import '../../flights-home.module.scss';
+
+.flight_quick_action_main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url('../../../../../assets/images//offersDesign.png');
+  background-repeat: no-repeat;
+  background-color: #f5f8fb;
+
+  @media only screen and (max-width: 500px) {
+    background-image: none;
+  }
+
+  .flight_quick_action {
+    width: $web_page_width_slider;
+    padding-top: 2rem;
+
+    .flight_quick_action_new {
+      display: grid;
+      grid-template-columns: 60% 40%;
+
+      .flight_quick_action_details_title {
+        @include font_flight_home(22px, 600, 30px);
+      }
+
+      .flight_quick_action_details_data {
+        margin-top: 0.571rem;
+        color: #000;
+        @include font_flight_home(14px, 400, 18px);
+      }
+
+      .flight_item {
+        width: 50rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 4.5rem;
+        grid-column-gap: 30px;
+        grid-row-gap: 16px;
+
+        .quick_action_card {
+          display: grid;
+          grid-template-columns: 20% 70%;
+          font-weight: 600;
+          padding: 0.3rem 0.3rem 0.2rem 0.3rem;
+          cursor: pointer;
+          padding-inline: 0.7rem;
+          width: 254px;
+          height: auto;
+          grid-gap: 0.714rem;
+          border-radius: 8px;
+          border: 1px solid #eaf0f6;
+          background: #fff;
+          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1);
+
+          .quick_action_card_img {
+            margin-top: 0.1rem;
+          }
+
+          .quick_action_card_details {
+            display: flex;
+            align-items: center;
+            @include font_flight_home(14px, 600, 118.5%);
+          }
+        }
+      }
+
+      .flight_img {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 2rem;
+        margin-right: 2rem;
+      }
+    }
+
+    @media only screen and (max-width: 1200px) {
+      .flight_quick_action_new {
+        margin-right: 0;
+        grid-template-columns: 65% 35%;
+        margin-left: 0;
+      }
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .flight_quick_action_new {
+        margin-right: 0;
+        grid-template-columns: 71% 37%;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .flight_quick_action_main {
+    .flight_quick_action {
+      width: 100%;
+      padding-top: 2rem;
+
+      @media only screen and (max-width: 500px) {
+        padding-top: 16px;
+      }
+
+      .flight_quick_action_new {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        height: 15rem;
+
+        .flight_quick_action_details_title {
+          font-weight: 600;
+          font-size: 1.6rem;
+          text-align: center;
+        }
+
+        .flight_quick_action_details_data {
+          margin: 0.5rem;
+          margin-bottom: 0rem;
+          text-align: center;
+        }
+
+        .quick_action_card_main_mobile {
+          height: 6rem;
+          margin-bottom: 1rem;
+
+          .quick_action_card_mobile {
+            height: 5rem;
+            width: 7rem;
+            background-color: white;
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+            display: flex;
+            color: black;
+            border-radius: 0.5rem;
+            position: relative;
+            margin-left: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+
+            .quick_action_card_img_mobile {
+              position: absolute;
+              width: 3rem;
+              height: 3rem;
+              margin-left: 25%;
+              top: -1.8rem;
+            }
+
+            .quick_action_card_details_mobile {
+              margin-left: 1.1rem;
+              margin-top: 1.8rem;
+              width: 5rem;
+            }
+          }
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .flight_quick_action_new {
+          .quick_action_card_main_mobile {
+            .quick_action_card_mobile {
+              width: 85px;
+              height: 68px;
+              border-radius: 8px;
+              border: 1px solid #eaf0f6;
+              background: #fff;
+              margin-left: 16px;
+
+              .quick_action_card_details_mobile {
+                font-size: 10px;
+                width: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1.5rem;
+                margin-top: 2.5rem;
+              }
+            }
+          }
+
+          .flight_quick_action_details_title {
+            @include font_flight_home(14px, 600, 16px);
+          }
+
+          .flight_quick_action_details_data {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 0;
+            margin-bottom: 3px;
+            margin-inline: 33px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+1. Traveller Form:
+    - On select - form should validate itself ✅
+        - if invalid -> expand and show error ✅
+        - if valid -> allow selection ✅
+            - Special case for fauji fare:
+                - Check on first selection if Defence ID is provided ✅
+                - If provided allow update ✅
+                - If not, shake the error message for user attention
+    - When updating an existing user, the form closes and auto-selects if the traveller criteria is not met
+        - In case the criteria is already met, then it only closes.
+    - When adding a new traveller
+        - Form closes on submit and auto-selects ✅
+    - Selection Criteria:
+        - if selection criteria is already met DISABLE the remaning check-boxes for selection
+        - This should also work based on the passenger type. For example, given a criteria requiring 2 child, only 2 childs should be allowed to select.
+
+2. On Add New traveller:
+    - On click, should present the new forms based on the remaining passenger types out of the total required and selected ✅
+    - All new traveller forms should be expanded by default ✅
+    - Add new button should be hidden when user is present with new forms to add travellers
+    - Will be disabled if the traveller criteria is met ✅

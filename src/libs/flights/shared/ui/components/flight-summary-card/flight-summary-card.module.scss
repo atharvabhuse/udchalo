@@ -1,0 +1,260 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+.container {
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #e5edf4;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  @media only screen and (max-width: 600px) {
+    // .flightNameContainer {
+    // margin-inline: 16px;
+    // margin-top: 100px;
+    margin-bottom: 7px;
+    // padding-top: 28px;
+    padding-bottom: 10px;
+    padding-top: 4px;
+    padding-inline: 8px;
+    fill: #fff;
+    // filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.2));
+    border-radius: 8px;
+  }
+  .mSiteFlightNameContainer {
+    @media only screen and (min-width: 600px) {
+      display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+      display: flex;
+      justify-content: space-between;
+
+      .mSiteflightNameCtn {
+        .mSiteflightName {
+          color: #000;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 16px;
+          display: flex;
+          gap: 0.5rem;
+
+          .mSiteflightNumber {
+            color: #858585;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 16px;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+  .inner_container {
+    display: flex;
+    justify-content: space-between;
+
+    .m_site_flight_icon {
+      .actual_airline_icon {
+        @media only screen and (max-width: 600px) {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+
+      @media only screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+    .flightNameContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-left: 34px;
+      @media only screen and (max-width: 600px) {
+        margin-left: 0px;
+        display: none;
+      }
+      .flightIcon {
+        width: 40px;
+        height: 40px;
+        border-radius: 4px;
+        border: 1px solid rgba(33, 64, 154, 0.2);
+        @media only screen and (max-width: 600px) {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .flightNameCtn {
+        margin-inline: 12px;
+        @media only screen and (max-width: 600px) {
+          display: flex;
+          margin: 0;
+          transform: translate(-32px, -24px);
+          margin-right: -68px;
+        }
+        .flightName {
+          color: #454545;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 20px; /* 142.857% */
+          @media only screen and (max-width: 600px) {
+            color: #000;
+            font-family: Open Sans;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 16px; /* 133.333% */
+          }
+        }
+        .flightNumber {
+          color: #858585;
+          display: block;
+          font-family: Open Sans;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          @media only screen and (max-width: 600px) {
+            //   color: #858585;
+            //   font-family: Open Sans;
+            font-size: 12px;
+            display: inline;
+            //   font-style: normal;
+            //   font-weight: 400;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+    .departContainer {
+      .departTime {
+        color: #454545;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 100% */
+
+        @media only screen and (max-width: 600px) {
+          font-size: 14px;
+        }
+      }
+      .departCityCode {
+        color: #858585;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        @media only screen and (max-width: 600px) {
+          font-size: 10px;
+        }
+      }
+      .departDate {
+        color: #858585;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 116.667% */
+
+        @media only screen and (max-width: 600px) {
+          font-size: 10px;
+        }
+      }
+    }
+    .filghtDurationContainer {
+      row-gap: 2px;
+      .filghtDuration {
+        color: #858585;
+        text-align: center;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 133.333% */
+        margin-bottom: -8px;
+        @media only screen and (max-width: 600px) {
+          font-size: 10px;
+        }
+      }
+      .lineIcon {
+        width: 82px;
+        height: 4px;
+        //   align-items: flex-start;
+        @media only screen and (max-width: 600px) {
+          width: 40px;
+        }
+      }
+    }
+    .arrivalContainer {
+      // align-items: flex-end;
+      .arrivalTime {
+        color: #454545;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 100% */
+        text-align: right;
+        @media only screen and (max-width: 600px) {
+          font-size: 14px;
+        }
+      }
+      .arrivalCityCode {
+        color: #858585;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-align: right;
+        @media only screen and (max-width: 600px) {
+          font-size: 10px;
+        }
+      }
+      .arrivalDate {
+        color: #858585;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px; /* 116.667% */
+        text-align: right;
+        @media only screen and (max-width: 600px) {
+          font-size: 10px;
+        }
+      }
+    }
+    .priceContainer {
+      margin-right: 49px;
+      @media only screen and (max-width: 600px) {
+        margin-right: 0px;
+      }
+      .price {
+        color: #000;
+        text-align: right;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px; /* 100% */
+
+        @media only screen and (max-width: 600px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

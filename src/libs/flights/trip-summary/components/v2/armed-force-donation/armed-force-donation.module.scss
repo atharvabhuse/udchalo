@@ -1,0 +1,31 @@
+.donation_card {
+  display: flex;
+  justify-content: space-between;
+  background-color: #faefe7;
+  border-radius: 16px;
+  .donation_container {
+    padding: 12px 7px;
+    padding-bottom: 0px;
+    .donation_heading {
+      .donation_title {
+        @include font-properties(#858585, 14px, normal, 400, 16px);
+        .donation_link {
+          color: #3398d5;
+          font-weight: 700;
+          text-decoration-line: underline;
+          cursor: pointer;
+        }
+      }
+    }
+    .donation_description {
+      @include font-properties(#858585, 12px, normal, 400, normal);
+      margin-left: 39px;
+      margin-top: -9px;
+      .donation_tnc_link {
+        color: #545454;
+        text-decoration-line: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}

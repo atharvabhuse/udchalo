@@ -1,0 +1,360 @@
+.tv_select {
+  position: relative;
+  width: 100%;
+
+  .float_label {
+    color: $text-quaternary;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -0.6rem;
+    left: 0.8rem;
+    background-color: white;
+    padding: 0 0.3rem;
+    z-index: 1;
+  }
+
+  .tv_container {
+    display: flex;
+    align-items: center;
+    border: 1px solid $dividers;
+    border-radius: 10px;
+    font-weight: 400;
+    padding: 6px 12px;
+    width: 100%;
+    height: 60px;
+
+    .tv_value {
+      flex: 0.99;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+}
+
+.tv_select_container {
+  .tv_header {
+    display: flex;
+    padding-top: 18px;
+    padding-inline: 16px;
+    .tv_title {
+      @include font-properties($black-secondary, 14px, normal, 600, 20px);
+    }
+    .close_icon {
+      position: absolute;
+      top: -54px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: transparent;
+    }
+  }
+  .tv_subtitle {
+    padding-inline: 16px;
+    margin-bottom: 19px;
+    @include font-properties($text-secondary, 12px, normal, 400, 14px);
+  }
+
+  .tv_cabin_options {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $text-quaternary;
+    border-bottom: 1px solid $dividers;
+    cursor: pointer;
+
+    .cabin {
+      padding: 0.5rem 1rem;
+      border-bottom: 2px solid transparent;
+      text-align: center;
+      @include font-properties($text-quaternary, 12px, normal, 600, 16px);
+
+      &:nth-child(2) {
+        flex: 1;
+      }
+
+      &:hover {
+        color: $green-primary;
+        border-color: $green-primary;
+      }
+    }
+
+    .active_cabin {
+      color: $green-primary;
+      border-color: $green-primary;
+    }
+  }
+  .tv_option {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    padding-inline: 16px;
+
+    .tv_type {
+      flex: 1;
+      @include font-properties($black-secondary, 12px, normal, 400, normal);
+      .subtitle {
+        color: $text-quaternary;
+      }
+    }
+
+    .tv_count_stepper {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      .btn_round {
+        color: $blue-primary;
+        background: rgba(51, 152, 213, 0.15);
+        border: 1px solid $blue-primary;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          background: rgba(51, 152, 213, 0.3);
+        }
+      }
+
+      .btn_round_inactive {
+        cursor: not-allowed;
+        color: $blue-inactive;
+        background-color: rgba(119, 139, 153, 0.15);
+        border-color: $blue-inactive;
+        &:hover {
+          background-color: rgba(119, 139, 153, 0.15);
+        }
+      }
+    }
+  }
+  .tv_btn_container {
+    display: flex;
+    padding-bottom: 22px;
+    justify-content: center;
+    .add_button {
+      width: 240px;
+      border-radius: 8px;
+      height: 40px;
+    }
+  }
+}
+
+.traveller_type_error_message {
+  color: $validation-error-primary;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  padding-inline: 16px;
+}
+.travellers_select {
+  &:hover,
+  &:focus {
+    .add_travellers_overlay {
+      display: block;
+    }
+  }
+
+  .add_travellers_overlay {
+    background: $white;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    .add_travellers_overlay_content {
+      position: absolute;
+
+      .add_travellers_overlay_header {
+        display: flex;
+        flex-direction: column;
+
+        .add_travellers_overlay_header_title {
+          display: flex;
+          align-items: center;
+          @include font-properties($black, 16px, normal, 600, 24px);
+          margin: 16px 237px 2px 14px;
+        }
+
+        .add_travellers_overlay_header_subtitle {
+          display: flex;
+          align-items: center;
+          @include font-properties($text-tertiary, 14px, normal, 400, 19px);
+          margin: 0 61px 20px 14px;
+        }
+      }
+
+      .add_travellers_overlay_tabs {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        @include font-properties($text-quaternary, 14px, normal, 400, 18px);
+        padding: 0 34px 14px 31px;
+        border-bottom: 1px solid $dividers;
+
+        .cabin_tab {
+          user-select: none;
+
+          cursor: pointer;
+
+          &:hover {
+            color: $green-primary;
+          }
+        }
+
+        .active {
+          color: $green-primary;
+        }
+
+        .add_travellers_overlay_premium_economy_tab {
+          padding: 0 34px 0 32px;
+        }
+      }
+
+      .add_travellers_overlay_add_form {
+        .add_travellers_overlay_add_form_adult_row {
+          display: flex;
+          padding: 24px 18px 22px 14px;
+          gap: 127px;
+
+          .add_travellers_overlay_add_form_adult_text {
+            font-weight: 400;
+            font-size: 14px;
+
+            .add_travellers_overlay_add_form_adult_text_header {
+              line-height: 16px;
+              color: $black;
+            }
+
+            .add_travellers_overlay_add_form_adult_text_subheader {
+              line-height: 19px;
+              color: $text-quaternary;
+            }
+          }
+
+          .add_travellers_overlay_add_form_adult_button {
+            display: flex;
+            gap: 12px;
+            text-align: center;
+
+            .add_travellers_overlay_add_form_adult_minus_button,
+            .add_travellers_overlay_add_form_adult_plus_button {
+              width: 32px;
+              height: 32px;
+              border: 1px solid $blue-primary;
+              border-radius: 16px;
+              background: rgba(51, 152, 213, 0.15);
+              display: grid;
+              place-content: center;
+              cursor: pointer;
+              user-select: none;
+            }
+
+            .add_travellers_overlay_add_form_adult_count_button {
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+
+        .add_travellers_overlay_add_form_children_row,
+        .add_travellers_overlay_add_form_infants_row {
+          display: flex;
+          padding: 0px 18px 22px 14px;
+          gap: 105px;
+
+          .add_travellers_overlay_add_form_children_text,
+          .add_travellers_overlay_add_form_infants_text {
+            font-weight: 400;
+            font-size: 14px;
+
+            .add_travellers_overlay_add_form_children_text_header,
+            .add_travellers_overlay_add_form_infants_text_header {
+              line-height: 16px;
+              color: $black;
+            }
+
+            .add_travellers_overlay_add_form_children_text_subheader,
+            .add_travellers_overlay_add_form_infants_text_subheader {
+              line-height: 19px;
+              color: $text-quaternary;
+            }
+          }
+
+          .add_travellers_overlay_add_form_children_button,
+          .add_travellers_overlay_add_form_infants_button {
+            display: flex;
+            gap: 12px;
+            text-align: center;
+
+            .add_travellers_overlay_add_form_children_minus_button,
+            .add_travellers_overlay_add_form_infants_minus_button,
+            .add_travellers_overlay_add_form_children_plus_button,
+            .add_travellers_overlay_add_form_infants_plus_button {
+              width: 32px;
+              height: 32px;
+              border: 1px solid $blue-primary;
+              border-radius: 16px;
+              background: rgba(51, 152, 213, 0.15);
+              display: grid;
+              place-content: center;
+              cursor: pointer;
+              user-select: none;
+            }
+
+            .add_travellers_overlay_add_form_children_count_button,
+            .add_travellers_overlay_add_form_infants_count_button {
+              width: 28px;
+              height: 28px;
+              display: grid;
+              place-content: center;
+            }
+          }
+        }
+      }
+
+      .add_travellers_overlay_add_button {
+        padding: 4px 36px 24px 35px;
+
+        .add_button_label {
+          display: flex;
+          align-items: center;
+          padding: 0px 138px;
+          width: 304px;
+          height: 48px;
+          background: $green-primary;
+          border-radius: 8px;
+          text-align: center;
+          text-transform: capitalize;
+          @include font-properties($white, 14px, normal, 700, 26px);
+        }
+      }
+    }
+  }
+
+  .inp_box_heading {
+    color: $text-quaternary;
+    font-size: 0.8rem;
+    position: absolute;
+    margin-top: -0.6rem;
+    margin-left: 0.8rem;
+    background-color: $white;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    z-index: 1;
+  }
+
+  .inp_travellers {
+    width: 100%;
+    max-width: 24rem;
+    height: 60px;
+    padding: 6px 12px;
+    border: 1px solid $dividers;
+    border-radius: 10px;
+    font-weight: 400;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

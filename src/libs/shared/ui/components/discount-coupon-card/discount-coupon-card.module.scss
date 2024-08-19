@@ -1,0 +1,161 @@
+.offer_not_available {
+  opacity: 0.5;
+}
+.coupon_card {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  background-color: $white;
+  padding: 8px;
+  width: 100%;
+  margin-bottom: 8px;
+
+  .coupon_img_box {
+    margin-right: 8px;
+  }
+
+  .coupon_content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    .coupon_content_heading_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+
+      .coupon_heading {
+        @include font-properties($text-secondary, 14px, normal, 400, 16px);
+      }
+
+      .coupon_apply,
+      .coupon_apply_disabled {
+        @include font-properties($blue-primary, 12px, normal, 700, normal);
+        text-transform: capitalize;
+        background-color: transparent;
+      }
+      .coupon_apply:hover {
+        cursor: pointer;
+      }
+    }
+    .coupon_content_desc_row {
+      width: 75%;
+      @include font-properties($text-quaternary, 12px, normal, 400, 14px);
+
+      .know_more,
+      .know_more_disabled {
+        background-color: transparent;
+        text-decoration: underline;
+        padding: 0px;
+        @include font-properties($text-quaternary, 12px, normal, 600, 14px);
+      }
+      .know_more:hover {
+        cursor: pointer;
+      }
+    }
+    .coupon_content_button_row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: 8px;
+
+      .save_rupees_text {
+        display: flex;
+        align-items: center;
+        @include font-properties($system-successful, 12px, normal, 600, 16px);
+      }
+
+      .coupon_content_tag_row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+
+        .tc_apply {
+          @include font-properties($text-quaternary, 8px, normal, 400, 12px);
+        }
+
+        .copy {
+          position: absolute;
+          transform: translateY(-140%);
+          background-color: rgba(0, 0, 0, 0.7);
+          color: $white;
+          padding: 0.4rem;
+          font-size: 0.9rem;
+          border-radius: 5px;
+          border: 0;
+          border-color: transparent;
+        }
+        .coupon,
+        .coupon_apply_disabled {
+          background-color: $accent-5;
+          border-radius: 2px;
+          padding: 2px 8px;
+          font-family: 'IBM Plex Sans';
+          @include font-properties($yellow-secondary, 12px, normal, 500, normal);
+        }
+        .coupon:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .coupon_content_particular_day_offer {
+      padding-top: 0.5rem;
+      @include font-properties($text-quaternary, 12px, normal, 400, 12px);
+    }
+  }
+}
+
+@include breakpoints(mobile) {
+  .coupon_card {
+    border: 1px solid $stroke-2;
+    .coupon_img_box {
+      padding: 7.5px 5.5px;
+      border-radius: 8px;
+      border: 1px solid $stroke-2;
+    }
+    .coupon_content {
+      .coupon_content_heading_row {
+        .coupon_heading {
+          font-size: 12px;
+          color: $black;
+        }
+        .coupon_apply {
+          text-align: center;
+        }
+      }
+      .coupon_content_desc_row {
+        font-size: 10px;
+        line-height: 12px;
+        .know_more .know_more_disabled {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+      .coupon_content_button_row {
+        padding-top: 5px;
+
+        .coupon_content_tag_row {
+          gap: 10.5px;
+        }
+
+        .coupon,
+        .coupon_disabled {
+          background-color: $accent-5;
+          border-radius: 2px;
+          padding: 2px 8px;
+          font-family: 'Open Sans';
+          color: $yellow-primary;
+          font-weight: 600;
+          border: 1px dashed $yellow-primary;
+        }
+      }
+      .coupon_content_particular_day_offer {
+        padding-top: 0.5rem;
+        font-size: 10px;
+      }
+    }
+  }
+}

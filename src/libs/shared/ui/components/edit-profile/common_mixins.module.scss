@@ -1,0 +1,27 @@
+@mixin mx_font_s14_w700 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@mixin mx_success_button_1 {
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    background: #32996a;
+    background-color: #32996a;
+    color: white;
+    text-transform: none;
+  }
+}
+
+@mixin mx_cancel_button_1 {
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    border: 2px solid #3398d5;
+    color: #3398d5;
+    text-transform: none;
+  }
+}

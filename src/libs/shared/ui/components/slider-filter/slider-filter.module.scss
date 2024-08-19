@@ -1,0 +1,36 @@
+.heading {
+  margin: 1rem 0;
+  color: #000;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+@mixin slider_text {
+  text-align: center;
+  color: #858585;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.current_value {
+  @include slider_text();
+  color: #000;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0;
+  padding-top: 0;
+  .range_label {
+    @include slider_text();
+  }
+}

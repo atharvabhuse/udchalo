@@ -1,0 +1,36 @@
+@import './common_mixins.module.scss';
+
+.heading_4 {
+  padding-bottom: 1rem;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.update_profile_button_container {
+  margin: 1rem;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+
+  .cancel_button {
+    @include mx_cancel_button_1;
+    @include mx_font_s14_w700;
+    line-height: 26px;
+    width: 170px;
+
+    @media screen and (max-width: 767px) {
+      width: 160px;
+    }
+  }
+
+  .update_profile_button {
+    @include mx_success_button_1;
+    @include mx_font_s14_w700;
+    line-height: 26px;
+    width: 170px;
+
+    @media screen and (max-width: 767px) {
+      width: 160px;
+    }
+  }
+}

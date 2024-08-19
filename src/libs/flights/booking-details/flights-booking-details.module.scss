@@ -1,0 +1,357 @@
+.origin_destination_and_date {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.question_and_share_icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .icon {
+    cursor: pointer;
+  }
+}
+.my_bookings_root {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 4rem 10rem 3.5rem 9.5rem;
+  background-color: rgba(229, 237, 244, 0.4);
+
+  .left_pane {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    max-width: 740px;
+    height: 100%;
+
+    .box {
+      display: flex;
+      justify-content: space-between;
+
+      .status {
+        color: #00b00c;
+        margin-top: 0.9rem;
+        display: flex;
+        text-align: right;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        /* 100% */
+      }
+
+      .type {
+        display: flex;
+        width: 80px;
+        color: #fff;
+        padding: 2px 8px 6px 8px;
+        justify-content: center;
+        align-items: flex-start;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 0px solid #c1a84d;
+        background: linear-gradient(103deg, #ab2421 0%, #070f6c 48.7%, #58bef2 94.44%);
+        box-shadow: 0px 0px 1px 0px rgba(193, 168, 77, 0.8);
+        margin-top: 1.2rem;
+        z-index: 0;
+        position: absolute;
+        border-radius: 8px 8px 0;
+
+        @media only screen and (max-width: 600px) {
+          margin-top: 0.8rem;
+          z-index: -1;
+          margin-left: 0.1rem;
+          padding: 2px 8px 15px 8px;
+        }
+      }
+
+      .pnr_box {
+        height: 4rem;
+        padding: 0.8rem;
+        background-color: #f4fafe;
+        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
+        border-radius: 16px 16px 0 0;
+        display: flex;
+        align-items: center;
+
+        .pnr {
+          color: #000;
+          text-align: center;
+          font-family: Open Sans;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          margin-right: 1rem;
+          padding-top: -1.5rem;
+          display: inline-flex;
+
+          @media only screen and (max-width: 600px) {
+            font-size: 16px;
+          }
+        }
+
+        .copy_icon {
+          color: #3398d5;
+          margin-top: 0.5rem;
+          display: inline-flex;
+
+          .icon {
+            font-size: 18px;
+            padding-top: 1px;
+          }
+        }
+      }
+    }
+
+    .leg_detail_container {
+      overflow: hidden;
+    }
+
+    .trip_summary {
+      width: 97%;
+      height: 300px;
+      flex-shrink: 0;
+      border-radius: 16px 16px 16px 16px;
+      border: 1px solid rgba(133, 133, 133, 0.15);
+      background: #fff;
+      z-index: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .suraksha,
+    .contact_details,
+    .holiday_banner,
+    .baggage_details {
+      margin-bottom: 0.5rem;
+    }
+
+    .traveller_details {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .extras {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+      padding: 1rem 1rem 0.5rem 1rem;
+      border-radius: 16px;
+      border: 1px solid #e5edf4;
+      background: #fff;
+      width: 97%;
+
+      .heading {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+
+        @media only screen and (max-width: 600px) {
+          display: none;
+        }
+      }
+
+      .m_site_heading {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+
+        @media only screen and (min-width: 600px) {
+          display: none;
+        }
+      }
+
+      .m_site_extras_site {
+        color: #000;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+
+        @media only screen and (min-width: 600px) {
+          display: none;
+        }
+      }
+
+      .sub_heading {
+        color: #545454;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 0.5rem;
+
+        @media only screen and (max-width: 600px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .right_pane {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+    min-width: 360px;
+    margin-top: 0.5rem;
+
+    .promo_button_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .ticket_button {
+        color: white;
+        background-color: #32996a;
+        border-radius: 8px;
+        font-weight: 600;
+        margin-top: 1rem;
+        width: 70%;
+        padding: 1rem;
+      }
+
+      .ticket_button:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .my_bookings_root {
+    padding: 0rem;
+    flex-direction: column;
+    gap: 0px;
+
+    .left_pane {
+      width: 100%;
+
+      .container_from_pnr_to_baggage {
+        background-color: white;
+        padding: 0 1rem 0 1rem;
+      }
+
+      .container_from_contact_to_cta_banner {
+        padding: 0 2rem 0 2rem;
+        margin-top: 1rem;
+
+        .extras {
+          width: 100%;
+        }
+
+        .suraksha {
+          display: none;
+        }
+      }
+
+      .pnr_box {
+        margin-top: 0.5rem;
+        position: relative;
+        height: 3.5rem !important;
+        background-color: #f4fafe;
+        filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.15));
+      }
+
+      .m_site_web_checkin_card {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .right_pane {
+      width: 100%;
+      min-width: unset;
+
+      .container_from_wecheckin_to_cta_msite_contact {
+        padding: 0 2rem 0 2rem;
+
+        .m_site_insurance_card {
+          width: 100%;
+        }
+      }
+
+      .web_checkin {
+        display: none;
+      }
+
+      .m_site_cards {
+        padding: 0 2rem 0 2rem;
+      }
+
+      .promo_button_container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 3.75rem;
+        margin-top: 1rem;
+        background: #fff;
+        box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.1);
+
+        .ticket_button {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+
+  .contact_details {
+    display: none;
+  }
+
+  .holiday_banner {
+    display: none;
+  }
+
+  .insurance_card {
+    display: none;
+  }
+
+  .fare_breack_up {
+    display: none;
+  }
+
+  .uc_support {
+    display: none;
+  }
+
+  .follows_and_download {
+    display: none;
+  }
+
+  .download_app {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .m_site_web_checkin_card {
+    display: none;
+  }
+
+  .m_site_insurance_card {
+    display: none;
+  }
+
+  .m_site_contact_detail {
+    display: none;
+  }
+
+  .m_site_holiday_banner {
+    display: none;
+  }
+  .m_site_surksha_card {
+    display: none;
+  }
+}

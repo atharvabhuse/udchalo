@@ -1,0 +1,290 @@
+.payments {
+  display: flex;
+  flex-direction: column;
+
+  .timeout_message {
+    background-color: #cddffb;
+    color: #545454;
+    width: 100%;
+    border-radius: 0px 0px 8px 8px;
+    padding: 1rem;
+
+    .timeout_time {
+      font-weight: 600;
+      color: #3572d2;
+    }
+  }
+
+  .payments_content {
+    display: flex;
+    flex-direction: row;
+    .payments_left {
+      width: 70%;
+
+      .credit_and_cash_reward_container {
+        border-radius: 12px;
+        padding: 1rem;
+        border: 1px solid lightgray;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+        .credit_and_cash_text {
+          font-weight: 600;
+          font-size: 1rem;
+        }
+
+        .credit_and_cash_reward_content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .credit_and_cash_reward_row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #eaf0f6;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            width: 49%;
+
+            .credit_and_cash_reward_row_left {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+
+              .credit_and_cash_reward_icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                border: 1px solid #eaf0f6;
+                padding: 1.3rem 1rem;
+              }
+
+              .credit_and_cash_reward_content {
+                display: flex;
+                flex-direction: column;
+                .credit_and_cash_reward_row_heading {
+                  color: #454545;
+                  font-weight: 600;
+                  margin-left: 1rem;
+                }
+                .credit_and_cash_reward_row_desc {
+                  color: #858585;
+                  font-weight: 400;
+                  margin-left: 1rem;
+                }
+              }
+            }
+            .credit_and_cash_reward_row_right {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              .credit_and_cash_reward_row_info {
+                color: black;
+                font-weight: 600;
+                margin-right: 1rem;
+              }
+              .credit_and_cash_reward_checkbox {
+                width: 20px;
+                height: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .other_options_container {
+        border-radius: 12px;
+        padding: 1rem;
+        border: 1px solid lightgray;
+        margin-top: 1rem;
+
+        .other_options_text {
+          font-weight: 600;
+          font-size: 1rem;
+        }
+
+        .other_options_content {
+          display: flex;
+          flex-direction: row;
+
+          .other_options_left {
+            width: 30%;
+
+            .other_options_left_row {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              border-bottom: 1px solid gray;
+              padding: 1.5rem;
+              border-style: dotted;
+              margin-top: 1rem;
+
+              .other_options_left_icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                border: 1px solid #eaf0f6;
+                padding: 1.3rem 1rem;
+              }
+
+              .other_options_left_content {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .other_options_left_heading {
+                  color: #454545;
+                  font-weight: 600;
+                  margin-left: 1rem;
+                }
+                .other_options_left_desc {
+                  color: #858585;
+                  margin-left: 1rem;
+                  font-size: 10px;
+                }
+                .other_options_left_info {
+                  color: #108f67;
+                  margin-left: 1rem;
+                  font-size: 10px;
+                }
+              }
+            }
+          }
+
+          .other_options_right {
+            width: 70%;
+            border: 1px solid #eaf0f6;
+            padding: 1rem;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            .saved_options_text {
+              color: #454545;
+              font-size: 14px;
+              font-weight: 600;
+              padding: 1rem 0rem 0rem 0rem;
+            }
+
+            .upi_options_text {
+              color: #454545;
+              font-size: 14px;
+              font-weight: 600;
+              padding: 1rem 0rem 0rem 0rem;
+            }
+
+            .upi_option_row {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              border: 1px solid #eaf0f6;
+              border-radius: 8px;
+              padding: 1.5rem;
+              margin-top: 1rem;
+
+              .upi_option_row_left {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                .upi_option_icon {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  border-radius: 4px;
+                  border: 1px solid #eaf0f6;
+                  padding: 1.3rem 1rem;
+                }
+
+                .upi_option_row_text {
+                  color: #454545;
+                  font-weight: 600;
+                  margin-left: 1rem;
+                }
+              }
+              .upi_option_row_right {
+                .upi_option_row_right_radio {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+            }
+
+            .add_new_upi_id_row {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              .add_new_upi_id {
+                border-radius: 8px;
+                border: 2px solid #3398d5;
+                color: #3398d5;
+                background-color: white;
+                padding: 1rem 3rem;
+                margin-top: 1rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+        .pay_button_row {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 1rem;
+
+          .pay_button {
+            background-color: #32996a;
+            color: white;
+            padding: 1rem 3rem;
+            border-radius: 8px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .pay_button:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .payments_right {
+      width: 30%;
+      margin-top: 1rem;
+      margin-left: 1rem;
+
+      .payments_accordion {
+        box-shadow: none;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        width: 100%;
+        margin-bottom: 1.5rem;
+
+        .payments_accordion_summary {
+          width: 100%;
+          .total_fare {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .payment_offers_heading {
+        font-weight: 500;
+        color: #454545;
+      }
+    }
+  }
+}

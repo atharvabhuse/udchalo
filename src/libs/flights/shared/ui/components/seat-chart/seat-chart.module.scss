@@ -1,0 +1,241 @@
+.container {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 7px 7px 0 7px;
+
+  .scroll_cover {
+    height: 90%;
+    border: 1px solid #d2d2d2;
+    border-top-left-radius: 160px;
+    border-bottom-left-radius: 160px;
+    border-right: none;
+    box-shadow: inset -14px 0px 15px 2px #ccc;
+    display: flex;
+    align-items: center;
+
+    @mixin label_mixin {
+      color: #545454;
+      font-family: Open Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px; /* 133.333% */
+    }
+
+    .exit_index {
+      margin-left: 10%;
+      height: 90%;
+      padding: 2rem 0;
+      @include label_mixin();
+
+      .column_lbl {
+        height: 44px;
+        display: grid;
+        place-content: center;
+      }
+    }
+
+    .column_index {
+      margin-left: 1rem;
+      height: 90%;
+      padding: 2rem 0;
+      @include label_mixin();
+      font-weight: 600;
+
+      .column_lbl {
+        height: 44px;
+        display: grid;
+        place-content: center;
+      }
+    }
+
+    .scroll_box {
+      margin-left: 1rem;
+      overflow: auto;
+      white-space: nowrap;
+      height: 90%;
+      padding: 2rem;
+
+      .seat {
+        display: inline-block;
+        margin: 7px;
+        cursor: pointer;
+      }
+
+      .num_row {
+        color: #545454;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        .row_no {
+          display: inline-block;
+          text-align: center;
+          width: 37px;
+          margin: 14px 0;
+        }
+      }
+    }
+  }
+
+  .seat_types {
+    width: 100%;
+    height: 10%;
+    min-height: 44px;
+    padding: 4px;
+    background-color: #ecf4fa;
+    display: flex;
+    justify-content: space-evenly;
+
+    .seat_info {
+      background-color: #fff;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      padding: 4px;
+      color: #858585;
+      font-family: Open Sans;
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+}
+
+.info_tt {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 7px 7px 0 7px;
+
+    .scroll_cover {
+      height: 90%;
+      border: 1px solid #d2d2d2;
+      border-top-left-radius: 160px;
+      border-bottom-left-radius: 160px;
+      border-right: none;
+      box-shadow: inset -14px 0px 15px 2px #ccc;
+      display: flex;
+      align-items: center;
+
+      @mixin label_mixin {
+        color: #545454;
+        font-family: Open Sans;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 133.333% */
+      }
+
+      .exit_index {
+        margin-left: 10%;
+        height: 90%;
+        padding: 2rem 0;
+        @include label_mixin();
+
+        .column_lbl {
+          height: 44px;
+          display: grid;
+          place-content: center;
+        }
+      }
+
+      .column_index {
+        margin-left: 1rem;
+        height: 90%;
+        padding: 2rem 0;
+        @include label_mixin();
+        font-weight: 600;
+
+        .column_lbl {
+          height: 44px;
+          display: grid;
+          place-content: center;
+        }
+      }
+
+      .scroll_box {
+        margin-left: 1rem;
+        overflow: auto;
+        white-space: nowrap;
+        height: 90%;
+        padding: 2rem;
+
+        .seat {
+          display: inline-block;
+          margin: 7px;
+          cursor: pointer;
+        }
+
+        .num_row {
+          color: #545454;
+          font-family: Open Sans;
+          font-size: 12px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+          .row_no {
+            display: inline-block;
+            text-align: center;
+            width: 37px;
+            margin: 14px 0;
+          }
+        }
+      }
+    }
+
+    .seat_types {
+      width: 100%;
+      height: 4rem;
+      min-height: 44px;
+      padding: 4px;
+      background-color: #ecf4fa;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .seat_info {
+        background-color: #fff;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 4px;
+        padding: 4px;
+        color: #858585;
+        font-family: Open Sans;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        height: 3rem;
+        width: 5rem;
+
+        p {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+
+  .info_tt {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+  }
+}

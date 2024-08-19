@@ -1,0 +1,119 @@
+.edit_personal_profile {
+  .heading_4 {
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .personal_profile_container {
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #e5edf4;
+    margin: 0.5rem;
+
+    .MuiSelect-select {
+      width: 32%;
+    }
+
+    .profile_header_baner {
+      height: 114px;
+
+      @media (max-width: 767px) {
+        height: 97px;
+      }
+
+      .profile_banner_edit_icon_container {
+        float: right;
+        padding-top: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    .profilePicContainer {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      // border: 4px solid #ffffff; /* White border */
+      top: 20px;
+      left: 20px;
+
+      @media (max-width: 767px) {
+        left: 34%;
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    .profilePic {
+      width: 100%;
+      height: 100%;
+      border: 2px solid white;
+    }
+
+    .cameraIcon {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 0px;
+      color: rgba(255, 255, 255, 0.7);
+      padding-bottom: 5px;
+    }
+
+    .fileInput {
+      display: none;
+    }
+
+    .profile_banner_form {
+      margin-top: 35px;
+
+      @media (max-width: 767px) {
+        margin-top: 0;
+      }
+    }
+
+    .edit_profile_form_container {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      border-radius: 10px;
+
+      .error_message {
+        color: red;
+      }
+
+      .add_traveller_input_row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        .input_box {
+          width: 32%;
+
+          @media screen and (max-width: 767px) {
+            width: 100%;
+          }
+
+          .input_heading {
+            font-size: 10px;
+            position: absolute;
+            background-color: white;
+            padding: 0.2rem 0.4rem;
+            transform: translateX(15%) translateY(-50%);
+            color: gray;
+          }
+
+          .add_traveller_inp {
+            width: 100%;
+          }
+
+          .error_message {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}

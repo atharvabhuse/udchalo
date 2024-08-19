@@ -1,0 +1,97 @@
+.proceed_to_pay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px -4px 6px rgb(128, 128, 128, 0.2);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 2% 5%;
+
+  &.no_border {
+    border-radius: 0px;
+  }
+
+  .proceed_to_pay_detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    @media only screen and (max-width: 600px) {
+      display: none; //this css written for flights/review page
+    }
+
+    .proceed_to_pay_detail_heading_col {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .proceed_to_pay_detail_heading_row {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .proceed_to_pay_detail_heading {
+          font-size: 18px;
+          font-weight: 600;
+        }
+      }
+
+      .proceed_to_pay_detail_desc_row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #545454;
+        gap: 0.5rem;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .total_fare_box {
+    display: flex;
+    flex-direction: column;
+
+    .total_fare_heading {
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .total_fare_desc {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .view_fare_break_up {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 16px;
+      color: rgba(51, 152, 213, 1);
+
+      .dropdown_icon {
+        transform: rotate(90%);
+      }
+
+      @media only screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .total_fare_heading {
+        display: none;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+    }
+  }
+
+  .proceed_box {
+    .proceed_button {
+      padding: 1rem 2rem;
+      font-weight: 600;
+    }
+  }
+}

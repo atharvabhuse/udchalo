@@ -1,0 +1,103 @@
+.baggage_allowance {
+  .baggage_allowance_container {
+    display: flex;
+    padding: 0.75rem;
+    align-items: center;
+    background-color: white;
+
+    .baggage_allowance_header {
+      display: flex;
+      gap: 0.5rem;
+
+      .title {
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        display: flex;
+        align-items: center;
+        color: #000000;
+      }
+    }
+
+    .cabin_baggage,
+    .check_in_baggage {
+      margin-left: 1.375rem;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      color: #545454;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      .dot {
+        display: inline-block;
+        border-radius: 50%;
+        height: 4px;
+        width: 4px;
+        background-color: #545454;
+      }
+
+      span {
+        color: #454545;
+        font-weight: 600;
+      }
+    }
+
+    .check_in_baggage {
+      margin-left: 0.938rem;
+    }
+  }
+
+  .excess_baggage {
+    border-radius: 4px;
+    background: #f0f8ff;
+    text-align: center;
+
+    .link {
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      color: #48a3da;
+      padding: 4px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .baggage_allowance {
+    .baggage_allowance_container {
+      flex-direction: column;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 0px;
+      row-gap: 8px;
+
+      .cabin_baggage,
+      .check_in_baggage {
+        margin-left: 10px;
+        font-size: 12px;
+        color: #454545;
+        row-gap: 7px;
+        .dot {
+          margin-right: 14px;
+        }
+      }
+      .baggage_allowance_header {
+        gap: 8px;
+        .title {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+    }
+
+    .excess_baggage {
+      margin-top: 10px;
+      .link {
+        font-size: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+.flight_cancellation_reschedule_flight_container {
+  display: flex;
+  gap: 1.25rem;
+  margin-top: 1rem;
+  width: 100%;
+  background-color: white;
+
+  .flight_cancellation_policies_container {
+    width: 100%;
+    .cancellation_policy_header {
+      display: flex;
+      gap: 0.5rem;
+
+      .title {
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 1rem;
+        display: flex;
+        align-items: center;
+        color: #000000;
+      }
+    }
+
+    .cancellation_policy_detail {
+      // width: 348px;
+      // height: 131px;
+      background: #ffffff;
+      border: 0.063rem solid #edf7ff;
+      border-radius: 0.5rem;
+
+      .detail_header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.313rem 2.813rem 0.313rem 0.688rem;
+        height: 2.5rem;
+        background: #eaf0f6;
+        border: 0.063rem solid #eaf0f6;
+        border-radius: 0.5rem 0.5rem 0 0;
+
+        .header {
+          .title {
+            font-weight: 600;
+            font-size: 0.75rem;
+            line-height: 0.875rem;
+            color: #454545;
+          }
+
+          .sub_title {
+            font-weight: 400;
+            font-size: 0.625rem;
+            line-height: 0.875rem;
+            color: #545454;
+          }
+        }
+      }
+      .detail_content_container {
+        padding-top: 9px;
+        padding-inline: 11px;
+        .detail_content {
+          display: flex;
+          justify-content: space-between;
+          // padding: 0.5rem 5.313rem 0 0.688rem;
+          padding: 0rem 5.313rem 12px 0rem;
+          .timeline_content {
+            line-height: 0.875rem;
+
+            .label {
+              font-weight: 600;
+              font-size: 0.75rem;
+              color: #454545;
+            }
+
+            .timeline {
+              font-weight: 400;
+              font-size: 0.625rem;
+              color: #545454;
+            }
+          }
+
+          .charges_content {
+            font-weight: 600;
+            font-size: 0.75rem;
+            line-height: 0.875rem;
+            color: #454545;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .flight_cancellation_reschedule_flight_container {
+    flex-direction: column;
+    .flight_cancellation_policies_container {
+      .cancellation_policy_header {
+        gap: 8px;
+        margin-bottom: 8px;
+        .title {
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+      .cancellation_policy_detail {
+        .detail_header {
+          .header {
+            .title {
+              font-size: 12px;
+              line-height: 14px;
+            }
+            .sub_title {
+              font-size: 10px;
+              line-height: 14px;
+            }
+          }
+        }
+        .detail_content_container {
+          .detail_content {
+            .timeline_content {
+              .label {
+                font-size: 12px;
+                line-height: 14px;
+              }
+              .timeline {
+                font-size: 10px;
+                line-height: 14px;
+              }
+            }
+            .charges_content {
+              font-size: 12px;
+              line-height: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
